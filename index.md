@@ -15,11 +15,16 @@ title: Agency Agents Catalog
       <span id="search-hint" class="visually-hidden">Type to filter agents by name or description</span>
     </div>
 
-    <div class="category-filters" role="group" aria-label="Filter agents by category">
-      <button class="filter-btn active" data-category="all" aria-pressed="true">All</button>
-      {% for category in site.data.categories %}
-      <button class="filter-btn" data-category="{{ category.id }}" aria-pressed="false">{{ category.name_en }}</button>
-      {% endfor %}
+    <div class="filter-bar">
+      <div class="category-filters" role="group" aria-label="Filter agents by category">
+        <button class="filter-btn active" data-category="all" aria-pressed="true">All</button>
+        {% for category in site.data.categories %}
+        <button class="filter-btn" data-category="{{ category.id }}" aria-pressed="false">{{ category.name_en }}</button>
+        {% endfor %}
+      </div>
+      <button id="favorites-btn" class="favorites-btn" aria-pressed="false" aria-label="Show favorites">
+        ⭐ Favorites
+      </button>
     </div>
   </div>
 </div>
@@ -28,6 +33,7 @@ title: Agency Agents Catalog
   <div class="agents-grid" id="agents-grid" role="list" aria-label="Agent listings">
     {% for agent in site.data.agents %}
     <a href="{{ agent.url }}" class="agent-card" role="listitem" data-category="{{ agent.category }}" data-name="{{ agent.name | downcase | escape }}" data-description="{{ agent.description_en | downcase | replace: '"', '&quot;' }} {{ agent.description_zh | downcase | replace: '"', '&quot;' }}">
+      <button class="favorite-btn" data-agent="{{ agent.name | downcase | escape }}" aria-label="Add to favorites" onclick="toggleFavorite('{{ agent.name | downcase | escape }}', event)">☆</button>
       <div class="card-header" style="background-color: {{ agent.color }}20;">
         <span class="card-emoji" aria-hidden="true">{{ agent.emoji }}</span>
       </div>

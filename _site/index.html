@@ -14,74 +14,84 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
     <div class="container">
-      <a href="/agency-agents/" class="site-logo">
-        <span class="logo-icon">🤖</span>
+      <a href="/agency-agents/" class="site-logo" aria-label="Agency Agents - Home">
+        <span class="logo-icon" aria-hidden="true">🤖</span>
         <span class="logo-text">Agency Agents</span>
       </a>
-      <nav class="site-nav">
-        <a href="https://github.com/SSBun/agency-agents" class="nav-link github-link" target="_blank" rel="noopener">
-          <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="https://github.com/SSBun/agency-agents" class="nav-link github-link" target="_blank" rel="noopener" aria-label="View on GitHub">
+          <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
           </svg>
         </a>
-        <div class="lang-toggle">
-          <button class="lang-btn" data-lang="en">EN</button>
-          <button class="lang-btn" data-lang="zh">中文</button>
+        <div class="lang-toggle" role="group" aria-label="Language selection">
+          <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
         </div>
       </nav>
     </div>
   </header>
 
-  <main class="site-main">
+  <main class="site-main" id="main-content" role="main">
     <div class="hero">
   <div class="container">
     <h1 class="hero-title">Agency Agents</h1>
     <p class="hero-subtitle">A comprehensive catalog of specialized AI agents for software development, design, marketing, and more.</p>
 
     <div class="search-container">
-      <input type="text" id="search-input" class="search-input" placeholder="Search agents by name or description..." />
-      <span class="search-icon">🔍</span>
+      <label for="search-input" class="visually-hidden">Search agents by name or description</label>
+      <input type="text" id="search-input" class="search-input" placeholder="Search agents by name or description..." aria-describedby="search-hint" />
+      <span class="search-icon" aria-hidden="true">🔍</span>
+      <span id="search-hint" class="visually-hidden">Type to filter agents by name or description</span>
     </div>
 
-    <div class="category-filters">
-      <button class="filter-btn active" data-category="all">All</button>
-      
-      <button class="filter-btn" data-category="engineering">Engineering</button>
-      
-      <button class="filter-btn" data-category="design">Design</button>
-      
-      <button class="filter-btn" data-category="game-development">Game Development</button>
-      
-      <button class="filter-btn" data-category="marketing">Marketing</button>
-      
-      <button class="filter-btn" data-category="paid-media">Paid Media</button>
-      
-      <button class="filter-btn" data-category="product">Product</button>
-      
-      <button class="filter-btn" data-category="project-management">Project Management</button>
-      
-      <button class="filter-btn" data-category="sales">Sales</button>
-      
-      <button class="filter-btn" data-category="specialized">Specialized</button>
-      
-      <button class="filter-btn" data-category="spatial-computing">Spatial Computing</button>
-      
-      <button class="filter-btn" data-category="support">Support</button>
-      
-      <button class="filter-btn" data-category="testing">Testing</button>
-      
+    <div class="filter-bar">
+      <div class="category-filters" role="group" aria-label="Filter agents by category">
+        <button class="filter-btn active" data-category="all" aria-pressed="true">All</button>
+        
+        <button class="filter-btn" data-category="engineering" aria-pressed="false">Engineering</button>
+        
+        <button class="filter-btn" data-category="design" aria-pressed="false">Design</button>
+        
+        <button class="filter-btn" data-category="game-development" aria-pressed="false">Game Development</button>
+        
+        <button class="filter-btn" data-category="marketing" aria-pressed="false">Marketing</button>
+        
+        <button class="filter-btn" data-category="paid-media" aria-pressed="false">Paid Media</button>
+        
+        <button class="filter-btn" data-category="product" aria-pressed="false">Product</button>
+        
+        <button class="filter-btn" data-category="project-management" aria-pressed="false">Project Management</button>
+        
+        <button class="filter-btn" data-category="sales" aria-pressed="false">Sales</button>
+        
+        <button class="filter-btn" data-category="specialized" aria-pressed="false">Specialized</button>
+        
+        <button class="filter-btn" data-category="spatial-computing" aria-pressed="false">Spatial Computing</button>
+        
+        <button class="filter-btn" data-category="support" aria-pressed="false">Support</button>
+        
+        <button class="filter-btn" data-category="testing" aria-pressed="false">Testing</button>
+        
+      </div>
+      <button id="favorites-btn" class="favorites-btn" aria-pressed="false" aria-label="Show favorites">
+        ⭐ Favorites
+      </button>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="agents-grid" id="agents-grid">
+  <div class="agents-grid" id="agents-grid" role="list" aria-label="Agent listings">
     
-    <a href="/agency-agents/engineering/engineering-ai-engineer.html" class="agent-card" data-category="engineering" data-name="ai engineer" data-description="expert ai/ml engineer specializing in machine learning model development, deployment, and integration into production systems 专业的ai/ml工程师，擅长机器学习模型开发、部署和生产系统集成">
+    <a href="/agency-agents/engineering/engineering-ai-engineer.html" class="agent-card" role="listitem" data-category="engineering" data-name="ai engineer" data-description="expert ai/ml engineer specializing in machine learning model development, deployment, and integration into production systems 专业的ai/ml工程师，擅长机器学习模型开发、部署和生产系统集成">
+      <button class="favorite-btn" data-agent="ai engineer" aria-label="Add to favorites" onclick="toggleFavorite('ai engineer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -91,9 +101,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/testing/testing-api-tester.html" class="agent-card" data-category="testing" data-name="api tester" data-description="expert api testing specialist focused on comprehensive api validation, performance testing, and quality assurance 专业api测试专家，专注于全面的api验证、性能测试和质量保证">
+    <a href="/agency-agents/testing/testing-api-tester.html" class="agent-card" role="listitem" data-category="testing" data-name="api tester" data-description="expert api testing specialist focused on comprehensive api validation, performance testing, and quality assurance 专业api测试专家，专注于全面的api验证、性能测试和质量保证">
+      <button class="favorite-btn" data-agent="api tester" aria-label="Add to favorites" onclick="toggleFavorite('api tester', event)">☆</button>
       <div class="card-header" style="background-color: #a855f720;">
-        <span class="card-emoji">🧪</span>
+        <span class="card-emoji" aria-hidden="true">🧪</span>
       </div>
       <div class="card-body">
         <span class="card-category">Testing</span>
@@ -103,9 +114,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/testing/testing-accessibility-auditor.html" class="agent-card" data-category="testing" data-name="accessibility auditor" data-description="expert accessibility specialist who audits interfaces against wcag standards, tests with assistive technologies 专业无障碍专家，根据wcag标准审计界面、使用辅助技术测试">
+    <a href="/agency-agents/testing/testing-accessibility-auditor.html" class="agent-card" role="listitem" data-category="testing" data-name="accessibility auditor" data-description="expert accessibility specialist who audits interfaces against wcag standards, tests with assistive technologies 专业无障碍专家，根据wcag标准审计界面、使用辅助技术测试">
+      <button class="favorite-btn" data-agent="accessibility auditor" aria-label="Add to favorites" onclick="toggleFavorite('accessibility auditor', event)">☆</button>
       <div class="card-header" style="background-color: #a855f720;">
-        <span class="card-emoji">🧪</span>
+        <span class="card-emoji" aria-hidden="true">🧪</span>
       </div>
       <div class="card-body">
         <span class="card-category">Testing</span>
@@ -115,9 +127,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/sales/sales-account-strategist.html" class="agent-card" data-category="sales" data-name="account strategist" data-description="expert post-sale account strategist specializing in land-and-expand execution, stakeholder mapping, qbr facilitation 专业售后账户策略师，擅长扩展执行、利益相关者映射、qbr促进">
+    <a href="/agency-agents/sales/sales-account-strategist.html" class="agent-card" role="listitem" data-category="sales" data-name="account strategist" data-description="expert post-sale account strategist specializing in land-and-expand execution, stakeholder mapping, qbr facilitation 专业售后账户策略师，擅长扩展执行、利益相关者映射、qbr促进">
+      <button class="favorite-btn" data-agent="account strategist" aria-label="Add to favorites" onclick="toggleFavorite('account strategist', event)">☆</button>
       <div class="card-header" style="background-color: #14b8a620;">
-        <span class="card-emoji">💼</span>
+        <span class="card-emoji" aria-hidden="true">💼</span>
       </div>
       <div class="card-body">
         <span class="card-category">Sales</span>
@@ -127,9 +140,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/accounts-payable-agent.html" class="agent-card" data-category="specialized" data-name="accounts payable agent" data-description="autonomous payment processing specialist that executes vendor payments, contractor invoices, and recurring bills across any payment rail 自主支付处理专家，在任何支付轨道上执行供应商付款、承包商发票和定期账单">
+    <a href="/agency-agents/specialized/accounts-payable-agent.html" class="agent-card" role="listitem" data-category="specialized" data-name="accounts payable agent" data-description="autonomous payment processing specialist that executes vendor payments, contractor invoices, and recurring bills across any payment rail 自主支付处理专家，在任何支付轨道上执行供应商付款、承包商发票和定期账单">
+      <button class="favorite-btn" data-agent="accounts payable agent" aria-label="Add to favorites" onclick="toggleFavorite('accounts payable agent', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -139,9 +153,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/paid-media/paid-media-ppc-strategist.html" class="agent-card" data-category="paid-media" data-name="ad creative strategist" data-description="paid media creative specialist focused on ad copywriting, rsa optimization, asset group design, and creative testing frameworks 付费媒体创意专家，专注于广告文案、rsa优化、资产组设计和创意测试框架">
+    <a href="/agency-agents/paid-media/paid-media-ppc-strategist.html" class="agent-card" role="listitem" data-category="paid-media" data-name="ad creative strategist" data-description="paid media creative specialist focused on ad copywriting, rsa optimization, asset group design, and creative testing frameworks 付费媒体创意专家，专注于广告文案、rsa优化、资产组设计和创意测试框架">
+      <button class="favorite-btn" data-agent="ad creative strategist" aria-label="Add to favorites" onclick="toggleFavorite('ad creative strategist', event)">☆</button>
       <div class="card-header" style="background-color: #ef444420;">
-        <span class="card-emoji">💰</span>
+        <span class="card-emoji" aria-hidden="true">💰</span>
       </div>
       <div class="card-body">
         <span class="card-category">Paid Media</span>
@@ -151,9 +166,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/agentic-identity-trust.html" class="agent-card" data-category="specialized" data-name="agentic identity &amp; trust architect" data-description="designs identity, authentication, and trust verification systems for autonomous ai agents operating in multi-agent environments 为在多智能体环境中运行的自主人工智能智能体设计身份、身份验证和信任验证系统">
+    <a href="/agency-agents/specialized/agentic-identity-trust.html" class="agent-card" role="listitem" data-category="specialized" data-name="agentic identity &amp; trust architect" data-description="designs identity, authentication, and trust verification systems for autonomous ai agents operating in multi-agent environments 为在多智能体环境中运行的自主人工智能智能体设计身份、身份验证和信任验证系统">
+      <button class="favorite-btn" data-agent="agentic identity &amp; trust architect" aria-label="Add to favorites" onclick="toggleFavorite('agentic identity &amp; trust architect', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -163,9 +179,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/agents-orchestrator.html" class="agent-card" data-category="specialized" data-name="agents orchestrator" data-description="autonomous pipeline manager that orchestrates the entire development workflow - the leader of this process 自主流水线管理器，协调整个开发流程 - 此过程的领导者">
+    <a href="/agency-agents/specialized/agents-orchestrator.html" class="agent-card" role="listitem" data-category="specialized" data-name="agents orchestrator" data-description="autonomous pipeline manager that orchestrates the entire development workflow - the leader of this process 自主流水线管理器，协调整个开发流程 - 此过程的领导者">
+      <button class="favorite-btn" data-agent="agents orchestrator" aria-label="Add to favorites" onclick="toggleFavorite('agents orchestrator', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -175,9 +192,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/support/support-analytics-reporter.html" class="agent-card" data-category="support" data-name="analytics reporter" data-description="expert data analyst transforming raw data into actionable business insights - creates dashboards, performs statistical analysis 专业数据分析师，将原始数据转化为可操作的业务洞察 - 创建仪表板、进行统计分析">
+    <a href="/agency-agents/support/support-analytics-reporter.html" class="agent-card" role="listitem" data-category="support" data-name="analytics reporter" data-description="expert data analyst transforming raw data into actionable business insights - creates dashboards, performs statistical analysis 专业数据分析师，将原始数据转化为可操作的业务洞察 - 创建仪表板、进行统计分析">
+      <button class="favorite-btn" data-agent="analytics reporter" aria-label="Add to favorites" onclick="toggleFavorite('analytics reporter', event)">☆</button>
       <div class="card-header" style="background-color: #22c55e20;">
-        <span class="card-emoji">🎧</span>
+        <span class="card-emoji" aria-hidden="true">🎧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Support</span>
@@ -187,9 +205,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-app-store-optimizer.html" class="agent-card" data-category="marketing" data-name="app store optimizer" data-description="expert app store marketing specialist focused on app store optimization (aso), conversion rate optimization, and app discoverability 专业应用商店营销专家，专注于aso、转化率优化和应用可发现性">
+    <a href="/agency-agents/marketing/marketing-app-store-optimizer.html" class="agent-card" role="listitem" data-category="marketing" data-name="app store optimizer" data-description="expert app store marketing specialist focused on app store optimization (aso), conversion rate optimization, and app discoverability 专业应用商店营销专家，专注于aso、转化率优化和应用可发现性">
+      <button class="favorite-btn" data-agent="app store optimizer" aria-label="Add to favorites" onclick="toggleFavorite('app store optimizer', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -199,9 +218,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-autonomous-optimization-architect.html" class="agent-card" data-category="engineering" data-name="autonomous optimization architect" data-description="intelligent system governor that continuously shadow-tests apis for performance while enforcing strict financial and security guardrails 智能系统治理者，持续进行api影子测试以优化性能，同时执行严格的财务和安全护栏">
+    <a href="/agency-agents/engineering/engineering-autonomous-optimization-architect.html" class="agent-card" role="listitem" data-category="engineering" data-name="autonomous optimization architect" data-description="intelligent system governor that continuously shadow-tests apis for performance while enforcing strict financial and security guardrails 智能系统治理者，持续进行api影子测试以优化性能，同时执行严格的财务和安全护栏">
+      <button class="favorite-btn" data-agent="autonomous optimization architect" aria-label="Add to favorites" onclick="toggleFavorite('autonomous optimization architect', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -211,9 +231,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-backend-architect.html" class="agent-card" data-category="engineering" data-name="backend architect" data-description="senior backend architect specializing in scalable system design, database architecture, api development, and cloud infrastructure 高级后端架构师，擅长可扩展系统设计、数据库架构、api开发和云基础设施">
+    <a href="/agency-agents/engineering/engineering-backend-architect.html" class="agent-card" role="listitem" data-category="engineering" data-name="backend architect" data-description="senior backend architect specializing in scalable system design, database architecture, api development, and cloud infrastructure 高级后端架构师，擅长可扩展系统设计、数据库架构、api开发和云基础设施">
+      <button class="favorite-btn" data-agent="backend architect" aria-label="Add to favorites" onclick="toggleFavorite('backend architect', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -223,9 +244,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/backend-architect-memory.html" class="agent-card" data-category="specialized" data-name="backend architect (memory)" data-description="senior backend architect specializing in scalable system design, database architecture, api development, and cloud infrastructure 高级后端架构师，擅长可扩展系统设计、数据库架构、api开发和云基础设施">
+    <a href="/agency-agents/specialized/backend-architect-memory.html" class="agent-card" role="listitem" data-category="specialized" data-name="backend architect (memory)" data-description="senior backend architect specializing in scalable system design, database architecture, api development, and cloud infrastructure 高级后端架构师，擅长可扩展系统设计、数据库架构、api开发和云基础设施">
+      <button class="favorite-btn" data-agent="backend architect (memory)" aria-label="Add to favorites" onclick="toggleFavorite('backend architect (memory)', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -235,9 +257,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-baidu-seo-specialist.html" class="agent-card" data-category="marketing" data-name="baidu seo specialist" data-description="expert baidu search optimization specialist focused on chinese search engine ranking, baidu ecosystem integration, icp compliance 专业百度搜索优化专家，专注于中国搜索引擎排名、百度生态整合、icp合规">
+    <a href="/agency-agents/marketing/marketing-baidu-seo-specialist.html" class="agent-card" role="listitem" data-category="marketing" data-name="baidu seo specialist" data-description="expert baidu search optimization specialist focused on chinese search engine ranking, baidu ecosystem integration, icp compliance 专业百度搜索优化专家，专注于中国搜索引擎排名、百度生态整合、icp合规">
+      <button class="favorite-btn" data-agent="baidu seo specialist" aria-label="Add to favorites" onclick="toggleFavorite('baidu seo specialist', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -247,9 +270,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/product/product-behavioral-nudge-engine.html" class="agent-card" data-category="product" data-name="behavioral nudge engine" data-description="behavioral psychology specialist that adapts software interaction cadences and styles to maximize user motivation and success 行为心理学专家，调整软件交互节奏和风格以最大化用户动机和成功率">
+    <a href="/agency-agents/product/product-behavioral-nudge-engine.html" class="agent-card" role="listitem" data-category="product" data-name="behavioral nudge engine" data-description="behavioral psychology specialist that adapts software interaction cadences and styles to maximize user motivation and success 行为心理学专家，调整软件交互节奏和风格以最大化用户动机和成功率">
+      <button class="favorite-btn" data-agent="behavioral nudge engine" aria-label="Add to favorites" onclick="toggleFavorite('behavioral nudge engine', event)">☆</button>
       <div class="card-header" style="background-color: #06b6d420;">
-        <span class="card-emoji">📦</span>
+        <span class="card-emoji" aria-hidden="true">📦</span>
       </div>
       <div class="card-body">
         <span class="card-category">Product</span>
@@ -259,9 +283,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-bilibili-content-strategist.html" class="agent-card" data-category="marketing" data-name="bilibili content strategist" data-description="expert bilibili marketing specialist focused on up主 growth, danmaku culture mastery, b站 algorithm optimization 专业b站营销专家，专注于up主成长、弹幕文化掌握、b站算法优化">
+    <a href="/agency-agents/marketing/marketing-bilibili-content-strategist.html" class="agent-card" role="listitem" data-category="marketing" data-name="bilibili content strategist" data-description="expert bilibili marketing specialist focused on up主 growth, danmaku culture mastery, b站 algorithm optimization 专业b站营销专家，专注于up主成长、弹幕文化掌握、b站算法优化">
+      <button class="favorite-btn" data-agent="bilibili content strategist" aria-label="Add to favorites" onclick="toggleFavorite('bilibili content strategist', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -271,9 +296,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/blockchain-security-auditor.html" class="agent-card" data-category="specialized" data-name="blockchain security auditor" data-description="expert smart contract security auditor specializing in vulnerability detection, formal verification, exploit analysis 专业智能合约安全审计师，擅长漏洞检测、形式化验证、漏洞分析">
+    <a href="/agency-agents/specialized/blockchain-security-auditor.html" class="agent-card" role="listitem" data-category="specialized" data-name="blockchain security auditor" data-description="expert smart contract security auditor specializing in vulnerability detection, formal verification, exploit analysis 专业智能合约安全审计师，擅长漏洞检测、形式化验证、漏洞分析">
+      <button class="favorite-btn" data-agent="blockchain security auditor" aria-label="Add to favorites" onclick="toggleFavorite('blockchain security auditor', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -283,9 +309,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/design/design-brand-guardian.html" class="agent-card" data-category="design" data-name="brand guardian" data-description="expert brand strategist and guardian specializing in brand identity development, consistency maintenance, and strategic brand positioning 专业品牌策略师和守护者，擅长品牌身份开发、一致性维护和战略性品牌定位">
+    <a href="/agency-agents/design/design-brand-guardian.html" class="agent-card" role="listitem" data-category="design" data-name="brand guardian" data-description="expert brand strategist and guardian specializing in brand identity development, consistency maintenance, and strategic brand positioning 专业品牌策略师和守护者，擅长品牌身份开发、一致性维护和战略性品牌定位">
+      <button class="favorite-btn" data-agent="brand guardian" aria-label="Add to favorites" onclick="toggleFavorite('brand guardian', event)">☆</button>
       <div class="card-header" style="background-color: #ec489920;">
-        <span class="card-emoji">🎨</span>
+        <span class="card-emoji" aria-hidden="true">🎨</span>
       </div>
       <div class="card-body">
         <span class="card-category">Design</span>
@@ -295,9 +322,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-carousel-growth-engine.html" class="agent-card" data-category="marketing" data-name="carousel growth engine" data-description="autonomous tiktok and instagram carousel generation specialist 自主tiktok和instagram轮播图生成专家">
+    <a href="/agency-agents/marketing/marketing-carousel-growth-engine.html" class="agent-card" role="listitem" data-category="marketing" data-name="carousel growth engine" data-description="autonomous tiktok and instagram carousel generation specialist 自主tiktok和instagram轮播图生成专家">
+      <button class="favorite-btn" data-agent="carousel growth engine" aria-label="Add to favorites" onclick="toggleFavorite('carousel growth engine', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -307,9 +335,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-china-ecommerce-operator.html" class="agent-card" data-category="marketing" data-name="china e-commerce operator" data-description="expert china e-commerce operations specialist covering taobao, tmall, pinduoduo, and jd ecosystems 专业中国电商运营专家，覆盖淘宝、天猫、拼多多和京东生态系统">
+    <a href="/agency-agents/marketing/marketing-china-ecommerce-operator.html" class="agent-card" role="listitem" data-category="marketing" data-name="china e-commerce operator" data-description="expert china e-commerce operations specialist covering taobao, tmall, pinduoduo, and jd ecosystems 专业中国电商运营专家，覆盖淘宝、天猫、拼多多和京东生态系统">
+      <button class="favorite-btn" data-agent="china e-commerce operator" aria-label="Add to favorites" onclick="toggleFavorite('china e-commerce operator', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -319,9 +348,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/compliance-auditor.html" class="agent-card" data-category="specialized" data-name="compliance auditor" data-description="expert technical compliance auditor specializing in soc 2, iso 27001, hipaa, and pci-dss audits 专业技术合规审计师，擅长soc 2、iso 27001、hipaa和pci-dss审计">
+    <a href="/agency-agents/specialized/compliance-auditor.html" class="agent-card" role="listitem" data-category="specialized" data-name="compliance auditor" data-description="expert technical compliance auditor specializing in soc 2, iso 27001, hipaa, and pci-dss audits 专业技术合规审计师，擅长soc 2、iso 27001、hipaa和pci-dss审计">
+      <button class="favorite-btn" data-agent="compliance auditor" aria-label="Add to favorites" onclick="toggleFavorite('compliance auditor', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -331,9 +361,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-linkedin-content-creator.html" class="agent-card" data-category="marketing" data-name="content creator" data-description="expert content strategist and creator for multi-platform campaigns 专业的多平台活动内容策略师和创作者">
+    <a href="/agency-agents/marketing/marketing-linkedin-content-creator.html" class="agent-card" role="listitem" data-category="marketing" data-name="content creator" data-description="expert content strategist and creator for multi-platform campaigns 专业的多平台活动内容策略师和创作者">
+      <button class="favorite-btn" data-agent="content creator" aria-label="Add to favorites" onclick="toggleFavorite('content creator', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -343,9 +374,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/specialized-cultural-intelligence-strategist.html" class="agent-card" data-category="specialized" data-name="cultural intelligence strategist" data-description="cq specialist that detects invisible exclusion, researches global context, and ensures software resonates authentically cq专家，检测无形排斥、研究全球背景，确保软件真实共鸣">
+    <a href="/agency-agents/specialized/specialized-cultural-intelligence-strategist.html" class="agent-card" role="listitem" data-category="specialized" data-name="cultural intelligence strategist" data-description="cq specialist that detects invisible exclusion, researches global context, and ensures software resonates authentically cq专家，检测无形排斥、研究全球背景，确保软件真实共鸣">
+      <button class="favorite-btn" data-agent="cultural intelligence strategist" aria-label="Add to favorites" onclick="toggleFavorite('cultural intelligence strategist', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -355,9 +387,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/data-consolidation-agent.html" class="agent-card" data-category="specialized" data-name="data consolidation agent" data-description="ai agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries ai智能体，将提取的销售数据整合到具有区域、销售代表和管道摘要的实时报告仪表板">
+    <a href="/agency-agents/specialized/data-consolidation-agent.html" class="agent-card" role="listitem" data-category="specialized" data-name="data consolidation agent" data-description="ai agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries ai智能体，将提取的销售数据整合到具有区域、销售代表和管道摘要的实时报告仪表板">
+      <button class="favorite-btn" data-agent="data consolidation agent" aria-label="Add to favorites" onclick="toggleFavorite('data consolidation agent', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -367,9 +400,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-data-engineer.html" class="agent-card" data-category="engineering" data-name="data engineer" data-description="expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infrastructure 专业数据工程师，擅长构建可靠数据流水线、湖仓架构和可扩展数据基础设施">
+    <a href="/agency-agents/engineering/engineering-data-engineer.html" class="agent-card" role="listitem" data-category="engineering" data-name="data engineer" data-description="expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infrastructure 专业数据工程师，擅长构建可靠数据流水线、湖仓架构和可扩展数据基础设施">
+      <button class="favorite-btn" data-agent="data engineer" aria-label="Add to favorites" onclick="toggleFavorite('data engineer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -379,9 +413,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/sales/sales-deal-strategist.html" class="agent-card" data-category="sales" data-name="deal strategist" data-description="senior deal strategist specializing in meddpicc qualification, competitive positioning, and win planning for complex b2b sales cycles 高级交易策略师，擅长meddpicc资格认证、竞争定位和复杂b2b销售周期的赢单规划">
+    <a href="/agency-agents/sales/sales-deal-strategist.html" class="agent-card" role="listitem" data-category="sales" data-name="deal strategist" data-description="senior deal strategist specializing in meddpicc qualification, competitive positioning, and win planning for complex b2b sales cycles 高级交易策略师，擅长meddpicc资格认证、竞争定位和复杂b2b销售周期的赢单规划">
+      <button class="favorite-btn" data-agent="deal strategist" aria-label="Add to favorites" onclick="toggleFavorite('deal strategist', event)">☆</button>
       <div class="card-header" style="background-color: #14b8a620;">
-        <span class="card-emoji">💼</span>
+        <span class="card-emoji" aria-hidden="true">💼</span>
       </div>
       <div class="card-body">
         <span class="card-category">Sales</span>
@@ -391,9 +426,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-devops-automator.html" class="agent-card" data-category="engineering" data-name="devops automator" data-description="expert devops engineer specializing in infrastructure automation, ci/cd pipeline development, and cloud operations 专业devops工程师，擅长基础设施自动化、ci/cd流水线开发和云运维">
+    <a href="/agency-agents/engineering/engineering-devops-automator.html" class="agent-card" role="listitem" data-category="engineering" data-name="devops automator" data-description="expert devops engineer specializing in infrastructure automation, ci/cd pipeline development, and cloud operations 专业devops工程师，擅长基础设施自动化、ci/cd流水线开发和云运维">
+      <button class="favorite-btn" data-agent="devops automator" aria-label="Add to favorites" onclick="toggleFavorite('devops automator', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -403,9 +439,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/specialized-developer-advocate.html" class="agent-card" data-category="specialized" data-name="developer advocate" data-description="expert developer advocate specializing in building developer communities, creating compelling technical content, optimizing dx 专业开发者倡导者，擅长建设开发者社区、创建引人注目的技术内容、优化开发者体验">
+    <a href="/agency-agents/specialized/specialized-developer-advocate.html" class="agent-card" role="listitem" data-category="specialized" data-name="developer advocate" data-description="expert developer advocate specializing in building developer communities, creating compelling technical content, optimizing dx 专业开发者倡导者，擅长建设开发者社区、创建引人注目的技术内容、优化开发者体验">
+      <button class="favorite-btn" data-agent="developer advocate" aria-label="Add to favorites" onclick="toggleFavorite('developer advocate', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -415,9 +452,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/sales/sales-discovery-coach.html" class="agent-card" data-category="sales" data-name="discovery coach" data-description="coaches sales teams on elite discovery methodology — question design, current-state mapping, gap quantification, and call structure 指导销售团队掌握精英发现方法论 — 问题设计、现状映射、差距量化和通话结构">
+    <a href="/agency-agents/sales/sales-discovery-coach.html" class="agent-card" role="listitem" data-category="sales" data-name="discovery coach" data-description="coaches sales teams on elite discovery methodology — question design, current-state mapping, gap quantification, and call structure 指导销售团队掌握精英发现方法论 — 问题设计、现状映射、差距量化和通话结构">
+      <button class="favorite-btn" data-agent="discovery coach" aria-label="Add to favorites" onclick="toggleFavorite('discovery coach', event)">☆</button>
       <div class="card-header" style="background-color: #14b8a620;">
-        <span class="card-emoji">💼</span>
+        <span class="card-emoji" aria-hidden="true">💼</span>
       </div>
       <div class="card-body">
         <span class="card-category">Sales</span>
@@ -427,9 +465,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-embedded-firmware-engineer.html" class="agent-card" data-category="engineering" data-name="embedded firmware engineer" data-description="specialist in bare-metal and rtos firmware - esp32/esp-idf, platformio, arduino, arm cortex-m, stm32 hal/ll, nordic nrf5/nrf connect sdk, freertos, zephyr 裸机和rtos固件专家 - esp32/esp-idf、platformio、arduino、arm cortex-m、stm32 hal/ll、nordic nrf5/nrf connect sdk、freertos、zephyr">
+    <a href="/agency-agents/engineering/engineering-embedded-firmware-engineer.html" class="agent-card" role="listitem" data-category="engineering" data-name="embedded firmware engineer" data-description="specialist in bare-metal and rtos firmware - esp32/esp-idf, platformio, arduino, arm cortex-m, stm32 hal/ll, nordic nrf5/nrf connect sdk, freertos, zephyr 裸机和rtos固件专家 - esp32/esp-idf、platformio、arduino、arm cortex-m、stm32 hal/ll、nordic nrf5/nrf connect sdk、freertos、zephyr">
+      <button class="favorite-btn" data-agent="embedded firmware engineer" aria-label="Add to favorites" onclick="toggleFavorite('embedded firmware engineer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -439,9 +478,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/testing/testing-evidence-collector.html" class="agent-card" data-category="testing" data-name="evidence collector" data-description="screenshot-obsessed, fantasy-allergic qa specialist - default to finding 3-5 issues, requires visual proof for everything 截图控、拒绝幻想的qa专家 - 默认找出3-5个问题，要求一切都有视觉证明">
+    <a href="/agency-agents/testing/testing-evidence-collector.html" class="agent-card" role="listitem" data-category="testing" data-name="evidence collector" data-description="screenshot-obsessed, fantasy-allergic qa specialist - default to finding 3-5 issues, requires visual proof for everything 截图控、拒绝幻想的qa专家 - 默认找出3-5个问题，要求一切都有视觉证明">
+      <button class="favorite-btn" data-agent="evidence collector" aria-label="Add to favorites" onclick="toggleFavorite('evidence collector', event)">☆</button>
       <div class="card-header" style="background-color: #a855f720;">
-        <span class="card-emoji">🧪</span>
+        <span class="card-emoji" aria-hidden="true">🧪</span>
       </div>
       <div class="card-body">
         <span class="card-category">Testing</span>
@@ -451,9 +491,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/support/support-executive-summary-generator.html" class="agent-card" data-category="support" data-name="executive summary generator" data-description="consultant-grade ai specialist trained to think and communicate like a senior strategy consultant 咨询级别的ai专家，训练有素地像高级战略顾问一样思考和沟通">
+    <a href="/agency-agents/support/support-executive-summary-generator.html" class="agent-card" role="listitem" data-category="support" data-name="executive summary generator" data-description="consultant-grade ai specialist trained to think and communicate like a senior strategy consultant 咨询级别的ai专家，训练有素地像高级战略顾问一样思考和沟通">
+      <button class="favorite-btn" data-agent="executive summary generator" aria-label="Add to favorites" onclick="toggleFavorite('executive summary generator', event)">☆</button>
       <div class="card-header" style="background-color: #22c55e20;">
-        <span class="card-emoji">🎧</span>
+        <span class="card-emoji" aria-hidden="true">🎧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Support</span>
@@ -463,9 +504,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/project-management/project-management-experiment-tracker.html" class="agent-card" data-category="project-management" data-name="experiment tracker" data-description="expert project manager specializing in experiment design, execution tracking, and data-driven decision making 专业项目经理，擅长实验设计、执行跟踪和数据驱动决策">
+    <a href="/agency-agents/project-management/project-management-experiment-tracker.html" class="agent-card" role="listitem" data-category="project-management" data-name="experiment tracker" data-description="expert project manager specializing in experiment design, execution tracking, and data-driven decision making 专业项目经理，擅长实验设计、执行跟踪和数据驱动决策">
+      <button class="favorite-btn" data-agent="experiment tracker" aria-label="Add to favorites" onclick="toggleFavorite('experiment tracker', event)">☆</button>
       <div class="card-header" style="background-color: #84cc1620;">
-        <span class="card-emoji">📋</span>
+        <span class="card-emoji" aria-hidden="true">📋</span>
       </div>
       <div class="card-body">
         <span class="card-category">Project Management</span>
@@ -475,9 +517,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/product/product-feedback-synthesizer.html" class="agent-card" data-category="product" data-name="feedback synthesizer" data-description="expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product insights 擅长从多渠道收集、分析和综合用户反馈，以提取可操作的产品洞察">
+    <a href="/agency-agents/product/product-feedback-synthesizer.html" class="agent-card" role="listitem" data-category="product" data-name="feedback synthesizer" data-description="expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product insights 擅长从多渠道收集、分析和综合用户反馈，以提取可操作的产品洞察">
+      <button class="favorite-btn" data-agent="feedback synthesizer" aria-label="Add to favorites" onclick="toggleFavorite('feedback synthesizer', event)">☆</button>
       <div class="card-header" style="background-color: #06b6d420;">
-        <span class="card-emoji">📦</span>
+        <span class="card-emoji" aria-hidden="true">📦</span>
       </div>
       <div class="card-body">
         <span class="card-category">Product</span>
@@ -487,9 +530,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/support/support-finance-tracker.html" class="agent-card" data-category="support" data-name="finance tracker" data-description="expert financial analyst and controller specializing in financial planning, budget management, and business performance analysis 专业财务分析师和controller，擅长财务规划、预算管理和业务绩效分析">
+    <a href="/agency-agents/support/support-finance-tracker.html" class="agent-card" role="listitem" data-category="support" data-name="finance tracker" data-description="expert financial analyst and controller specializing in financial planning, budget management, and business performance analysis 专业财务分析师和controller，擅长财务规划、预算管理和业务绩效分析">
+      <button class="favorite-btn" data-agent="finance tracker" aria-label="Add to favorites" onclick="toggleFavorite('finance tracker', event)">☆</button>
       <div class="card-header" style="background-color: #22c55e20;">
-        <span class="card-emoji">🎧</span>
+        <span class="card-emoji" aria-hidden="true">🎧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Support</span>
@@ -499,9 +543,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-frontend-developer.html" class="agent-card" data-category="engineering" data-name="frontend developer" data-description="expert frontend developer specializing in modern web technologies, react/vue/angular frameworks, ui implementation, and performance optimization 专注于现代web技术、react/vue/angular框架、ui实现和性能优化的专业前端开发工程师">
+    <a href="/agency-agents/engineering/engineering-frontend-developer.html" class="agent-card" role="listitem" data-category="engineering" data-name="frontend developer" data-description="expert frontend developer specializing in modern web technologies, react/vue/angular frameworks, ui implementation, and performance optimization 专注于现代web技术、react/vue/angular框架、ui实现和性能优化的专业前端开发工程师">
+      <button class="favorite-btn" data-agent="frontend developer" aria-label="Add to favorites" onclick="toggleFavorite('frontend developer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -511,9 +556,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/game-audio-engineer.html" class="agent-card" data-category="game-development" data-name="game audio engineer" data-description="interactive audio specialist - masters fmod/wwise integration, adaptive music systems, spatial audio, and audio performance budgeting 交互式音频专家 - 精通fmod/wwise集成、自适应音乐系统、空间音频和音频性能预算">
+    <a href="/agency-agents/game-development/game-audio-engineer.html" class="agent-card" role="listitem" data-category="game-development" data-name="game audio engineer" data-description="interactive audio specialist - masters fmod/wwise integration, adaptive music systems, spatial audio, and audio performance budgeting 交互式音频专家 - 精通fmod/wwise集成、自适应音乐系统、空间音频和音频性能预算">
+      <button class="favorite-btn" data-agent="game audio engineer" aria-label="Add to favorites" onclick="toggleFavorite('game audio engineer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -523,9 +569,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/game-designer.html" class="agent-card" data-category="game-development" data-name="game designer" data-description="systems and mechanics architect - masters gdd authorship, player psychology, economy balancing, and gameplay loop design 系统和机制架构师 - 精通游戏设计文档撰写、玩家心理、经济平衡和游戏循环设计">
+    <a href="/agency-agents/game-development/game-designer.html" class="agent-card" role="listitem" data-category="game-development" data-name="game designer" data-description="systems and mechanics architect - masters gdd authorship, player psychology, economy balancing, and gameplay loop design 系统和机制架构师 - 精通游戏设计文档撰写、玩家心理、经济平衡和游戏循环设计">
+      <button class="favorite-btn" data-agent="game designer" aria-label="Add to favorites" onclick="toggleFavorite('game designer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -535,9 +582,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/godot-gameplay-scripter.html" class="agent-card" data-category="game-development" data-name="godot gameplay scripter" data-description="composition and signal integrity specialist - masters gdscript 2.0, c# integration, node-based architecture, and type-safe signal design 组合和信号完整性专家 - 精通gdscript 2.0、c#集成、基于节点的架构和类型安全信号设计">
+    <a href="/agency-agents/game-development/godot-gameplay-scripter.html" class="agent-card" role="listitem" data-category="game-development" data-name="godot gameplay scripter" data-description="composition and signal integrity specialist - masters gdscript 2.0, c# integration, node-based architecture, and type-safe signal design 组合和信号完整性专家 - 精通gdscript 2.0、c#集成、基于节点的架构和类型安全信号设计">
+      <button class="favorite-btn" data-agent="godot gameplay scripter" aria-label="Add to favorites" onclick="toggleFavorite('godot gameplay scripter', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -547,9 +595,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/game-audio-engineer.html" class="agent-card" data-category="game-development" data-name="godot multiplayer engineer" data-description="godot 4 networking specialist - masters the multiplayerapi, scene replication, enet/webrtc transport, rpcs, and authority models godot 4网络专家 - 精通multiplayerapi、场景复制、enet/webrtc传输、rpc和权威模型">
+    <a href="/agency-agents/game-development/game-audio-engineer.html" class="agent-card" role="listitem" data-category="game-development" data-name="godot multiplayer engineer" data-description="godot 4 networking specialist - masters the multiplayerapi, scene replication, enet/webrtc transport, rpcs, and authority models godot 4网络专家 - 精通multiplayerapi、场景复制、enet/webrtc传输、rpc和权威模型">
+      <button class="favorite-btn" data-agent="godot multiplayer engineer" aria-label="Add to favorites" onclick="toggleFavorite('godot multiplayer engineer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -559,9 +608,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/godot-shader-developer.html" class="agent-card" data-category="game-development" data-name="godot shader developer" data-description="godot 4 visual effects specialist - masters the godot shading language, visualshader editor, canvasitem and spatial shaders godot 4视觉特效专家 - 精通godot着色语言、visualshader编辑器、canvasitem和spatial着色器">
+    <a href="/agency-agents/game-development/godot-shader-developer.html" class="agent-card" role="listitem" data-category="game-development" data-name="godot shader developer" data-description="godot 4 visual effects specialist - masters the godot shading language, visualshader editor, canvasitem and spatial shaders godot 4视觉特效专家 - 精通godot着色语言、visualshader编辑器、canvasitem和spatial着色器">
+      <button class="favorite-btn" data-agent="godot shader developer" aria-label="Add to favorites" onclick="toggleFavorite('godot shader developer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -571,9 +621,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-growth-hacker.html" class="agent-card" data-category="marketing" data-name="growth hacker" data-description="expert growth strategist specializing in rapid user acquisition through data-driven experimentation 专业增长策略师，擅长通过数据驱动的实验快速获取用户">
+    <a href="/agency-agents/marketing/marketing-growth-hacker.html" class="agent-card" role="listitem" data-category="marketing" data-name="growth hacker" data-description="expert growth strategist specializing in rapid user acquisition through data-driven experimentation 专业增长策略师，擅长通过数据驱动的实验快速获取用户">
+      <button class="favorite-btn" data-agent="growth hacker" aria-label="Add to favorites" onclick="toggleFavorite('growth hacker', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -583,9 +634,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/identity-graph-operator.html" class="agent-card" data-category="specialized" data-name="identity graph operator" data-description="operates a shared identity graph that multiple ai agents resolve against - ensures consistent entity identification 运营多个ai智能体共享的身份图谱 - 确保一致的实体识别">
+    <a href="/agency-agents/specialized/identity-graph-operator.html" class="agent-card" role="listitem" data-category="specialized" data-name="identity graph operator" data-description="operates a shared identity graph that multiple ai agents resolve against - ensures consistent entity identification 运营多个ai智能体共享的身份图谱 - 确保一致的实体识别">
+      <button class="favorite-btn" data-agent="identity graph operator" aria-label="Add to favorites" onclick="toggleFavorite('identity graph operator', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -595,9 +647,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/design/design-image-prompt-engineer.html" class="agent-card" data-category="design" data-name="image prompt engineer" data-description="expert photography prompt engineer specializing in crafting detailed, evocative prompts for ai image generation 专业摄影提示工程师，擅长为ai图像生成制作详细、富有表现力的提示">
+    <a href="/agency-agents/design/design-image-prompt-engineer.html" class="agent-card" role="listitem" data-category="design" data-name="image prompt engineer" data-description="expert photography prompt engineer specializing in crafting detailed, evocative prompts for ai image generation 专业摄影提示工程师，擅长为ai图像生成制作详细、富有表现力的提示">
+      <button class="favorite-btn" data-agent="image prompt engineer" aria-label="Add to favorites" onclick="toggleFavorite('image prompt engineer', event)">☆</button>
       <div class="card-header" style="background-color: #ec489920;">
-        <span class="card-emoji">🎨</span>
+        <span class="card-emoji" aria-hidden="true">🎨</span>
       </div>
       <div class="card-body">
         <span class="card-category">Design</span>
@@ -607,9 +660,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-incident-response-commander.html" class="agent-card" data-category="engineering" data-name="incident response commander" data-description="expert incident commander specializing in production incident management, structured response coordination, post-mortem facilitation, slo/sli tracking, and on-call process design 专业事件指挥官，擅长生产事件管理、结构化响应协调、复盘推动、slo/sli跟踪和值班流程设计">
+    <a href="/agency-agents/engineering/engineering-incident-response-commander.html" class="agent-card" role="listitem" data-category="engineering" data-name="incident response commander" data-description="expert incident commander specializing in production incident management, structured response coordination, post-mortem facilitation, slo/sli tracking, and on-call process design 专业事件指挥官，擅长生产事件管理、结构化响应协调、复盘推动、slo/sli跟踪和值班流程设计">
+      <button class="favorite-btn" data-agent="incident response commander" aria-label="Add to favorites" onclick="toggleFavorite('incident response commander', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -619,9 +673,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/design/design-inclusive-visuals-specialist.html" class="agent-card" data-category="design" data-name="inclusive visuals specialist" data-description="representation expert who defeats systemic ai biases to generate culturally accurate, affirming, and non-stereotypical images and video 代表性专家，击败系统性ai偏见，生成文化准确、肯定和非刻板印象的形象和视频">
+    <a href="/agency-agents/design/design-inclusive-visuals-specialist.html" class="agent-card" role="listitem" data-category="design" data-name="inclusive visuals specialist" data-description="representation expert who defeats systemic ai biases to generate culturally accurate, affirming, and non-stereotypical images and video 代表性专家，击败系统性ai偏见，生成文化准确、肯定和非刻板印象的形象和视频">
+      <button class="favorite-btn" data-agent="inclusive visuals specialist" aria-label="Add to favorites" onclick="toggleFavorite('inclusive visuals specialist', event)">☆</button>
       <div class="card-header" style="background-color: #ec489920;">
-        <span class="card-emoji">🎨</span>
+        <span class="card-emoji" aria-hidden="true">🎨</span>
       </div>
       <div class="card-body">
         <span class="card-category">Design</span>
@@ -631,9 +686,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/support/support-infrastructure-maintainer.html" class="agent-card" data-category="support" data-name="infrastructure maintainer" data-description="expert infrastructure specialist focused on system reliability, performance optimization, and technical operations management 专业基础设施专家，专注于系统可靠性、性能优化和技术运维管理">
+    <a href="/agency-agents/support/support-infrastructure-maintainer.html" class="agent-card" role="listitem" data-category="support" data-name="infrastructure maintainer" data-description="expert infrastructure specialist focused on system reliability, performance optimization, and technical operations management 专业基础设施专家，专注于系统可靠性、性能优化和技术运维管理">
+      <button class="favorite-btn" data-agent="infrastructure maintainer" aria-label="Add to favorites" onclick="toggleFavorite('infrastructure maintainer', event)">☆</button>
       <div class="card-header" style="background-color: #22c55e20;">
-        <span class="card-emoji">🎧</span>
+        <span class="card-emoji" aria-hidden="true">🎧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Support</span>
@@ -643,9 +699,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-instagram-curator.html" class="agent-card" data-category="marketing" data-name="instagram curator" data-description="expert instagram marketing specialist focused on visual storytelling, community building, and multi-format content optimization 专业instagram营销专家，专注于视觉叙事、社区建设和多格式内容优化">
+    <a href="/agency-agents/marketing/marketing-instagram-curator.html" class="agent-card" role="listitem" data-category="marketing" data-name="instagram curator" data-description="expert instagram marketing specialist focused on visual storytelling, community building, and multi-format content optimization 专业instagram营销专家，专注于视觉叙事、社区建设和多格式内容优化">
+      <button class="favorite-btn" data-agent="instagram curator" aria-label="Add to favorites" onclick="toggleFavorite('instagram curator', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -655,9 +712,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/project-management/project-management-jira-workflow-steward.html" class="agent-card" data-category="project-management" data-name="jira workflow steward" data-description="expert delivery operations specialist who enforces jira-linked git workflows, traceable commits, structured pull requests 专业交付运营专家，执行jira关联的git工作流、可追溯提交、结构化拉取请求">
+    <a href="/agency-agents/project-management/project-management-jira-workflow-steward.html" class="agent-card" role="listitem" data-category="project-management" data-name="jira workflow steward" data-description="expert delivery operations specialist who enforces jira-linked git workflows, traceable commits, structured pull requests 专业交付运营专家，执行jira关联的git工作流、可追溯提交、结构化拉取请求">
+      <button class="favorite-btn" data-agent="jira workflow steward" aria-label="Add to favorites" onclick="toggleFavorite('jira workflow steward', event)">☆</button>
       <div class="card-header" style="background-color: #84cc1620;">
-        <span class="card-emoji">📋</span>
+        <span class="card-emoji" aria-hidden="true">📋</span>
       </div>
       <div class="card-body">
         <span class="card-category">Project Management</span>
@@ -667,9 +725,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-kuaishou-strategist.html" class="agent-card" data-category="marketing" data-name="kuaishou strategist" data-description="expert kuaishou marketing strategist specializing in short-video content for china's lower-tier city markets, live commerce operations 专业快手营销专家，专注于中国低线城市市场的短视频内容、直播电商运营">
+    <a href="/agency-agents/marketing/marketing-kuaishou-strategist.html" class="agent-card" role="listitem" data-category="marketing" data-name="kuaishou strategist" data-description="expert kuaishou marketing strategist specializing in short-video content for china's lower-tier city markets, live commerce operations 专业快手营销专家，专注于中国低线城市市场的短视频内容、直播电商运营">
+      <button class="favorite-btn" data-agent="kuaishou strategist" aria-label="Add to favorites" onclick="toggleFavorite('kuaishou strategist', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -679,9 +738,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/lsp-index-engineer.html" class="agent-card" data-category="specialized" data-name="lsp/index engineer" data-description="language server protocol specialist building unified code intelligence systems through lsp client orchestration and semantic indexing 语言服务器协议专家，通过lpc客户端编排和语义索引构建统一代码智能系统">
+    <a href="/agency-agents/specialized/lsp-index-engineer.html" class="agent-card" role="listitem" data-category="specialized" data-name="lsp/index engineer" data-description="language server protocol specialist building unified code intelligence systems through lsp client orchestration and semantic indexing 语言服务器协议专家，通过lpc客户端编排和语义索引构建统一代码智能系统">
+      <button class="favorite-btn" data-agent="lsp/index engineer" aria-label="Add to favorites" onclick="toggleFavorite('lsp/index engineer', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -691,9 +751,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/support/support-legal-compliance-checker.html" class="agent-card" data-category="support" data-name="legal compliance checker" data-description="expert legal and compliance specialist ensuring business operations, data handling, and content creation comply with relevant laws 专业法律和合规专家，确保业务运营、数据处理和内容创作符合相关法律法规">
+    <a href="/agency-agents/support/support-legal-compliance-checker.html" class="agent-card" role="listitem" data-category="support" data-name="legal compliance checker" data-description="expert legal and compliance specialist ensuring business operations, data handling, and content creation comply with relevant laws 专业法律和合规专家，确保业务运营、数据处理和内容创作符合相关法律法规">
+      <button class="favorite-btn" data-agent="legal compliance checker" aria-label="Add to favorites" onclick="toggleFavorite('legal compliance checker', event)">☆</button>
       <div class="card-header" style="background-color: #22c55e20;">
-        <span class="card-emoji">🎧</span>
+        <span class="card-emoji" aria-hidden="true">🎧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Support</span>
@@ -703,9 +764,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/level-designer.html" class="agent-card" data-category="game-development" data-name="level designer" data-description="spatial storytelling and flow specialist - masters layout theory, pacing architecture, encounter design, and environmental narrative 空间叙事和流程专家 - 精通布局理论、节奏架构、遭遇设计和环境叙事">
+    <a href="/agency-agents/game-development/level-designer.html" class="agent-card" role="listitem" data-category="game-development" data-name="level designer" data-description="spatial storytelling and flow specialist - masters layout theory, pacing architecture, encounter design, and environmental narrative 空间叙事和流程专家 - 精通布局理论、节奏架构、遭遇设计和环境叙事">
+      <button class="favorite-btn" data-agent="level designer" aria-label="Add to favorites" onclick="toggleFavorite('level designer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -715,9 +777,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-linkedin-content-creator.html" class="agent-card" data-category="marketing" data-name="linkedin content creator" data-description="expert linkedin content strategist focused on thought leadership, personal brand building, and high-engagement professional content 专业linkedin内容策略师，专注于思想领袖、个人品牌建设和高参与度专业内容">
+    <a href="/agency-agents/marketing/marketing-linkedin-content-creator.html" class="agent-card" role="listitem" data-category="marketing" data-name="linkedin content creator" data-description="expert linkedin content strategist focused on thought leadership, personal brand building, and high-engagement professional content 专业linkedin内容策略师，专注于思想领袖、个人品牌建设和高参与度专业内容">
+      <button class="favorite-btn" data-agent="linkedin content creator" aria-label="Add to favorites" onclick="toggleFavorite('linkedin content creator', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -727,9 +790,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-mobile-app-builder.html" class="agent-card" data-category="engineering" data-name="mobile app builder" data-description="specialized mobile application developer with expertise in native ios/android development and cross-platform frameworks 专业移动应用开发人员，熟悉原生ios/android开发和跨平台框架">
+    <a href="/agency-agents/engineering/engineering-mobile-app-builder.html" class="agent-card" role="listitem" data-category="engineering" data-name="mobile app builder" data-description="specialized mobile application developer with expertise in native ios/android development and cross-platform frameworks 专业移动应用开发人员，熟悉原生ios/android开发和跨平台框架">
+      <button class="favorite-btn" data-agent="mobile app builder" aria-label="Add to favorites" onclick="toggleFavorite('mobile app builder', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -739,9 +803,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/specialized-model-qa.html" class="agent-card" data-category="specialized" data-name="model qa specialist" data-description="independent model qa expert who audits ml and statistical models end-to-end 独立模型qa专家，端到端审计ml和统计模型">
+    <a href="/agency-agents/specialized/specialized-model-qa.html" class="agent-card" role="listitem" data-category="specialized" data-name="model qa specialist" data-description="independent model qa expert who audits ml and statistical models end-to-end 独立模型qa专家，端到端审计ml和统计模型">
+      <button class="favorite-btn" data-agent="model qa specialist" aria-label="Add to favorites" onclick="toggleFavorite('model qa specialist', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -751,9 +816,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/narrative-designer.html" class="agent-card" data-category="game-development" data-name="narrative designer" data-description="story systems and dialogue architect - masters gdd-aligned narrative design, branching dialogue, lore architecture, and environmental storytelling 故事系统和对话架构师 - 精通游戏设计文档驱动的叙事设计、分支对话、lore架构和环境叙事">
+    <a href="/agency-agents/game-development/narrative-designer.html" class="agent-card" role="listitem" data-category="game-development" data-name="narrative designer" data-description="story systems and dialogue architect - masters gdd-aligned narrative design, branching dialogue, lore architecture, and environmental storytelling 故事系统和对话架构师 - 精通游戏设计文档驱动的叙事设计、分支对话、lore架构和环境叙事">
+      <button class="favorite-btn" data-agent="narrative designer" aria-label="Add to favorites" onclick="toggleFavorite('narrative designer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -763,9 +829,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/sales/sales-outbound-strategist.html" class="agent-card" data-category="sales" data-name="outbound strategist" data-description="signal-based outbound specialist who designs multi-channel prospecting sequences, defines icps, and builds pipeline through research-driven personalization 基于信号的外呼专家，设计多渠道探矿序列、定义icp，并通过研究驱动的个性化建立管道">
+    <a href="/agency-agents/sales/sales-outbound-strategist.html" class="agent-card" role="listitem" data-category="sales" data-name="outbound strategist" data-description="signal-based outbound specialist who designs multi-channel prospecting sequences, defines icps, and builds pipeline through research-driven personalization 基于信号的外呼专家，设计多渠道探矿序列、定义icp，并通过研究驱动的个性化建立管道">
+      <button class="favorite-btn" data-agent="outbound strategist" aria-label="Add to favorites" onclick="toggleFavorite('outbound strategist', event)">☆</button>
       <div class="card-header" style="background-color: #14b8a620;">
-        <span class="card-emoji">💼</span>
+        <span class="card-emoji" aria-hidden="true">💼</span>
       </div>
       <div class="card-body">
         <span class="card-category">Sales</span>
@@ -775,9 +842,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/paid-media/paid-media-ppc-strategist.html" class="agent-card" data-category="paid-media" data-name="ppc campaign strategist" data-description="senior paid media strategist specializing in large-scale search, shopping, and performance max campaign architecture 高级付费媒体策略师，擅长大规模搜索、购物和效果最大化营销活动架构">
+    <a href="/agency-agents/paid-media/paid-media-ppc-strategist.html" class="agent-card" role="listitem" data-category="paid-media" data-name="ppc campaign strategist" data-description="senior paid media strategist specializing in large-scale search, shopping, and performance max campaign architecture 高级付费媒体策略师，擅长大规模搜索、购物和效果最大化营销活动架构">
+      <button class="favorite-btn" data-agent="ppc campaign strategist" aria-label="Add to favorites" onclick="toggleFavorite('ppc campaign strategist', event)">☆</button>
       <div class="card-header" style="background-color: #ef444420;">
-        <span class="card-emoji">💰</span>
+        <span class="card-emoji" aria-hidden="true">💰</span>
       </div>
       <div class="card-body">
         <span class="card-category">Paid Media</span>
@@ -787,9 +855,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/paid-media/paid-media-auditor.html" class="agent-card" data-category="paid-media" data-name="paid media auditor" data-description="comprehensive paid media auditor who systematically evaluates google ads, microsoft ads, and meta accounts across 200+ checkpoints 综合付费媒体审计师，系统评估google ads、microsoft ads和meta账户的200多个检查点">
+    <a href="/agency-agents/paid-media/paid-media-auditor.html" class="agent-card" role="listitem" data-category="paid-media" data-name="paid media auditor" data-description="comprehensive paid media auditor who systematically evaluates google ads, microsoft ads, and meta accounts across 200+ checkpoints 综合付费媒体审计师，系统评估google ads、microsoft ads和meta账户的200多个检查点">
+      <button class="favorite-btn" data-agent="paid media auditor" aria-label="Add to favorites" onclick="toggleFavorite('paid media auditor', event)">☆</button>
       <div class="card-header" style="background-color: #ef444420;">
-        <span class="card-emoji">💰</span>
+        <span class="card-emoji" aria-hidden="true">💰</span>
       </div>
       <div class="card-body">
         <span class="card-category">Paid Media</span>
@@ -799,9 +868,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/paid-media/paid-media-paid-social-strategist.html" class="agent-card" data-category="paid-media" data-name="paid social strategist" data-description="cross-platform paid social advertising specialist covering meta, linkedin, tiktok, pinterest, x, and snapchat 跨平台付费社交广告专家，覆盖meta、linkedin、tiktok、pinterest、x和snapchat">
+    <a href="/agency-agents/paid-media/paid-media-paid-social-strategist.html" class="agent-card" role="listitem" data-category="paid-media" data-name="paid social strategist" data-description="cross-platform paid social advertising specialist covering meta, linkedin, tiktok, pinterest, x, and snapchat 跨平台付费社交广告专家，覆盖meta、linkedin、tiktok、pinterest、x和snapchat">
+      <button class="favorite-btn" data-agent="paid social strategist" aria-label="Add to favorites" onclick="toggleFavorite('paid social strategist', event)">☆</button>
       <div class="card-header" style="background-color: #ef444420;">
-        <span class="card-emoji">💰</span>
+        <span class="card-emoji" aria-hidden="true">💰</span>
       </div>
       <div class="card-body">
         <span class="card-category">Paid Media</span>
@@ -811,9 +881,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/testing/testing-performance-benchmarker.html" class="agent-card" data-category="testing" data-name="performance benchmarker" data-description="expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance 专业性能和优化专家，专注于测量、分析和改进系统性能">
+    <a href="/agency-agents/testing/testing-performance-benchmarker.html" class="agent-card" role="listitem" data-category="testing" data-name="performance benchmarker" data-description="expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance 专业性能和优化专家，专注于测量、分析和改进系统性能">
+      <button class="favorite-btn" data-agent="performance benchmarker" aria-label="Add to favorites" onclick="toggleFavorite('performance benchmarker', event)">☆</button>
       <div class="card-header" style="background-color: #a855f720;">
-        <span class="card-emoji">🧪</span>
+        <span class="card-emoji" aria-hidden="true">🧪</span>
       </div>
       <div class="card-body">
         <span class="card-category">Testing</span>
@@ -823,9 +894,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/sales/sales-pipeline-analyst.html" class="agent-card" data-category="sales" data-name="pipeline analyst" data-description="revenue operations analyst specializing in pipeline health diagnostics, deal velocity analysis, forecast accuracy 营收运营分析师，擅长管道健康诊断、交易速度分析、预测准确性">
+    <a href="/agency-agents/sales/sales-pipeline-analyst.html" class="agent-card" role="listitem" data-category="sales" data-name="pipeline analyst" data-description="revenue operations analyst specializing in pipeline health diagnostics, deal velocity analysis, forecast accuracy 营收运营分析师，擅长管道健康诊断、交易速度分析、预测准确性">
+      <button class="favorite-btn" data-agent="pipeline analyst" aria-label="Add to favorites" onclick="toggleFavorite('pipeline analyst', event)">☆</button>
       <div class="card-header" style="background-color: #14b8a620;">
-        <span class="card-emoji">💼</span>
+        <span class="card-emoji" aria-hidden="true">💼</span>
       </div>
       <div class="card-body">
         <span class="card-category">Sales</span>
@@ -835,9 +907,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/paid-media/paid-media-programmatic-buyer.html" class="agent-card" data-category="paid-media" data-name="programmatic &amp; display buyer" data-description="display advertising and programmatic media buying specialist covering gdn, dv360, trade desk platforms, and abm display strategies 展示广告和程序化媒体购买专家，覆盖gdn、dv360、交易平台和abm展示策略">
+    <a href="/agency-agents/paid-media/paid-media-programmatic-buyer.html" class="agent-card" role="listitem" data-category="paid-media" data-name="programmatic &amp; display buyer" data-description="display advertising and programmatic media buying specialist covering gdn, dv360, trade desk platforms, and abm display strategies 展示广告和程序化媒体购买专家，覆盖gdn、dv360、交易平台和abm展示策略">
+      <button class="favorite-btn" data-agent="programmatic &amp; display buyer" aria-label="Add to favorites" onclick="toggleFavorite('programmatic &amp; display buyer', event)">☆</button>
       <div class="card-header" style="background-color: #ef444420;">
-        <span class="card-emoji">💰</span>
+        <span class="card-emoji" aria-hidden="true">💰</span>
       </div>
       <div class="card-body">
         <span class="card-category">Paid Media</span>
@@ -847,9 +920,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/project-management/project-management-project-shepherd.html" class="agent-card" data-category="project-management" data-name="project shepherd" data-description="expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder alignment 专业项目经理，擅长跨职能项目协调、时间线管理和利益相关者对齐">
+    <a href="/agency-agents/project-management/project-management-project-shepherd.html" class="agent-card" role="listitem" data-category="project-management" data-name="project shepherd" data-description="expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder alignment 专业项目经理，擅长跨职能项目协调、时间线管理和利益相关者对齐">
+      <button class="favorite-btn" data-agent="project shepherd" aria-label="Add to favorites" onclick="toggleFavorite('project shepherd', event)">☆</button>
       <div class="card-header" style="background-color: #84cc1620;">
-        <span class="card-emoji">📋</span>
+        <span class="card-emoji" aria-hidden="true">📋</span>
       </div>
       <div class="card-body">
         <span class="card-category">Project Management</span>
@@ -859,9 +933,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/sales/sales-proposal-strategist.html" class="agent-card" data-category="sales" data-name="proposal strategist" data-description="strategic proposal architect who transforms rfps and sales opportunities into compelling win narratives 战略提案架构师，将rfp和销售机会转化为引人注目的赢单叙事">
+    <a href="/agency-agents/sales/sales-proposal-strategist.html" class="agent-card" role="listitem" data-category="sales" data-name="proposal strategist" data-description="strategic proposal architect who transforms rfps and sales opportunities into compelling win narratives 战略提案架构师，将rfp和销售机会转化为引人注目的赢单叙事">
+      <button class="favorite-btn" data-agent="proposal strategist" aria-label="Add to favorites" onclick="toggleFavorite('proposal strategist', event)">☆</button>
       <div class="card-header" style="background-color: #14b8a620;">
-        <span class="card-emoji">💼</span>
+        <span class="card-emoji" aria-hidden="true">💼</span>
       </div>
       <div class="card-body">
         <span class="card-category">Sales</span>
@@ -871,9 +946,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-rapid-prototyper.html" class="agent-card" data-category="engineering" data-name="rapid prototyper" data-description="specialized in ultra-fast proof-of-concept development and mvp creation using efficient tools and frameworks 专注于使用高效工具和框架进行超快速概念验证和mvp创建">
+    <a href="/agency-agents/engineering/engineering-rapid-prototyper.html" class="agent-card" role="listitem" data-category="engineering" data-name="rapid prototyper" data-description="specialized in ultra-fast proof-of-concept development and mvp creation using efficient tools and frameworks 专注于使用高效工具和框架进行超快速概念验证和mvp创建">
+      <button class="favorite-btn" data-agent="rapid prototyper" aria-label="Add to favorites" onclick="toggleFavorite('rapid prototyper', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -883,9 +959,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/testing/testing-reality-checker.html" class="agent-card" data-category="testing" data-name="reality checker" data-description="stops fantasy approvals, evidence-based certification - default to &quot;needs work&quot;, requires overwhelming proof for production readiness 阻止幻想批准、基于证据的认证 - 默认&quot;需要工作&quot;，要求压倒性的生产就绪证据">
+    <a href="/agency-agents/testing/testing-reality-checker.html" class="agent-card" role="listitem" data-category="testing" data-name="reality checker" data-description="stops fantasy approvals, evidence-based certification - default to &quot;needs work&quot;, requires overwhelming proof for production readiness 阻止幻想批准、基于证据的认证 - 默认&quot;需要工作&quot;，要求压倒性的生产就绪证据">
+      <button class="favorite-btn" data-agent="reality checker" aria-label="Add to favorites" onclick="toggleFavorite('reality checker', event)">☆</button>
       <div class="card-header" style="background-color: #a855f720;">
-        <span class="card-emoji">🧪</span>
+        <span class="card-emoji" aria-hidden="true">🧪</span>
       </div>
       <div class="card-body">
         <span class="card-category">Testing</span>
@@ -895,9 +972,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-reddit-community-builder.html" class="agent-card" data-category="marketing" data-name="reddit community builder" data-description="expert reddit marketing specialist focused on authentic community engagement, value-driven content creation 专业reddit营销专家，专注于真实社区参与和价值驱动内容创作">
+    <a href="/agency-agents/marketing/marketing-reddit-community-builder.html" class="agent-card" role="listitem" data-category="marketing" data-name="reddit community builder" data-description="expert reddit marketing specialist focused on authentic community engagement, value-driven content creation 专业reddit营销专家，专注于真实社区参与和价值驱动内容创作">
+      <button class="favorite-btn" data-agent="reddit community builder" aria-label="Add to favorites" onclick="toggleFavorite('reddit community builder', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -907,9 +985,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/report-distribution-agent.html" class="agent-card" data-category="specialized" data-name="report distribution agent" data-description="ai agent that automates distribution of consolidated sales reports to representatives based on territorial parameters ai智能体，根据区域参数自动将整合的销售报告分发给代表">
+    <a href="/agency-agents/specialized/report-distribution-agent.html" class="agent-card" role="listitem" data-category="specialized" data-name="report distribution agent" data-description="ai agent that automates distribution of consolidated sales reports to representatives based on territorial parameters ai智能体，根据区域参数自动将整合的销售报告分发给代表">
+      <button class="favorite-btn" data-agent="report distribution agent" aria-label="Add to favorites" onclick="toggleFavorite('report distribution agent', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -919,9 +998,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/roblox-avatar-creator.html" class="agent-card" data-category="game-development" data-name="roblox avatar creator" data-description="roblox ugc and avatar pipeline specialist - masters roblox's avatar system, ugc item creation, accessory rigging, texture standards roblox ugc和化身流水线专家 - 精通roblox化身系统、ugc物品创建、配饰绑定、纹理标准">
+    <a href="/agency-agents/game-development/roblox-avatar-creator.html" class="agent-card" role="listitem" data-category="game-development" data-name="roblox avatar creator" data-description="roblox ugc and avatar pipeline specialist - masters roblox's avatar system, ugc item creation, accessory rigging, texture standards roblox ugc和化身流水线专家 - 精通roblox化身系统、ugc物品创建、配饰绑定、纹理标准">
+      <button class="favorite-btn" data-agent="roblox avatar creator" aria-label="Add to favorites" onclick="toggleFavorite('roblox avatar creator', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -931,9 +1011,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/level-designer.html" class="agent-card" data-category="game-development" data-name="roblox experience designer" data-description="roblox platform ux and monetization specialist - masters engagement loop design, datastore-driven progression, roblox monetization systems roblox平台ux和商业化专家 - 精通参与度循环设计、datastore驱动的进度系统、roblox商业化系统">
+    <a href="/agency-agents/game-development/level-designer.html" class="agent-card" role="listitem" data-category="game-development" data-name="roblox experience designer" data-description="roblox platform ux and monetization specialist - masters engagement loop design, datastore-driven progression, roblox monetization systems roblox平台ux和商业化专家 - 精通参与度循环设计、datastore驱动的进度系统、roblox商业化系统">
+      <button class="favorite-btn" data-agent="roblox experience designer" aria-label="Add to favorites" onclick="toggleFavorite('roblox experience designer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -943,9 +1024,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/roblox-systems-scripter.html" class="agent-card" data-category="game-development" data-name="roblox systems scripter" data-description="roblox platform engineering specialist - masters luau, client-server security model, remoteevents/remotefunctions, datastore roblox平台工程专家 - 精通luau、客户端-服务器安全模型、remoteevents/remotefunctions、datastore">
+    <a href="/agency-agents/game-development/roblox-systems-scripter.html" class="agent-card" role="listitem" data-category="game-development" data-name="roblox systems scripter" data-description="roblox platform engineering specialist - masters luau, client-server security model, remoteevents/remotefunctions, datastore roblox平台工程专家 - 精通luau、客户端-服务器安全模型、remoteevents/remotefunctions、datastore">
+      <button class="favorite-btn" data-agent="roblox systems scripter" aria-label="Add to favorites" onclick="toggleFavorite('roblox systems scripter', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -955,9 +1037,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-baidu-seo-specialist.html" class="agent-card" data-category="marketing" data-name="seo specialist" data-description="expert search engine optimization strategist specializing in technical seo, content optimization, link authority building 专业搜索引擎优化策略师，擅长技术seo、内容优化、链接权威建设">
+    <a href="/agency-agents/marketing/marketing-baidu-seo-specialist.html" class="agent-card" role="listitem" data-category="marketing" data-name="seo specialist" data-description="expert search engine optimization strategist specializing in technical seo, content optimization, link authority building 专业搜索引擎优化策略师，擅长技术seo、内容优化、链接权威建设">
+      <button class="favorite-btn" data-agent="seo specialist" aria-label="Add to favorites" onclick="toggleFavorite('seo specialist', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -967,9 +1050,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/sales/sales-coach.html" class="agent-card" data-category="sales" data-name="sales coach" data-description="expert sales coaching specialist focused on rep development, pipeline review facilitation, call coaching, deal strategy 专业销售教练，专注于销售代表发展、管道审查促进、电话辅导、交易策略">
+    <a href="/agency-agents/sales/sales-coach.html" class="agent-card" role="listitem" data-category="sales" data-name="sales coach" data-description="expert sales coaching specialist focused on rep development, pipeline review facilitation, call coaching, deal strategy 专业销售教练，专注于销售代表发展、管道审查促进、电话辅导、交易策略">
+      <button class="favorite-btn" data-agent="sales coach" aria-label="Add to favorites" onclick="toggleFavorite('sales coach', event)">☆</button>
       <div class="card-header" style="background-color: #14b8a620;">
-        <span class="card-emoji">💼</span>
+        <span class="card-emoji" aria-hidden="true">💼</span>
       </div>
       <div class="card-body">
         <span class="card-category">Sales</span>
@@ -979,9 +1063,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/sales-data-extraction-agent.html" class="agent-card" data-category="specialized" data-name="sales data extraction agent" data-description="ai agent specialized in monitoring excel files and extracting key sales metrics (mtd, ytd, year end) for internal live reporting ai智能体，专门监控excel文件并提取关键销售指标（月度至今、年度至今、年度结束）用于内部实时报告">
+    <a href="/agency-agents/specialized/sales-data-extraction-agent.html" class="agent-card" role="listitem" data-category="specialized" data-name="sales data extraction agent" data-description="ai agent specialized in monitoring excel files and extracting key sales metrics (mtd, ytd, year end) for internal live reporting ai智能体，专门监控excel文件并提取关键销售指标（月度至今、年度至今、年度结束）用于内部实时报告">
+      <button class="favorite-btn" data-agent="sales data extraction agent" aria-label="Add to favorites" onclick="toggleFavorite('sales data extraction agent', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -991,9 +1076,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/sales/sales-engineer.html" class="agent-card" data-category="sales" data-name="sales engineer" data-description="senior pre-sales engineer specializing in technical discovery, demo engineering, poc scoping, competitive battlecards 高级售前工程师，擅长技术发现、演示工程、poc范围界定、竞争对策卡">
+    <a href="/agency-agents/sales/sales-engineer.html" class="agent-card" role="listitem" data-category="sales" data-name="sales engineer" data-description="senior pre-sales engineer specializing in technical discovery, demo engineering, poc scoping, competitive battlecards 高级售前工程师，擅长技术发现、演示工程、poc范围界定、竞争对策卡">
+      <button class="favorite-btn" data-agent="sales engineer" aria-label="Add to favorites" onclick="toggleFavorite('sales engineer', event)">☆</button>
       <div class="card-header" style="background-color: #14b8a620;">
-        <span class="card-emoji">💼</span>
+        <span class="card-emoji" aria-hidden="true">💼</span>
       </div>
       <div class="card-body">
         <span class="card-category">Sales</span>
@@ -1003,9 +1089,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/paid-media/paid-media-search-query-analyst.html" class="agent-card" data-category="paid-media" data-name="search query analyst" data-description="specialist in search term analysis, negative keyword architecture, and query-to-intent mapping 搜索词分析、否定关键词架构和查询到意图映射专家">
+    <a href="/agency-agents/paid-media/paid-media-search-query-analyst.html" class="agent-card" role="listitem" data-category="paid-media" data-name="search query analyst" data-description="specialist in search term analysis, negative keyword architecture, and query-to-intent mapping 搜索词分析、否定关键词架构和查询到意图映射专家">
+      <button class="favorite-btn" data-agent="search query analyst" aria-label="Add to favorites" onclick="toggleFavorite('search query analyst', event)">☆</button>
       <div class="card-header" style="background-color: #ef444420;">
-        <span class="card-emoji">💰</span>
+        <span class="card-emoji" aria-hidden="true">💰</span>
       </div>
       <div class="card-body">
         <span class="card-category">Paid Media</span>
@@ -1015,9 +1102,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-security-engineer.html" class="agent-card" data-category="engineering" data-name="security engineer" data-description="expert application security engineer specializing in threat modeling, vulnerability assessment, secure code review, and security architecture design 专业应用安全工程师，擅长威胁建模、漏洞评估、安全代码审查和安全架构设计">
+    <a href="/agency-agents/engineering/engineering-security-engineer.html" class="agent-card" role="listitem" data-category="engineering" data-name="security engineer" data-description="expert application security engineer specializing in threat modeling, vulnerability assessment, secure code review, and security architecture design 专业应用安全工程师，擅长威胁建模、漏洞评估、安全代码审查和安全架构设计">
+      <button class="favorite-btn" data-agent="security engineer" aria-label="Add to favorites" onclick="toggleFavorite('security engineer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -1027,9 +1115,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-senior-developer.html" class="agent-card" data-category="engineering" data-name="senior developer" data-description="premium implementation specialist - masters laravel/livewire/fluxui, advanced css, three.js integration 顶级实现专家 - 精通laravel/livewire/fluxui、高级css、three.js集成">
+    <a href="/agency-agents/engineering/engineering-senior-developer.html" class="agent-card" role="listitem" data-category="engineering" data-name="senior developer" data-description="premium implementation specialist - masters laravel/livewire/fluxui, advanced css, three.js integration 顶级实现专家 - 精通laravel/livewire/fluxui、高级css、three.js集成">
+      <button class="favorite-btn" data-agent="senior developer" aria-label="Add to favorites" onclick="toggleFavorite('senior developer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -1039,9 +1128,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/project-management/project-management-studio-producer.html" class="agent-card" data-category="project-management" data-name="senior project manager" data-description="converts specs to tasks and remembers previous projects - focused on realistic scope 将规格转换为任务并记住之前的项目 - 专注于实际范围">
+    <a href="/agency-agents/project-management/project-management-studio-producer.html" class="agent-card" role="listitem" data-category="project-management" data-name="senior project manager" data-description="converts specs to tasks and remembers previous projects - focused on realistic scope 将规格转换为任务并记住之前的项目 - 专注于实际范围">
+      <button class="favorite-btn" data-agent="senior project manager" aria-label="Add to favorites" onclick="toggleFavorite('senior project manager', event)">☆</button>
       <div class="card-header" style="background-color: #84cc1620;">
-        <span class="card-emoji">📋</span>
+        <span class="card-emoji" aria-hidden="true">📋</span>
       </div>
       <div class="card-body">
         <span class="card-category">Project Management</span>
@@ -1051,9 +1141,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-social-media-strategist.html" class="agent-card" data-category="marketing" data-name="social media strategist" data-description="expert social media strategist for linkedin, twitter, and professional platforms linkedin、twitter和专业平台的跨平台社交媒体营销专家">
+    <a href="/agency-agents/marketing/marketing-social-media-strategist.html" class="agent-card" role="listitem" data-category="marketing" data-name="social media strategist" data-description="expert social media strategist for linkedin, twitter, and professional platforms linkedin、twitter和专业平台的跨平台社交媒体营销专家">
+      <button class="favorite-btn" data-agent="social media strategist" aria-label="Add to favorites" onclick="toggleFavorite('social media strategist', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -1063,9 +1154,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-solidity-smart-contract-engineer.html" class="agent-card" data-category="engineering" data-name="solidity smart contract engineer" data-description="expert solidity developer specializing in evm smart contract architecture, gas optimization, upgradeable proxy patterns, defi protocol development, and security-first contract design 专业solidity开发者，擅长evm智能合约架构、gas优化、可升级代理模式、defi协议开发和安全优先的合约设计">
+    <a href="/agency-agents/engineering/engineering-solidity-smart-contract-engineer.html" class="agent-card" role="listitem" data-category="engineering" data-name="solidity smart contract engineer" data-description="expert solidity developer specializing in evm smart contract architecture, gas optimization, upgradeable proxy patterns, defi protocol development, and security-first contract design 专业solidity开发者，擅长evm智能合约架构、gas优化、可升级代理模式、defi协议开发和安全优先的合约设计">
+      <button class="favorite-btn" data-agent="solidity smart contract engineer" aria-label="Add to favorites" onclick="toggleFavorite('solidity smart contract engineer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -1075,9 +1167,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/product/product-sprint-prioritizer.html" class="agent-card" data-category="product" data-name="sprint prioritizer" data-description="expert product manager specializing in agile sprint planning, feature prioritization, and resource allocation 专业产品经理，擅长敏捷冲刺规划、功能优先级排序和资源分配">
+    <a href="/agency-agents/product/product-sprint-prioritizer.html" class="agent-card" role="listitem" data-category="product" data-name="sprint prioritizer" data-description="expert product manager specializing in agile sprint planning, feature prioritization, and resource allocation 专业产品经理，擅长敏捷冲刺规划、功能优先级排序和资源分配">
+      <button class="favorite-btn" data-agent="sprint prioritizer" aria-label="Add to favorites" onclick="toggleFavorite('sprint prioritizer', event)">☆</button>
       <div class="card-header" style="background-color: #06b6d420;">
-        <span class="card-emoji">📦</span>
+        <span class="card-emoji" aria-hidden="true">📦</span>
       </div>
       <div class="card-body">
         <span class="card-category">Product</span>
@@ -1087,9 +1180,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/project-management/project-management-studio-operations.html" class="agent-card" data-category="project-management" data-name="studio operations" data-description="expert operations manager specializing in day-to-day studio efficiency, process optimization, and resource coordination 专业运营经理，擅长日常工作室效率、流程优化和资源协调">
+    <a href="/agency-agents/project-management/project-management-studio-operations.html" class="agent-card" role="listitem" data-category="project-management" data-name="studio operations" data-description="expert operations manager specializing in day-to-day studio efficiency, process optimization, and resource coordination 专业运营经理，擅长日常工作室效率、流程优化和资源协调">
+      <button class="favorite-btn" data-agent="studio operations" aria-label="Add to favorites" onclick="toggleFavorite('studio operations', event)">☆</button>
       <div class="card-header" style="background-color: #84cc1620;">
-        <span class="card-emoji">📋</span>
+        <span class="card-emoji" aria-hidden="true">📋</span>
       </div>
       <div class="card-body">
         <span class="card-category">Project Management</span>
@@ -1099,9 +1193,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/project-management/project-management-studio-producer.html" class="agent-card" data-category="project-management" data-name="studio producer" data-description="senior strategic leader specializing in high-level creative and technical project orchestration, resource allocation 高级战略领导者，擅长高层创意和技术项目协调、资源分配">
+    <a href="/agency-agents/project-management/project-management-studio-producer.html" class="agent-card" role="listitem" data-category="project-management" data-name="studio producer" data-description="senior strategic leader specializing in high-level creative and technical project orchestration, resource allocation 高级战略领导者，擅长高层创意和技术项目协调、资源分配">
+      <button class="favorite-btn" data-agent="studio producer" aria-label="Add to favorites" onclick="toggleFavorite('studio producer', event)">☆</button>
       <div class="card-header" style="background-color: #84cc1620;">
-        <span class="card-emoji">📋</span>
+        <span class="card-emoji" aria-hidden="true">📋</span>
       </div>
       <div class="card-body">
         <span class="card-category">Project Management</span>
@@ -1111,9 +1206,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/support/support-support-responder.html" class="agent-card" data-category="support" data-name="support responder" data-description="expert customer support specialist delivering exceptional customer service, issue resolution, and user experience optimization 专业客户支持专家，提供卓越客户服务、问题解决和用户体验优化">
+    <a href="/agency-agents/support/support-support-responder.html" class="agent-card" role="listitem" data-category="support" data-name="support responder" data-description="expert customer support specialist delivering exceptional customer service, issue resolution, and user experience optimization 专业客户支持专家，提供卓越客户服务、问题解决和用户体验优化">
+      <button class="favorite-btn" data-agent="support responder" aria-label="Add to favorites" onclick="toggleFavorite('support responder', event)">☆</button>
       <div class="card-header" style="background-color: #22c55e20;">
-        <span class="card-emoji">🎧</span>
+        <span class="card-emoji" aria-hidden="true">🎧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Support</span>
@@ -1123,9 +1219,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/technical-artist.html" class="agent-card" data-category="game-development" data-name="technical artist" data-description="art-to-engine pipeline specialist - masters shaders, vfx systems, lod pipelines, performance budgeting, and cross-engine asset optimization 美术到引擎流水线专家 - 精通着色器、vfx系统、lod流水线、性能预算和跨引擎资产优化">
+    <a href="/agency-agents/game-development/technical-artist.html" class="agent-card" role="listitem" data-category="game-development" data-name="technical artist" data-description="art-to-engine pipeline specialist - masters shaders, vfx systems, lod pipelines, performance budgeting, and cross-engine asset optimization 美术到引擎流水线专家 - 精通着色器、vfx系统、lod流水线、性能预算和跨引擎资产优化">
+      <button class="favorite-btn" data-agent="technical artist" aria-label="Add to favorites" onclick="toggleFavorite('technical artist', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -1135,9 +1232,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-technical-writer.html" class="agent-card" data-category="engineering" data-name="technical writer" data-description="expert technical writer specializing in developer documentation, api references, readme files, and tutorials 专业技术写手，擅长开发者文档、api参考、readme文件和使用教程">
+    <a href="/agency-agents/engineering/engineering-technical-writer.html" class="agent-card" role="listitem" data-category="engineering" data-name="technical writer" data-description="expert technical writer specializing in developer documentation, api references, readme files, and tutorials 专业技术写手，擅长开发者文档、api参考、readme文件和使用教程">
+      <button class="favorite-btn" data-agent="technical writer" aria-label="Add to favorites" onclick="toggleFavorite('technical writer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -1147,9 +1245,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/spatial-computing/terminal-integration-specialist.html" class="agent-card" data-category="spatial-computing" data-name="terminal integration specialist" data-description="terminal emulation, text rendering optimization, and swiftterm integration for modern swift applications 终端仿真、文本渲染优化和现代swift应用程序的swiftterm集成">
+    <a href="/agency-agents/spatial-computing/terminal-integration-specialist.html" class="agent-card" role="listitem" data-category="spatial-computing" data-name="terminal integration specialist" data-description="terminal emulation, text rendering optimization, and swiftterm integration for modern swift applications 终端仿真、文本渲染优化和现代swift应用程序的swiftterm集成">
+      <button class="favorite-btn" data-agent="terminal integration specialist" aria-label="Add to favorites" onclick="toggleFavorite('terminal integration specialist', event)">☆</button>
       <div class="card-header" style="background-color: #f9731620;">
-        <span class="card-emoji">🌐</span>
+        <span class="card-emoji" aria-hidden="true">🌐</span>
       </div>
       <div class="card-body">
         <span class="card-category">Spatial Computing</span>
@@ -1159,9 +1258,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/testing/testing-test-results-analyzer.html" class="agent-card" data-category="testing" data-name="test results analyzer" data-description="expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis 专业测试分析专家，专注于全面的测试结果评估、质量指标分析">
+    <a href="/agency-agents/testing/testing-test-results-analyzer.html" class="agent-card" role="listitem" data-category="testing" data-name="test results analyzer" data-description="expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis 专业测试分析专家，专注于全面的测试结果评估、质量指标分析">
+      <button class="favorite-btn" data-agent="test results analyzer" aria-label="Add to favorites" onclick="toggleFavorite('test results analyzer', event)">☆</button>
       <div class="card-header" style="background-color: #a855f720;">
-        <span class="card-emoji">🧪</span>
+        <span class="card-emoji" aria-hidden="true">🧪</span>
       </div>
       <div class="card-body">
         <span class="card-category">Testing</span>
@@ -1171,9 +1271,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-threat-detection-engineer.html" class="agent-card" data-category="engineering" data-name="threat detection engineer" data-description="expert detection engineer specializing in siem rule development, mitre att&amp;ck coverage mapping, threat hunting, alert tuning, and detection-as-code pipelines 专业检测工程师，擅长siem规则开发、mitre att&amp;ck覆盖映射、威胁狩猎、告警调优和检测即代码流水线">
+    <a href="/agency-agents/engineering/engineering-threat-detection-engineer.html" class="agent-card" role="listitem" data-category="engineering" data-name="threat detection engineer" data-description="expert detection engineer specializing in siem rule development, mitre att&amp;ck coverage mapping, threat hunting, alert tuning, and detection-as-code pipelines 专业检测工程师，擅长siem规则开发、mitre att&amp;ck覆盖映射、威胁狩猎、告警调优和检测即代码流水线">
+      <button class="favorite-btn" data-agent="threat detection engineer" aria-label="Add to favorites" onclick="toggleFavorite('threat detection engineer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -1183,9 +1284,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-tiktok-strategist.html" class="agent-card" data-category="marketing" data-name="tiktok strategist" data-description="expert tiktok marketing specialist focused on viral content creation, algorithm optimization, and community building 专业tiktok营销专家，专注于病毒式内容创作、算法优化和社区建设">
+    <a href="/agency-agents/marketing/marketing-tiktok-strategist.html" class="agent-card" role="listitem" data-category="marketing" data-name="tiktok strategist" data-description="expert tiktok marketing specialist focused on viral content creation, algorithm optimization, and community building 专业tiktok营销专家，专注于病毒式内容创作、算法优化和社区建设">
+      <button class="favorite-btn" data-agent="tiktok strategist" aria-label="Add to favorites" onclick="toggleFavorite('tiktok strategist', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -1195,9 +1297,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/testing/testing-tool-evaluator.html" class="agent-card" data-category="testing" data-name="tool evaluator" data-description="expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms 专业技术评估专家，专注于评估、测试和推荐工具、软件和平台">
+    <a href="/agency-agents/testing/testing-tool-evaluator.html" class="agent-card" role="listitem" data-category="testing" data-name="tool evaluator" data-description="expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms 专业技术评估专家，专注于评估、测试和推荐工具、软件和平台">
+      <button class="favorite-btn" data-agent="tool evaluator" aria-label="Add to favorites" onclick="toggleFavorite('tool evaluator', event)">☆</button>
       <div class="card-header" style="background-color: #a855f720;">
-        <span class="card-emoji">🧪</span>
+        <span class="card-emoji" aria-hidden="true">🧪</span>
       </div>
       <div class="card-body">
         <span class="card-category">Testing</span>
@@ -1207,9 +1310,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/paid-media/paid-media-tracking-specialist.html" class="agent-card" data-category="paid-media" data-name="tracking &amp; measurement specialist" data-description="expert in conversion tracking architecture, tag management, and attribution modeling across gtm, ga4, google ads, meta capi 跨gtm、ga4、google ads、meta capi的转化追踪架构、标签管理和归因模型专家">
+    <a href="/agency-agents/paid-media/paid-media-tracking-specialist.html" class="agent-card" role="listitem" data-category="paid-media" data-name="tracking &amp; measurement specialist" data-description="expert in conversion tracking architecture, tag management, and attribution modeling across gtm, ga4, google ads, meta capi 跨gtm、ga4、google ads、meta capi的转化追踪架构、标签管理和归因模型专家">
+      <button class="favorite-btn" data-agent="tracking &amp; measurement specialist" aria-label="Add to favorites" onclick="toggleFavorite('tracking &amp; measurement specialist', event)">☆</button>
       <div class="card-header" style="background-color: #ef444420;">
-        <span class="card-emoji">💰</span>
+        <span class="card-emoji" aria-hidden="true">💰</span>
       </div>
       <div class="card-body">
         <span class="card-category">Paid Media</span>
@@ -1219,9 +1323,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/product/product-trend-researcher.html" class="agent-card" data-category="product" data-name="trend researcher" data-description="expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity assessment 专业市场情报分析师，擅长识别新兴趋势、竞争分析和机会评估">
+    <a href="/agency-agents/product/product-trend-researcher.html" class="agent-card" role="listitem" data-category="product" data-name="trend researcher" data-description="expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity assessment 专业市场情报分析师，擅长识别新兴趋势、竞争分析和机会评估">
+      <button class="favorite-btn" data-agent="trend researcher" aria-label="Add to favorites" onclick="toggleFavorite('trend researcher', event)">☆</button>
       <div class="card-header" style="background-color: #06b6d420;">
-        <span class="card-emoji">📦</span>
+        <span class="card-emoji" aria-hidden="true">📦</span>
       </div>
       <div class="card-body">
         <span class="card-category">Product</span>
@@ -1231,9 +1336,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-twitter-engager.html" class="agent-card" data-category="marketing" data-name="twitter engager" data-description="expert twitter marketing specialist focused on real-time engagement, thought leadership building, and community-driven growth 专业twitter营销专家，专注于实时互动、思想领袖建立和社区驱动增长">
+    <a href="/agency-agents/marketing/marketing-twitter-engager.html" class="agent-card" role="listitem" data-category="marketing" data-name="twitter engager" data-description="expert twitter marketing specialist focused on real-time engagement, thought leadership building, and community-driven growth 专业twitter营销专家，专注于实时互动、思想领袖建立和社区驱动增长">
+      <button class="favorite-btn" data-agent="twitter engager" aria-label="Add to favorites" onclick="toggleFavorite('twitter engager', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -1243,9 +1349,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/design/design-ui-designer.html" class="agent-card" data-category="design" data-name="ui designer" data-description="expert ui designer specializing in visual design systems, component libraries, and pixel-perfect interface creation 专业ui设计师，擅长视觉设计系统、组件库和像素级完美界面创建">
+    <a href="/agency-agents/design/design-ui-designer.html" class="agent-card" role="listitem" data-category="design" data-name="ui designer" data-description="expert ui designer specializing in visual design systems, component libraries, and pixel-perfect interface creation 专业ui设计师，擅长视觉设计系统、组件库和像素级完美界面创建">
+      <button class="favorite-btn" data-agent="ui designer" aria-label="Add to favorites" onclick="toggleFavorite('ui designer', event)">☆</button>
       <div class="card-header" style="background-color: #ec489920;">
-        <span class="card-emoji">🎨</span>
+        <span class="card-emoji" aria-hidden="true">🎨</span>
       </div>
       <div class="card-body">
         <span class="card-category">Design</span>
@@ -1255,9 +1362,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/design/design-ux-architect.html" class="agent-card" data-category="design" data-name="ux architect" data-description="technical architecture and ux specialist who provides developers with solid foundations, css systems, and clear implementation guidance 技术架构和ux专家，为开发者提供坚实基础、css系统和清晰的实现指导">
+    <a href="/agency-agents/design/design-ux-architect.html" class="agent-card" role="listitem" data-category="design" data-name="ux architect" data-description="technical architecture and ux specialist who provides developers with solid foundations, css systems, and clear implementation guidance 技术架构和ux专家，为开发者提供坚实基础、css系统和清晰的实现指导">
+      <button class="favorite-btn" data-agent="ux architect" aria-label="Add to favorites" onclick="toggleFavorite('ux architect', event)">☆</button>
       <div class="card-header" style="background-color: #ec489920;">
-        <span class="card-emoji">🎨</span>
+        <span class="card-emoji" aria-hidden="true">🎨</span>
       </div>
       <div class="card-body">
         <span class="card-category">Design</span>
@@ -1267,9 +1375,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/design/design-ux-researcher.html" class="agent-card" data-category="design" data-name="ux researcher" data-description="expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insights 专业用户体验研究员，擅长用户行为分析、可用性测试和数据驱动的设计洞察">
+    <a href="/agency-agents/design/design-ux-researcher.html" class="agent-card" role="listitem" data-category="design" data-name="ux researcher" data-description="expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insights 专业用户体验研究员，擅长用户行为分析、可用性测试和数据驱动的设计洞察">
+      <button class="favorite-btn" data-agent="ux researcher" aria-label="Add to favorites" onclick="toggleFavorite('ux researcher', event)">☆</button>
       <div class="card-header" style="background-color: #ec489920;">
-        <span class="card-emoji">🎨</span>
+        <span class="card-emoji" aria-hidden="true">🎨</span>
       </div>
       <div class="card-body">
         <span class="card-category">Design</span>
@@ -1279,9 +1388,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/unity-architect.html" class="agent-card" data-category="game-development" data-name="unity architect" data-description="data-driven modularity specialist - masters scriptableobjects, decoupled systems, and single-responsibility component design 数据驱动模块化专家 - 精通scriptableobjects、解耦系统和单一职责组件设计">
+    <a href="/agency-agents/game-development/unity-architect.html" class="agent-card" role="listitem" data-category="game-development" data-name="unity architect" data-description="data-driven modularity specialist - masters scriptableobjects, decoupled systems, and single-responsibility component design 数据驱动模块化专家 - 精通scriptableobjects、解耦系统和单一职责组件设计">
+      <button class="favorite-btn" data-agent="unity architect" aria-label="Add to favorites" onclick="toggleFavorite('unity architect', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -1291,9 +1401,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/unity-editor-tool-developer.html" class="agent-card" data-category="game-development" data-name="unity editor tool developer" data-description="unity editor automation specialist - masters custom editorwindows, propertydrawers, assetpostprocessors, scriptedimporters unity编辑器自动化专家 - 精通自定义editorwindows、propertydrawers、assetpostprocessors、scriptedimporters">
+    <a href="/agency-agents/game-development/unity-editor-tool-developer.html" class="agent-card" role="listitem" data-category="game-development" data-name="unity editor tool developer" data-description="unity editor automation specialist - masters custom editorwindows, propertydrawers, assetpostprocessors, scriptedimporters unity编辑器自动化专家 - 精通自定义editorwindows、propertydrawers、assetpostprocessors、scriptedimporters">
+      <button class="favorite-btn" data-agent="unity editor tool developer" aria-label="Add to favorites" onclick="toggleFavorite('unity editor tool developer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -1303,9 +1414,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/game-audio-engineer.html" class="agent-card" data-category="game-development" data-name="unity multiplayer engineer" data-description="networked gameplay specialist - masters netcode for gameobjects, unity gaming services, client-server authority, lag compensation 网络游戏专家 - 精通netcode for gameobjects、unity游戏服务、客户端-服务器权威、延迟补偿">
+    <a href="/agency-agents/game-development/game-audio-engineer.html" class="agent-card" role="listitem" data-category="game-development" data-name="unity multiplayer engineer" data-description="networked gameplay specialist - masters netcode for gameobjects, unity gaming services, client-server authority, lag compensation 网络游戏专家 - 精通netcode for gameobjects、unity游戏服务、客户端-服务器权威、延迟补偿">
+      <button class="favorite-btn" data-agent="unity multiplayer engineer" aria-label="Add to favorites" onclick="toggleFavorite('unity multiplayer engineer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -1315,9 +1427,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/technical-artist.html" class="agent-card" data-category="game-development" data-name="unity shader graph artist" data-description="visual effects and material specialist - masters unity shader graph, hlsl, urp/hdrp rendering pipelines 视觉特效和材质专家 - 精通unity着色器图、hlsl、urp/hdrp渲染管线">
+    <a href="/agency-agents/game-development/technical-artist.html" class="agent-card" role="listitem" data-category="game-development" data-name="unity shader graph artist" data-description="visual effects and material specialist - masters unity shader graph, hlsl, urp/hdrp rendering pipelines 视觉特效和材质专家 - 精通unity着色器图、hlsl、urp/hdrp渲染管线">
+      <button class="favorite-btn" data-agent="unity shader graph artist" aria-label="Add to favorites" onclick="toggleFavorite('unity shader graph artist', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -1327,9 +1440,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/unreal-multiplayer-architect.html" class="agent-card" data-category="game-development" data-name="unreal multiplayer architect" data-description="unreal engine networking specialist - masters actor replication, gamemode/gamestate architecture, server-authoritative gameplay unreal引擎网络专家 - 精通actor复制、gamemode/gamestate架构、服务器权威游戏">
+    <a href="/agency-agents/game-development/unreal-multiplayer-architect.html" class="agent-card" role="listitem" data-category="game-development" data-name="unreal multiplayer architect" data-description="unreal engine networking specialist - masters actor replication, gamemode/gamestate architecture, server-authoritative gameplay unreal引擎网络专家 - 精通actor复制、gamemode/gamestate架构、服务器权威游戏">
+      <button class="favorite-btn" data-agent="unreal multiplayer architect" aria-label="Add to favorites" onclick="toggleFavorite('unreal multiplayer architect', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -1339,9 +1453,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/game-audio-engineer.html" class="agent-card" data-category="game-development" data-name="unreal systems engineer" data-description="performance and hybrid architecture specialist - masters c++/blueprint continuum, nanite geometry, lumen gi, and gameplay ability system 性能和混合架构专家 - 精通c++/blueprint结合、nanite几何体、lumen gi和gameplay ability system">
+    <a href="/agency-agents/game-development/game-audio-engineer.html" class="agent-card" role="listitem" data-category="game-development" data-name="unreal systems engineer" data-description="performance and hybrid architecture specialist - masters c++/blueprint continuum, nanite geometry, lumen gi, and gameplay ability system 性能和混合架构专家 - 精通c++/blueprint结合、nanite几何体、lumen gi和gameplay ability system">
+      <button class="favorite-btn" data-agent="unreal systems engineer" aria-label="Add to favorites" onclick="toggleFavorite('unreal systems engineer', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -1351,9 +1466,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/technical-artist.html" class="agent-card" data-category="game-development" data-name="unreal technical artist" data-description="unreal engine visual pipeline specialist - masters the material editor, niagara vfx, procedural content generation, and art-to-engine pipeline unreal引擎视觉流水线专家 - 精通材质编辑器、niagara vfx、程序化内容生成和美术到引擎流水线">
+    <a href="/agency-agents/game-development/technical-artist.html" class="agent-card" role="listitem" data-category="game-development" data-name="unreal technical artist" data-description="unreal engine visual pipeline specialist - masters the material editor, niagara vfx, procedural content generation, and art-to-engine pipeline unreal引擎视觉流水线专家 - 精通材质编辑器、niagara vfx、程序化内容生成和美术到引擎流水线">
+      <button class="favorite-btn" data-agent="unreal technical artist" aria-label="Add to favorites" onclick="toggleFavorite('unreal technical artist', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -1363,9 +1479,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/game-development/unreal-world-builder.html" class="agent-card" data-category="game-development" data-name="unreal world builder" data-description="open-world and environment specialist - masters ue5 world partition, landscape, procedural foliage, hlod, and large-scale level streaming 开放世界和环境专家 - 精通ue5世界分区、landscape、程序化植被、hlod和大规模关卡流式加载">
+    <a href="/agency-agents/game-development/unreal-world-builder.html" class="agent-card" role="listitem" data-category="game-development" data-name="unreal world builder" data-description="open-world and environment specialist - masters ue5 world partition, landscape, procedural foliage, hlod, and large-scale level streaming 开放世界和环境专家 - 精通ue5世界分区、landscape、程序化植被、hlod和大规模关卡流式加载">
+      <button class="favorite-btn" data-agent="unreal world builder" aria-label="Add to favorites" onclick="toggleFavorite('unreal world builder', event)">☆</button>
       <div class="card-header" style="background-color: #8b5cf620;">
-        <span class="card-emoji">🎮</span>
+        <span class="card-emoji" aria-hidden="true">🎮</span>
       </div>
       <div class="card-body">
         <span class="card-category">Game Development</span>
@@ -1375,9 +1492,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/design/design-visual-storyteller.html" class="agent-card" data-category="design" data-name="visual storyteller" data-description="expert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand storytelling through design 专业视觉传播专家，专注于通过设计创建引人入胜的视觉叙事、多媒体内容和品牌故事">
+    <a href="/agency-agents/design/design-visual-storyteller.html" class="agent-card" role="listitem" data-category="design" data-name="visual storyteller" data-description="expert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand storytelling through design 专业视觉传播专家，专注于通过设计创建引人入胜的视觉叙事、多媒体内容和品牌故事">
+      <button class="favorite-btn" data-agent="visual storyteller" aria-label="Add to favorites" onclick="toggleFavorite('visual storyteller', event)">☆</button>
       <div class="card-header" style="background-color: #ec489920;">
-        <span class="card-emoji">🎨</span>
+        <span class="card-emoji" aria-hidden="true">🎨</span>
       </div>
       <div class="card-body">
         <span class="card-category">Design</span>
@@ -1387,9 +1505,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/engineering/engineering-wechat-mini-program-developer.html" class="agent-card" data-category="engineering" data-name="wechat mini program developer" data-description="expert wechat mini program developer specializing in 小程序 development with wxml/wxss/wxs, wechat api integration, payment systems, subscription messaging 专业微信小程序开发工程师，擅长wxml/wxss/wxs开发、微信api集成、支付系统、订阅消息">
+    <a href="/agency-agents/engineering/engineering-wechat-mini-program-developer.html" class="agent-card" role="listitem" data-category="engineering" data-name="wechat mini program developer" data-description="expert wechat mini program developer specializing in 小程序 development with wxml/wxss/wxs, wechat api integration, payment systems, subscription messaging 专业微信小程序开发工程师，擅长wxml/wxss/wxs开发、微信api集成、支付系统、订阅消息">
+      <button class="favorite-btn" data-agent="wechat mini program developer" aria-label="Add to favorites" onclick="toggleFavorite('wechat mini program developer', event)">☆</button>
       <div class="card-header" style="background-color: #3b82f620;">
-        <span class="card-emoji">⚙️</span>
+        <span class="card-emoji" aria-hidden="true">⚙️</span>
       </div>
       <div class="card-body">
         <span class="card-category">Engineering</span>
@@ -1399,9 +1518,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-wechat-official-account.html" class="agent-card" data-category="marketing" data-name="wechat official account manager" data-description="expert wechat official account (oa) strategist specializing in content marketing, subscriber engagement, and conversion optimization 专业微信公众号(oa)策略师，擅长内容营销、订阅者参与和转化优化">
+    <a href="/agency-agents/marketing/marketing-wechat-official-account.html" class="agent-card" role="listitem" data-category="marketing" data-name="wechat official account manager" data-description="expert wechat official account (oa) strategist specializing in content marketing, subscriber engagement, and conversion optimization 专业微信公众号(oa)策略师，擅长内容营销、订阅者参与和转化优化">
+      <button class="favorite-btn" data-agent="wechat official account manager" aria-label="Add to favorites" onclick="toggleFavorite('wechat official account manager', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -1411,9 +1531,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/design/design-whimsy-injector.html" class="agent-card" data-category="design" data-name="whimsy injector" data-description="expert creative specialist focused on adding personality, delight, and playful elements to brand experiences 专业创意专家，专注于为品牌体验增添个性、愉悦和趣味元素">
+    <a href="/agency-agents/design/design-whimsy-injector.html" class="agent-card" role="listitem" data-category="design" data-name="whimsy injector" data-description="expert creative specialist focused on adding personality, delight, and playful elements to brand experiences 专业创意专家，专注于为品牌体验增添个性、愉悦和趣味元素">
+      <button class="favorite-btn" data-agent="whimsy injector" aria-label="Add to favorites" onclick="toggleFavorite('whimsy injector', event)">☆</button>
       <div class="card-header" style="background-color: #ec489920;">
-        <span class="card-emoji">🎨</span>
+        <span class="card-emoji" aria-hidden="true">🎨</span>
       </div>
       <div class="card-body">
         <span class="card-category">Design</span>
@@ -1423,9 +1544,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/testing/testing-workflow-optimizer.html" class="agent-card" data-category="testing" data-name="workflow optimizer" data-description="expert process improvement specialist focused on analyzing, optimizing, and automating workflows 专业流程改进专家，专注于分析、优化和自动化工作流">
+    <a href="/agency-agents/testing/testing-workflow-optimizer.html" class="agent-card" role="listitem" data-category="testing" data-name="workflow optimizer" data-description="expert process improvement specialist focused on analyzing, optimizing, and automating workflows 专业流程改进专家，专注于分析、优化和自动化工作流">
+      <button class="favorite-btn" data-agent="workflow optimizer" aria-label="Add to favorites" onclick="toggleFavorite('workflow optimizer', event)">☆</button>
       <div class="card-header" style="background-color: #a855f720;">
-        <span class="card-emoji">🧪</span>
+        <span class="card-emoji" aria-hidden="true">🧪</span>
       </div>
       <div class="card-body">
         <span class="card-category">Testing</span>
@@ -1435,9 +1557,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/spatial-computing/xr-cockpit-interaction-specialist.html" class="agent-card" data-category="spatial-computing" data-name="xr cockpit interaction specialist" data-description="specialist in designing and developing immersive cockpit-based control systems for xr environments 专注于为xr环境设计和开发沉浸式座舱控制系统的专家">
+    <a href="/agency-agents/spatial-computing/xr-cockpit-interaction-specialist.html" class="agent-card" role="listitem" data-category="spatial-computing" data-name="xr cockpit interaction specialist" data-description="specialist in designing and developing immersive cockpit-based control systems for xr environments 专注于为xr环境设计和开发沉浸式座舱控制系统的专家">
+      <button class="favorite-btn" data-agent="xr cockpit interaction specialist" aria-label="Add to favorites" onclick="toggleFavorite('xr cockpit interaction specialist', event)">☆</button>
       <div class="card-header" style="background-color: #f9731620;">
-        <span class="card-emoji">🌐</span>
+        <span class="card-emoji" aria-hidden="true">🌐</span>
       </div>
       <div class="card-body">
         <span class="card-category">Spatial Computing</span>
@@ -1447,9 +1570,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/spatial-computing/xr-immersive-developer.html" class="agent-card" data-category="spatial-computing" data-name="xr immersive developer" data-description="expert webxr and immersive technology developer with specialization in browser-based ar/vr/xr applications 专业webxr和沉浸式技术开发者，专注于基于浏览器的ar/vr/xr应用">
+    <a href="/agency-agents/spatial-computing/xr-immersive-developer.html" class="agent-card" role="listitem" data-category="spatial-computing" data-name="xr immersive developer" data-description="expert webxr and immersive technology developer with specialization in browser-based ar/vr/xr applications 专业webxr和沉浸式技术开发者，专注于基于浏览器的ar/vr/xr应用">
+      <button class="favorite-btn" data-agent="xr immersive developer" aria-label="Add to favorites" onclick="toggleFavorite('xr immersive developer', event)">☆</button>
       <div class="card-header" style="background-color: #f9731620;">
-        <span class="card-emoji">🌐</span>
+        <span class="card-emoji" aria-hidden="true">🌐</span>
       </div>
       <div class="card-body">
         <span class="card-category">Spatial Computing</span>
@@ -1459,9 +1583,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/spatial-computing/xr-interface-architect.html" class="agent-card" data-category="spatial-computing" data-name="xr interface architect" data-description="spatial interaction designer and interface strategist for immersive ar/vr/xr environments 沉浸式ar/vr/xr环境的空间交互设计师和界面策略师">
+    <a href="/agency-agents/spatial-computing/xr-interface-architect.html" class="agent-card" role="listitem" data-category="spatial-computing" data-name="xr interface architect" data-description="spatial interaction designer and interface strategist for immersive ar/vr/xr environments 沉浸式ar/vr/xr环境的空间交互设计师和界面策略师">
+      <button class="favorite-btn" data-agent="xr interface architect" aria-label="Add to favorites" onclick="toggleFavorite('xr interface architect', event)">☆</button>
       <div class="card-header" style="background-color: #f9731620;">
-        <span class="card-emoji">🌐</span>
+        <span class="card-emoji" aria-hidden="true">🌐</span>
       </div>
       <div class="card-body">
         <span class="card-category">Spatial Computing</span>
@@ -1471,9 +1596,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-xiaohongshu-specialist.html" class="agent-card" data-category="marketing" data-name="xiaohongshu specialist" data-description="expert xiaohongshu marketing specialist focused on lifestyle content, trend-driven strategies, and authentic community engagement 专业小红书营销专家，专注于生活方式内容、趋势驱动策略和真实社区参与">
+    <a href="/agency-agents/marketing/marketing-xiaohongshu-specialist.html" class="agent-card" role="listitem" data-category="marketing" data-name="xiaohongshu specialist" data-description="expert xiaohongshu marketing specialist focused on lifestyle content, trend-driven strategies, and authentic community engagement 专业小红书营销专家，专注于生活方式内容、趋势驱动策略和真实社区参与">
+      <button class="favorite-btn" data-agent="xiaohongshu specialist" aria-label="Add to favorites" onclick="toggleFavorite('xiaohongshu specialist', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -1483,9 +1609,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/specialized/zk-steward.html" class="agent-card" data-category="specialized" data-name="zk steward" data-description="knowledge-base steward in the spirit of niklas luhmann's zettelkasten - enforces atomic notes, connectivity, and validation loops 借鉴niklas luhmann zettelkasten的知识库守护者 - 强制执行原子笔记、连接和验证循环">
+    <a href="/agency-agents/specialized/zk-steward.html" class="agent-card" role="listitem" data-category="specialized" data-name="zk steward" data-description="knowledge-base steward in the spirit of niklas luhmann's zettelkasten - enforces atomic notes, connectivity, and validation loops 借鉴niklas luhmann zettelkasten的知识库守护者 - 强制执行原子笔记、连接和验证循环">
+      <button class="favorite-btn" data-agent="zk steward" aria-label="Add to favorites" onclick="toggleFavorite('zk steward', event)">☆</button>
       <div class="card-header" style="background-color: #6366f120;">
-        <span class="card-emoji">🔧</span>
+        <span class="card-emoji" aria-hidden="true">🔧</span>
       </div>
       <div class="card-body">
         <span class="card-category">Specialized</span>
@@ -1495,9 +1622,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/marketing/marketing-zhihu-strategist.html" class="agent-card" data-category="marketing" data-name="zhihu strategist" data-description="expert zhihu marketing specialist focused on thought leadership, community credibility, and knowledge-driven engagement 专业知乎营销专家，专注于思想领袖、社区可信度和知识驱动参与">
+    <a href="/agency-agents/marketing/marketing-zhihu-strategist.html" class="agent-card" role="listitem" data-category="marketing" data-name="zhihu strategist" data-description="expert zhihu marketing specialist focused on thought leadership, community credibility, and knowledge-driven engagement 专业知乎营销专家，专注于思想领袖、社区可信度和知识驱动参与">
+      <button class="favorite-btn" data-agent="zhihu strategist" aria-label="Add to favorites" onclick="toggleFavorite('zhihu strategist', event)">☆</button>
       <div class="card-header" style="background-color: #f59e0b20;">
-        <span class="card-emoji">📢</span>
+        <span class="card-emoji" aria-hidden="true">📢</span>
       </div>
       <div class="card-body">
         <span class="card-category">Marketing</span>
@@ -1507,9 +1635,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/spatial-computing/macos-spatial-metal-engineer.html" class="agent-card" data-category="spatial-computing" data-name="macos spatial/metal engineer" data-description="native swift and metal specialist building high-performance 3d rendering systems and spatial computing experiences 本地swift和metal专家，构建高性能3d渲染系统和空间计算体验">
+    <a href="/agency-agents/spatial-computing/macos-spatial-metal-engineer.html" class="agent-card" role="listitem" data-category="spatial-computing" data-name="macos spatial/metal engineer" data-description="native swift and metal specialist building high-performance 3d rendering systems and spatial computing experiences 本地swift和metal专家，构建高性能3d渲染系统和空间计算体验">
+      <button class="favorite-btn" data-agent="macos spatial/metal engineer" aria-label="Add to favorites" onclick="toggleFavorite('macos spatial/metal engineer', event)">☆</button>
       <div class="card-header" style="background-color: #f9731620;">
-        <span class="card-emoji">🌐</span>
+        <span class="card-emoji" aria-hidden="true">🌐</span>
       </div>
       <div class="card-body">
         <span class="card-category">Spatial Computing</span>
@@ -1519,9 +1648,10 @@
       </div>
     </a>
     
-    <a href="/agency-agents/spatial-computing/visionos-spatial-engineer.html" class="agent-card" data-category="spatial-computing" data-name="visionos spatial engineer" data-description="native visionos spatial computing, swiftui volumetric interfaces, and liquid glass design implementation 本地visionos空间计算、swiftui体积界面和liquid glass设计实现">
+    <a href="/agency-agents/spatial-computing/visionos-spatial-engineer.html" class="agent-card" role="listitem" data-category="spatial-computing" data-name="visionos spatial engineer" data-description="native visionos spatial computing, swiftui volumetric interfaces, and liquid glass design implementation 本地visionos空间计算、swiftui体积界面和liquid glass设计实现">
+      <button class="favorite-btn" data-agent="visionos spatial engineer" aria-label="Add to favorites" onclick="toggleFavorite('visionos spatial engineer', event)">☆</button>
       <div class="card-header" style="background-color: #f9731620;">
-        <span class="card-emoji">🌐</span>
+        <span class="card-emoji" aria-hidden="true">🌐</span>
       </div>
       <div class="card-body">
         <span class="card-category">Spatial Computing</span>
@@ -1533,8 +1663,12 @@
     
   </div>
 
-  <div class="no-results" id="no-results" style="display: none;">
-    <p>No agents found matching your search.</p>
+  <div class="no-results" id="no-results" style="display: none;" role="status" aria-live="polite">
+    <div class="no-results-content">
+      <span class="no-results-icon" aria-hidden="true">🔍</span>
+      <h3 class="no-results-title">No agents found</h3>
+      <p class="no-results-text">Try adjusting your search or filter to find what you're looking for.</p>
+    </div>
   </div>
 </div>
 
@@ -1547,7 +1681,7 @@
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <p>&copy; 2026 Agency Agents. All rights reserved.</p>
       <p>Total: 121 agents</p>

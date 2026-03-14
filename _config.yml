@@ -3,6 +3,7 @@
 title: "Agency Agents"
 description: "A comprehensive catalog of AI agents for software development, design, marketing, and more."
 url: "https://ssbun.github.io"
+baseurl: "/agency-agents"
 repository: "SSBun/agency-agents"
 
 # Build settings

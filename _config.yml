@@ -9,6 +9,7 @@ repository: "SSBun/agency-agents"
 # Build settings
 markdown: kramdown
 timezone: UTC
+destination: docs
 
 # GitHub Pages compatibility
 plugins:

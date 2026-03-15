@@ -1,1093 +1,1677 @@
-- name: AI Engineer
-  description_en: Expert AI/ML engineer specializing in machine learning model development,
-    deployment, and integration into production systems
+# Generated 147 agents
+- name: AI Data Remediation Engineer
+  description_en: 'Specialist in self-healing data pipelines — uses air-gapped local
+    SLMs and semantic clustering to automatically detect, classify, and fix data anomalies
+    at scale. Focuses exclusively on the remediation layer: intercepting bad data,
+    generating deterministic fix logic via Ollama, and guaranteeing zero data loss.
+    Not a general data engineer — a surgical specialist for when your data is broken
+    and the pipeline can''t stop.'
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业的AI/ML工程师，擅长机器学习模型开发、部署和生产系统集成
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: green
+  emoji: 🧬
+  vibe: Fixes your broken data with surgical AI precision — no rows left behind.
+  url: /agency-agents/engineering/engineering-ai-data-remediation-engineer.html
+- name: AI Engineer
+  description_en: Expert AI/ML engineer specializing in machine learning model development,
+    deployment, and integration into production systems. Focused on building intelligent
+    features, data pipelines, and AI-powered applications with emphasis on practical,
+    scalable solutions.
+  description_zh: ''
+  category: engineering
+  category_name: Engineering
+  color: blue
+  emoji: 🤖
+  vibe: Turns ML models into production features that actually scale.
   url: /agency-agents/engineering/engineering-ai-engineer.html
 - name: API Tester
   description_en: Expert API testing specialist focused on comprehensive API validation,
-    performance testing, and quality assurance
+    performance testing, and quality assurance across all systems and third-party
+    integrations
+  description_zh: ''
   category: testing
   category_name: Testing
-  description_zh: 专业API测试专家，专注于全面的API验证、性能测试和质量保证
-  color: '#a855f7'
-  emoji: 🧪
+  color: purple
+  emoji: 🔌
+  vibe: Breaks your API before your users do.
   url: /agency-agents/testing/testing-api-tester.html
 - name: Accessibility Auditor
   description_en: Expert accessibility specialist who audits interfaces against WCAG
-    standards, tests with assistive technologies
+    standards, tests with assistive technologies, and ensures inclusive design. Defaults
+    to finding barriers — if it's not tested with a screen reader, it's not accessible.
+  description_zh: ''
   category: testing
   category_name: Testing
-  description_zh: 专业无障碍专家，根据WCAG标准审计界面、使用辅助技术测试
-  color: '#a855f7'
-  emoji: 🧪
+  color: '#0077B6'
+  emoji: ♿
+  vibe: If it's not tested with a screen reader, it's not accessible.
   url: /agency-agents/testing/testing-accessibility-auditor.html
 - name: Account Strategist
   description_en: Expert post-sale account strategist specializing in land-and-expand
-    execution, stakeholder mapping, QBR facilitation
+    execution, stakeholder mapping, QBR facilitation, and net revenue retention. Turns
+    closed deals into long-term platform relationships through systematic expansion
+    planning and multi-threaded account development.
+  description_zh: ''
   category: sales
   category_name: Sales
-  description_zh: 专业售后账户策略师，擅长扩展执行、利益相关者映射、QBR促进
-  color: '#14b8a6'
-  emoji: 💼
+  color: '#2E7D32'
+  emoji: 🗺️
+  vibe: Maps the org, finds the whitespace, and turns customers into platforms.
   url: /agency-agents/sales/sales-account-strategist.html
 - name: Accounts Payable Agent
   description_en: Autonomous payment processing specialist that executes vendor payments,
-    contractor invoices, and recurring bills across any payment rail
+    contractor invoices, and recurring bills across any payment rail — crypto, fiat,
+    stablecoins. Integrates with AI agent workflows via tool calls.
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 自主支付处理专家，在任何支付轨道上执行供应商付款、承包商发票和定期账单
-  color: '#6366f1'
-  emoji: 🔧
+  color: green
+  emoji: 💸
+  vibe: Moves money across any rail — crypto, fiat, stablecoins — so you don't have
+    to.
   url: /agency-agents/specialized/accounts-payable-agent.html
 - name: Ad Creative Strategist
   description_en: Paid media creative specialist focused on ad copywriting, RSA optimization,
-    asset group design, and creative testing frameworks
+    asset group design, and creative testing frameworks across Google, Meta, Microsoft,
+    and programmatic platforms. Bridges the gap between performance data and persuasive
+    messaging.
+  description_zh: ''
   category: paid-media
   category_name: Paid Media
-  description_zh: 付费媒体创意专家，专注于广告文案、RSA优化、资产组设计和创意测试框架
-  color: '#ef4444'
-  emoji: 💰
-  url: /agency-agents/paid-media/paid-media-ppc-strategist.html
+  color: orange
+  emoji: ✍️
+  vibe: Turns ad creative from guesswork into a repeatable science.
+  url: /agency-agents/paid-media/paid-media-creative-strategist.html
 - name: Agentic Identity & Trust Architect
   description_en: Designs identity, authentication, and trust verification systems
-    for autonomous AI agents operating in multi-agent environments
+    for autonomous AI agents operating in multi-agent environments. Ensures agents
+    can prove who they are, what they're authorized to do, and what they actually
+    did.
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 为在多智能体环境中运行的自主人工智能智能体设计身份、身份验证和信任验证系统
-  color: '#6366f1'
-  emoji: 🔧
+  color: '#2d5a27'
+  emoji: 🔐
+  vibe: Ensures every AI agent can prove who it is, what it's allowed to do, and what
+    it actually did.
   url: /agency-agents/specialized/agentic-identity-trust.html
 - name: Agents Orchestrator
   description_en: Autonomous pipeline manager that orchestrates the entire development
-    workflow - the leader of this process
+    workflow. You are the leader of this process.
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 自主流水线管理器，协调整个开发流程 - 此过程的领导者
-  color: '#6366f1'
-  emoji: 🔧
+  color: cyan
+  emoji: 🎛️
+  vibe: The conductor who runs the entire dev pipeline from spec to ship.
   url: /agency-agents/specialized/agents-orchestrator.html
 - name: Analytics Reporter
   description_en: Expert data analyst transforming raw data into actionable business
-    insights - creates dashboards, performs statistical analysis
+    insights. Creates dashboards, performs statistical analysis, tracks KPIs, and
+    provides strategic decision support through data visualization and reporting.
+  description_zh: ''
   category: support
   category_name: Support
-  description_zh: 专业数据分析师，将原始数据转化为可操作的业务洞察 - 创建仪表板、进行统计分析
-  color: '#22c55e'
-  emoji: 🎧
+  color: teal
+  emoji: 📊
+  vibe: Transforms raw data into the insights that drive your next decision.
   url: /agency-agents/support/support-analytics-reporter.html
 - name: App Store Optimizer
   description_en: Expert app store marketing specialist focused on App Store Optimization
     (ASO), conversion rate optimization, and app discoverability
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业应用商店营销专家，专注于ASO、转化率优化和应用可发现性
-  color: '#f59e0b'
-  emoji: 📢
+  color: blue
+  emoji: 📱
+  vibe: Gets your app found, downloaded, and loved in the store.
   url: /agency-agents/marketing/marketing-app-store-optimizer.html
+- name: Automation Governance Architect
+  description_en: Governance-first architect for business automations (n8n-first)
+    who audits value, risk, and maintainability before implementation.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: cyan
+  emoji: ⚙️
+  vibe: Calm, skeptical, and operations-focused. Prefer reliable systems over automation
+    hype.
+  url: /agency-agents/specialized/automation-governance-architect.html
 - name: Autonomous Optimization Architect
   description_en: Intelligent system governor that continuously shadow-tests APIs
-    for performance while enforcing strict financial and security guardrails
+    for performance while enforcing strict financial and security guardrails against
+    runaway costs.
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 智能系统治理者，持续进行API影子测试以优化性能，同时执行严格的财务和安全护栏
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: '#673AB7'
+  emoji: ⚡
+  vibe: The system governor that makes things faster without bankrupting you.
   url: /agency-agents/engineering/engineering-autonomous-optimization-architect.html
 - name: Backend Architect
   description_en: Senior backend architect specializing in scalable system design,
-    database architecture, API development, and cloud infrastructure
+    database architecture, API development, and cloud infrastructure. Builds robust,
+    secure, performant server-side applications and microservices
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 高级后端架构师，擅长可扩展系统设计、数据库架构、API开发和云基础设施
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: blue
+  emoji: 🏗️
+  vibe: Designs the systems that hold everything up — databases, APIs, cloud, scale.
   url: /agency-agents/engineering/engineering-backend-architect.html
-- name: Backend Architect (Memory)
-  description_en: Senior backend architect specializing in scalable system design,
-    database architecture, API development, and cloud infrastructure
-  category: specialized
-  category_name: Specialized
-  description_zh: 高级后端架构师，擅长可扩展系统设计、数据库架构、API开发和云基础设施
-  color: '#6366f1'
-  emoji: 🔧
-  url: /agency-agents/specialized/backend-architect-memory.html
 - name: Baidu SEO Specialist
   description_en: Expert Baidu search optimization specialist focused on Chinese search
-    engine ranking, Baidu ecosystem integration, ICP compliance
+    engine ranking, Baidu ecosystem integration, ICP compliance, Chinese keyword research,
+    and mobile-first indexing for the China market.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业百度搜索优化专家，专注于中国搜索引擎排名、百度生态整合、ICP合规
-  color: '#f59e0b'
-  emoji: 📢
+  color: blue
+  emoji: 🇨🇳
+  vibe: Masters Baidu's algorithm so your brand ranks in China's search ecosystem.
   url: /agency-agents/marketing/marketing-baidu-seo-specialist.html
 - name: Behavioral Nudge Engine
   description_en: Behavioral psychology specialist that adapts software interaction
-    cadences and styles to maximize user motivation and success
+    cadences and styles to maximize user motivation and success.
+  description_zh: ''
   category: product
   category_name: Product
-  description_zh: 行为心理学专家，调整软件交互节奏和风格以最大化用户动机和成功率
-  color: '#06b6d4'
-  emoji: 📦
+  color: '#FF8A65'
+  emoji: 🧠
+  vibe: Adapts software interactions to maximize user motivation through behavioral
+    psychology.
   url: /agency-agents/product/product-behavioral-nudge-engine.html
 - name: Bilibili Content Strategist
   description_en: Expert Bilibili marketing specialist focused on UP主 growth, danmaku
-    culture mastery, B站 algorithm optimization
+    culture mastery, B站 algorithm optimization, community building, and branded content
+    strategy for China's leading video community platform.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业B站营销专家，专注于UP主成长、弹幕文化掌握、B站算法优化
-  color: '#f59e0b'
-  emoji: 📢
+  color: pink
+  emoji: 🎬
+  vibe: Speaks fluent danmaku and grows your brand on B站.
   url: /agency-agents/marketing/marketing-bilibili-content-strategist.html
+- name: Blender Add-on Engineer
+  description_en: Blender tooling specialist - Builds Python add-ons, asset validators,
+    exporters, and pipeline automations that turn repetitive DCC work into reliable
+    one-click workflows
+  description_zh: ''
+  category: game-development
+  category_name: Game Development
+  color: blue
+  emoji: 🧩
+  vibe: Turns repetitive Blender pipeline work into reliable one-click tools that
+    artists actually use.
+  url: /agency-agents/game-development/blender/blender-addon-engineer.html
 - name: Blockchain Security Auditor
   description_en: Expert smart contract security auditor specializing in vulnerability
-    detection, formal verification, exploit analysis
+    detection, formal verification, exploit analysis, and comprehensive audit report
+    writing for DeFi protocols and blockchain applications.
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 专业智能合约安全审计师，擅长漏洞检测、形式化验证、漏洞分析
-  color: '#6366f1'
-  emoji: 🔧
+  color: red
+  emoji: 🛡️
+  vibe: Finds the exploit in your smart contract before the attacker does.
   url: /agency-agents/specialized/blockchain-security-auditor.html
+- name: Book Co-Author
+  description_en: Strategic thought-leadership book collaborator for founders, experts,
+    and operators turning voice notes, fragments, and positioning into structured
+    first-person chapters.
+  description_zh: ''
+  category: marketing
+  category_name: Marketing
+  color: '#8B5E3C'
+  emoji: 📘
+  vibe: Turns rough expertise into a recognizable book people can quote, remember,
+    and buy into.
+  url: /agency-agents/marketing/marketing-book-co-author.html
 - name: Brand Guardian
   description_en: Expert brand strategist and guardian specializing in brand identity
     development, consistency maintenance, and strategic brand positioning
+  description_zh: ''
   category: design
   category_name: Design
-  description_zh: 专业品牌策略师和守护者，擅长品牌身份开发、一致性维护和战略性品牌定位
-  color: '#ec4899'
+  color: blue
   emoji: 🎨
+  vibe: Your brand's fiercest protector and most passionate advocate.
   url: /agency-agents/design/design-brand-guardian.html
 - name: Carousel Growth Engine
-  description_en: Autonomous TikTok and Instagram carousel generation specialist
+  description_en: Autonomous TikTok and Instagram carousel generation specialist.
+    Analyzes any website URL with Playwright, generates viral 6-slide carousels via
+    Gemini image generation, publishes directly to feed via Upload-Post API with auto
+    trending music, fetches analytics, and iteratively improves through a data-driven
+    learning loop.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 自主TikTok和Instagram轮播图生成专家
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#FF0050'
+  emoji: 🎠
+  vibe: Autonomously generates viral carousels from any URL and publishes them to
+    feed.
   url: /agency-agents/marketing/marketing-carousel-growth-engine.html
 - name: China E-Commerce Operator
   description_en: Expert China e-commerce operations specialist covering Taobao, Tmall,
-    Pinduoduo, and JD ecosystems
+    Pinduoduo, and JD ecosystems with deep expertise in product listing optimization,
+    live commerce, store operations, 618/Double 11 campaigns, and cross-platform strategy.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业中国电商运营专家，覆盖淘宝、天猫、拼多多和京东生态系统
-  color: '#f59e0b'
-  emoji: 📢
+  color: red
+  emoji: 🛒
+  vibe: Runs your Taobao, Tmall, Pinduoduo, and JD storefronts like a native operator.
   url: /agency-agents/marketing/marketing-china-ecommerce-operator.html
+- name: Code Reviewer
+  description_en: Expert code reviewer who provides constructive, actionable feedback
+    focused on correctness, maintainability, security, and performance — not style
+    preferences.
+  description_zh: ''
+  category: engineering
+  category_name: Engineering
+  color: purple
+  emoji: 👁️
+  vibe: Reviews code like a mentor, not a gatekeeper. Every comment teaches something.
+  url: /agency-agents/engineering/engineering-code-reviewer.html
 - name: Compliance Auditor
   description_en: Expert technical compliance auditor specializing in SOC 2, ISO 27001,
-    HIPAA, and PCI-DSS audits
+    HIPAA, and PCI-DSS audits — from readiness assessment through evidence collection
+    to certification.
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 专业技术合规审计师，擅长SOC 2、ISO 27001、HIPAA和PCI-DSS审计
-  color: '#6366f1'
-  emoji: 🔧
+  color: orange
+  emoji: 📋
+  vibe: Walks you from readiness assessment through evidence collection to SOC 2 certification.
   url: /agency-agents/specialized/compliance-auditor.html
 - name: Content Creator
-  description_en: Expert content strategist and creator for multi-platform campaigns
+  description_en: Expert content strategist and creator for multi-platform campaigns.
+    Develops editorial calendars, creates compelling copy, manages brand storytelling,
+    and optimizes content for engagement across all digital channels.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业的多平台活动内容策略师和创作者
-  color: '#f59e0b'
-  emoji: 📢
-  url: /agency-agents/marketing/marketing-linkedin-content-creator.html
-- name: Cultural Intelligence Strategist
-  description_en: CQ specialist that detects invisible exclusion, researches global
-    context, and ensures software resonates authentically
+  color: teal
+  emoji: ✍️
+  vibe: Crafts compelling stories across every platform your audience lives on.
+  url: /agency-agents/marketing/marketing-content-creator.html
+- name: Corporate Training Designer
+  description_en: Expert in enterprise training system design and curriculum development
+    — proficient in training needs analysis, instructional design methodology, blended
+    learning program design, internal trainer development, leadership programs, and
+    training effectiveness evaluation and continuous optimization.
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: CQ专家，检测无形排斥、研究全球背景，确保软件真实共鸣
-  color: '#6366f1'
-  emoji: 🔧
+  color: orange
+  emoji: 📚
+  vibe: Designs training programs that drive real behavior change — from needs analysis
+    to Kirkpatrick Level 3 evaluation — because good training is measured by what
+    learners do, not what instructors say.
+  url: /agency-agents/specialized/corporate-training-designer.html
+- name: Cross-Border E-Commerce Specialist
+  description_en: Full-funnel cross-border e-commerce strategist covering Amazon,
+    Shopee, Lazada, AliExpress, Temu, and TikTok Shop operations, international logistics
+    and overseas warehousing, compliance and taxation, multilingual listing optimization,
+    brand globalization, and DTC independent site development.
+  description_zh: ''
+  category: marketing
+  category_name: Marketing
+  color: blue
+  emoji: 🌏
+  vibe: Takes your products from Chinese factories to global bestseller lists.
+  url: /agency-agents/marketing/marketing-cross-border-ecommerce.html
+- name: Cultural Intelligence Strategist
+  description_en: CQ specialist that detects invisible exclusion, researches global
+    context, and ensures software resonates authentically across intersectional identities.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: '#FFA000'
+  emoji: 🌍
+  vibe: Detects invisible exclusion and ensures your software resonates across cultures.
   url: /agency-agents/specialized/specialized-cultural-intelligence-strategist.html
 - name: Data Consolidation Agent
   description_en: AI agent that consolidates extracted sales data into live reporting
     dashboards with territory, rep, and pipeline summaries
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: AI智能体，将提取的销售数据整合到具有区域、销售代表和管道摘要的实时报告仪表板
-  color: '#6366f1'
-  emoji: 🔧
+  color: '#38a169'
+  emoji: 🗄️
+  vibe: Consolidates scattered sales data into live reporting dashboards.
   url: /agency-agents/specialized/data-consolidation-agent.html
 - name: Data Engineer
   description_en: Expert data engineer specializing in building reliable data pipelines,
-    lakehouse architectures, and scalable data infrastructure
+    lakehouse architectures, and scalable data infrastructure. Masters ETL/ELT, Apache
+    Spark, dbt, streaming systems, and cloud data platforms to turn raw data into
+    trusted, analytics-ready assets.
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业数据工程师，擅长构建可靠数据流水线、湖仓架构和可扩展数据基础设施
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: orange
+  emoji: 🔧
+  vibe: Builds the pipelines that turn raw data into trusted, analytics-ready assets.
   url: /agency-agents/engineering/engineering-data-engineer.html
+- name: Database Optimizer
+  description_en: Expert database specialist focusing on schema design, query optimization,
+    indexing strategies, and performance tuning for PostgreSQL, MySQL, and modern
+    databases like Supabase and PlanetScale.
+  description_zh: ''
+  category: engineering
+  category_name: Engineering
+  color: amber
+  emoji: 🗄️
+  vibe: Indexes, query plans, and schema design — databases that don't wake you at
+    3am.
+  url: /agency-agents/engineering/engineering-database-optimizer.html
 - name: Deal Strategist
   description_en: Senior deal strategist specializing in MEDDPICC qualification, competitive
-    positioning, and win planning for complex B2B sales cycles
+    positioning, and win planning for complex B2B sales cycles. Scores opportunities,
+    exposes pipeline risk, and builds deal strategies that survive forecast review.
+  description_zh: ''
   category: sales
   category_name: Sales
-  description_zh: 高级交易策略师，擅长MEDDPICC资格认证、竞争定位和复杂B2B销售周期的赢单规划
-  color: '#14b8a6'
-  emoji: 💼
+  color: '#1B4D3E'
+  emoji: ♟️
+  vibe: Qualifies deals like a surgeon and kills happy ears on contact.
   url: /agency-agents/sales/sales-deal-strategist.html
 - name: DevOps Automator
   description_en: Expert DevOps engineer specializing in infrastructure automation,
     CI/CD pipeline development, and cloud operations
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业DevOps工程师，擅长基础设施自动化、CI/CD流水线开发和云运维
-  color: '#3b82f6'
+  color: orange
   emoji: ⚙️
+  vibe: Automates infrastructure so your team ships faster and sleeps better.
   url: /agency-agents/engineering/engineering-devops-automator.html
 - name: Developer Advocate
   description_en: Expert developer advocate specializing in building developer communities,
-    creating compelling technical content, optimizing DX
+    creating compelling technical content, optimizing developer experience (DX), and
+    driving platform adoption through authentic engineering engagement. Bridges product
+    and engineering teams with external developers.
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 专业开发者倡导者，擅长建设开发者社区、创建引人注目的技术内容、优化开发者体验
-  color: '#6366f1'
-  emoji: 🔧
+  color: purple
+  emoji: 🗣️
+  vibe: Bridges your product team and the developer community through authentic engagement.
   url: /agency-agents/specialized/specialized-developer-advocate.html
 - name: Discovery Coach
   description_en: Coaches sales teams on elite discovery methodology — question design,
-    current-state mapping, gap quantification, and call structure
+    current-state mapping, gap quantification, and call structure that surfaces real
+    buying motivation.
+  description_zh: ''
   category: sales
   category_name: Sales
-  description_zh: 指导销售团队掌握精英发现方法论 — 问题设计、现状映射、差距量化和通话结构
-  color: '#14b8a6'
-  emoji: 💼
+  color: '#5C7CFA'
+  emoji: 🔍
+  vibe: Asks one more question than everyone else — and that's the one that closes
+    the deal.
   url: /agency-agents/sales/sales-discovery-coach.html
+- name: Document Generator
+  description_en: Expert document creation specialist who generates professional PDF,
+    PPTX, DOCX, and XLSX files using code-based approaches with proper formatting,
+    charts, and data visualization.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: blue
+  emoji: 📄
+  vibe: Professional documents from code — PDFs, slides, spreadsheets, and reports.
+  url: /agency-agents/specialized/specialized-document-generator.html
+- name: Douyin Strategist
+  description_en: Short-video marketing expert specializing in the Douyin platform,
+    with deep expertise in recommendation algorithm mechanics, viral video planning,
+    livestream commerce workflows, and full-funnel brand growth through content matrix
+    strategies.
+  description_zh: ''
+  category: marketing
+  category_name: Marketing
+  color: '#000000'
+  emoji: 🎵
+  vibe: Masters the Douyin algorithm so your short videos actually get seen.
+  url: /agency-agents/marketing/marketing-douyin-strategist.html
 - name: Embedded Firmware Engineer
   description_en: Specialist in bare-metal and RTOS firmware - ESP32/ESP-IDF, PlatformIO,
     Arduino, ARM Cortex-M, STM32 HAL/LL, Nordic nRF5/nRF Connect SDK, FreeRTOS, Zephyr
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 裸机和RTOS固件专家 - ESP32/ESP-IDF、PlatformIO、Arduino、ARM Cortex-M、STM32
-    HAL/LL、Nordic nRF5/nRF Connect SDK、FreeRTOS、Zephyr
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: orange
+  emoji: 🔩
+  vibe: Writes production-grade firmware for hardware that can't afford to crash.
   url: /agency-agents/engineering/engineering-embedded-firmware-engineer.html
 - name: Evidence Collector
   description_en: Screenshot-obsessed, fantasy-allergic QA specialist - Default to
     finding 3-5 issues, requires visual proof for everything
+  description_zh: ''
   category: testing
   category_name: Testing
-  description_zh: 截图控、拒绝幻想的QA专家 - 默认找出3-5个问题，要求一切都有视觉证明
-  color: '#a855f7'
-  emoji: 🧪
+  color: orange
+  emoji: 📸
+  vibe: Screenshot-obsessed QA who won't approve anything without visual proof.
   url: /agency-agents/testing/testing-evidence-collector.html
 - name: Executive Summary Generator
   description_en: Consultant-grade AI specialist trained to think and communicate
-    like a senior strategy consultant
+    like a senior strategy consultant. Transforms complex business inputs into concise,
+    actionable executive summaries using McKinsey SCQA, BCG Pyramid Principle, and
+    Bain frameworks for C-suite decision-makers.
+  description_zh: ''
   category: support
   category_name: Support
-  description_zh: 咨询级别的AI专家，训练有素地像高级战略顾问一样思考和沟通
-  color: '#22c55e'
-  emoji: 🎧
+  color: purple
+  emoji: 📝
+  vibe: Thinks like a McKinsey consultant, writes for the C-suite.
   url: /agency-agents/support/support-executive-summary-generator.html
 - name: Experiment Tracker
   description_en: Expert project manager specializing in experiment design, execution
-    tracking, and data-driven decision making
+    tracking, and data-driven decision making. Focused on managing A/B tests, feature
+    experiments, and hypothesis validation through systematic experimentation and
+    rigorous analysis.
+  description_zh: ''
   category: project-management
   category_name: Project Management
-  description_zh: 专业项目经理，擅长实验设计、执行跟踪和数据驱动决策
-  color: '#84cc16'
-  emoji: 📋
+  color: purple
+  emoji: 🧪
+  vibe: Designs experiments, tracks results, and lets the data decide.
   url: /agency-agents/project-management/project-management-experiment-tracker.html
 - name: Feedback Synthesizer
   description_en: Expert in collecting, analyzing, and synthesizing user feedback
-    from multiple channels to extract actionable product insights
+    from multiple channels to extract actionable product insights. Transforms qualitative
+    feedback into quantitative priorities and strategic recommendations.
+  description_zh: ''
   category: product
   category_name: Product
-  description_zh: 擅长从多渠道收集、分析和综合用户反馈，以提取可操作的产品洞察
-  color: '#06b6d4'
-  emoji: 📦
+  color: blue
+  emoji: 🔍
+  vibe: Distills a thousand user voices into the five things you need to build next.
   url: /agency-agents/product/product-feedback-synthesizer.html
+- name: Feishu Integration Developer
+  description_en: Full-stack integration expert specializing in the Feishu (Lark)
+    Open Platform — proficient in Feishu bots, mini programs, approval workflows,
+    Bitable (multidimensional spreadsheets), interactive message cards, Webhooks,
+    SSO authentication, and workflow automation, building enterprise-grade collaboration
+    and automation solutions within the Feishu ecosystem.
+  description_zh: ''
+  category: engineering
+  category_name: Engineering
+  color: blue
+  emoji: 🔗
+  vibe: Builds enterprise integrations on the Feishu (Lark) platform — bots, approvals,
+    data sync, and SSO — so your team's workflows run on autopilot.
+  url: /agency-agents/engineering/engineering-feishu-integration-developer.html
 - name: Finance Tracker
   description_en: Expert financial analyst and controller specializing in financial
-    planning, budget management, and business performance analysis
+    planning, budget management, and business performance analysis. Maintains financial
+    health, optimizes cash flow, and provides strategic financial insights for business
+    growth.
+  description_zh: ''
   category: support
   category_name: Support
-  description_zh: 专业财务分析师和Controller，擅长财务规划、预算管理和业务绩效分析
-  color: '#22c55e'
-  emoji: 🎧
+  color: green
+  emoji: 💰
+  vibe: Keeps the books clean, the cash flowing, and the forecasts honest.
   url: /agency-agents/support/support-finance-tracker.html
 - name: Frontend Developer
   description_en: Expert frontend developer specializing in modern web technologies,
     React/Vue/Angular frameworks, UI implementation, and performance optimization
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专注于现代Web技术、React/Vue/Angular框架、UI实现和性能优化的专业前端开发工程师
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: cyan
+  emoji: 🖥️
+  vibe: Builds responsive, accessible web apps with pixel-perfect precision.
   url: /agency-agents/engineering/engineering-frontend-developer.html
 - name: Game Audio Engineer
   description_en: Interactive audio specialist - Masters FMOD/Wwise integration, adaptive
-    music systems, spatial audio, and audio performance budgeting
+    music systems, spatial audio, and audio performance budgeting across all game
+    engines
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 交互式音频专家 - 精通FMOD/Wwise集成、自适应音乐系统、空间音频和音频性能预算
-  color: '#8b5cf6'
-  emoji: 🎮
+  color: indigo
+  emoji: 🎵
+  vibe: Makes every gunshot, footstep, and musical cue feel alive in the game world.
   url: /agency-agents/game-development/game-audio-engineer.html
 - name: Game Designer
   description_en: Systems and mechanics architect - Masters GDD authorship, player
-    psychology, economy balancing, and gameplay loop design
+    psychology, economy balancing, and gameplay loop design across all engines and
+    genres
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 系统和机制架构师 - 精通游戏设计文档撰写、玩家心理、经济平衡和游戏循环设计
-  color: '#8b5cf6'
+  color: yellow
   emoji: 🎮
+  vibe: Thinks in loops, levers, and player motivations to architect compelling gameplay.
   url: /agency-agents/game-development/game-designer.html
+- name: Git Workflow Master
+  description_en: Expert in Git workflows, branching strategies, and version control
+    best practices including conventional commits, rebasing, worktrees, and CI-friendly
+    branch management.
+  description_zh: ''
+  category: engineering
+  category_name: Engineering
+  color: orange
+  emoji: 🌿
+  vibe: Clean history, atomic commits, and branches that tell a story.
+  url: /agency-agents/engineering/engineering-git-workflow-master.html
 - name: Godot Gameplay Scripter
   description_en: Composition and signal integrity specialist - Masters GDScript 2.0,
-    C# integration, node-based architecture, and type-safe signal design
+    C# integration, node-based architecture, and type-safe signal design for Godot
+    4 projects
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 组合和信号完整性专家 - 精通GDScript 2.0、C#集成、基于节点的架构和类型安全信号设计
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/godot-gameplay-scripter.html
+  color: purple
+  emoji: 🎯
+  vibe: Builds Godot 4 gameplay systems with the discipline of a software architect.
+  url: /agency-agents/game-development/godot/godot-gameplay-scripter.html
 - name: Godot Multiplayer Engineer
   description_en: Godot 4 networking specialist - Masters the MultiplayerAPI, scene
-    replication, ENet/WebRTC transport, RPCs, and authority models
+    replication, ENet/WebRTC transport, RPCs, and authority models for real-time multiplayer
+    games
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: Godot 4网络专家 - 精通MultiplayerAPI、场景复制、ENet/WebRTC传输、RPC和权威模型
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/game-audio-engineer.html
+  color: violet
+  emoji: 🌐
+  vibe: Masters Godot's MultiplayerAPI to make real-time netcode feel seamless.
+  url: /agency-agents/game-development/godot/godot-multiplayer-engineer.html
 - name: Godot Shader Developer
-  description_en: Godot 4 visual effects specialist - Masters the Godot Shading Language,
-    VisualShader editor, CanvasItem and Spatial shaders
+  description_en: Godot 4 visual effects specialist - Masters the Godot Shading Language
+    (GLSL-like), VisualShader editor, CanvasItem and Spatial shaders, post-processing,
+    and performance optimization for 2D/3D effects
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: Godot 4视觉特效专家 - 精通Godot着色语言、VisualShader编辑器、CanvasItem和Spatial着色器
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/godot-shader-developer.html
-- name: Growth Hacker
-  description_en: Expert growth strategist specializing in rapid user acquisition
-    through data-driven experimentation
-  category: marketing
-  category_name: Marketing
-  description_zh: 专业增长策略师，擅长通过数据驱动的实验快速获取用户
-  color: '#f59e0b'
-  emoji: 📢
-  url: /agency-agents/marketing/marketing-growth-hacker.html
-- name: Identity Graph Operator
-  description_en: Operates a shared identity graph that multiple AI agents resolve
-    against - ensures consistent entity identification
+  color: purple
+  emoji: 💎
+  vibe: Bends light and pixels through Godot's shading language to create stunning
+    effects.
+  url: /agency-agents/game-development/godot/godot-shader-developer.html
+- name: Government Digital Presales Consultant
+  description_en: Presales expert for China's government digital transformation market
+    (ToG), proficient in policy interpretation, solution design, bid document preparation,
+    POC validation, compliance requirements (classified protection/cryptographic assessment/Xinchuang
+    domestic IT), and stakeholder management — helping technical teams efficiently
+    win government IT projects.
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 运营多个AI智能体共享的身份图谱 - 确保一致的实体识别
-  color: '#6366f1'
-  emoji: 🔧
+  color: '#8B0000'
+  emoji: 🏛️
+  vibe: Navigates the Chinese government IT procurement maze — from policy signals
+    to winning bids — so your team lands digital transformation projects.
+  url: /agency-agents/specialized/government-digital-presales-consultant.html
+- name: Growth Hacker
+  description_en: Expert growth strategist specializing in rapid user acquisition
+    through data-driven experimentation. Develops viral loops, optimizes conversion
+    funnels, and finds scalable growth channels for exponential business growth.
+  description_zh: ''
+  category: marketing
+  category_name: Marketing
+  color: green
+  emoji: 🚀
+  vibe: Finds the growth channel nobody's exploited yet — then scales it.
+  url: /agency-agents/marketing/marketing-growth-hacker.html
+- name: Healthcare Marketing Compliance Specialist
+  description_en: Expert in healthcare marketing compliance in China, proficient in
+    the Advertising Law, Medical Advertisement Management Measures, Drug Administration
+    Law, and related regulations — covering pharmaceuticals, medical devices, medical
+    aesthetics, health supplements, and internet healthcare across content review,
+    risk control, platform rule interpretation, and patient privacy protection, helping
+    enterprises conduct effective health marketing within legal boundaries.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: '#2E8B57'
+  emoji: ⚕️
+  vibe: Keeps your healthcare marketing legal in China's tightly regulated landscape
+    — reviewing content, flagging violations, and finding creative space within compliance
+    boundaries.
+  url: /agency-agents/specialized/healthcare-marketing-compliance.html
+- name: Identity Graph Operator
+  description_en: Operates a shared identity graph that multiple AI agents resolve
+    against. Ensures every agent in a multi-agent system gets the same canonical answer
+    for "who is this entity?" - deterministically, even under concurrent writes.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: '#C5A572'
+  emoji: 🕸️
+  vibe: Ensures every agent in a multi-agent system gets the same canonical answer
+    for "who is this?"
   url: /agency-agents/specialized/identity-graph-operator.html
 - name: Image Prompt Engineer
   description_en: Expert photography prompt engineer specializing in crafting detailed,
-    evocative prompts for AI image generation
+    evocative prompts for AI image generation. Masters the art of translating visual
+    concepts into precise language that produces stunning, professional-quality photography
+    through generative AI tools.
+  description_zh: ''
   category: design
   category_name: Design
-  description_zh: 专业摄影提示工程师，擅长为AI图像生成制作详细、富有表现力的提示
-  color: '#ec4899'
-  emoji: 🎨
+  color: amber
+  emoji: 📷
+  vibe: Translates visual concepts into precise prompts that produce stunning AI photography.
   url: /agency-agents/design/design-image-prompt-engineer.html
 - name: Incident Response Commander
   description_en: Expert incident commander specializing in production incident management,
     structured response coordination, post-mortem facilitation, SLO/SLI tracking,
-    and on-call process design
+    and on-call process design for reliable engineering organizations.
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业事件指挥官，擅长生产事件管理、结构化响应协调、复盘推动、SLO/SLI跟踪和值班流程设计
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: '#e63946'
+  emoji: 🚨
+  vibe: Turns production chaos into structured resolution.
   url: /agency-agents/engineering/engineering-incident-response-commander.html
 - name: Inclusive Visuals Specialist
   description_en: Representation expert who defeats systemic AI biases to generate
-    culturally accurate, affirming, and non-stereotypical images and video
+    culturally accurate, affirming, and non-stereotypical images and video.
+  description_zh: ''
   category: design
   category_name: Design
-  description_zh: 代表性专家，击败系统性AI偏见，生成文化准确、肯定和非刻板印象的形象和视频
-  color: '#ec4899'
-  emoji: 🎨
+  color: '#4DB6AC'
+  emoji: 🌈
+  vibe: Defeats systemic AI biases to generate culturally accurate, affirming imagery.
   url: /agency-agents/design/design-inclusive-visuals-specialist.html
 - name: Infrastructure Maintainer
   description_en: Expert infrastructure specialist focused on system reliability,
-    performance optimization, and technical operations management
+    performance optimization, and technical operations management. Maintains robust,
+    scalable infrastructure supporting business operations with security, performance,
+    and cost efficiency.
+  description_zh: ''
   category: support
   category_name: Support
-  description_zh: 专业基础设施专家，专注于系统可靠性、性能优化和技术运维管理
-  color: '#22c55e'
-  emoji: 🎧
+  color: orange
+  emoji: 🏢
+  vibe: Keeps the lights on, the servers humming, and the alerts quiet.
   url: /agency-agents/support/support-infrastructure-maintainer.html
 - name: Instagram Curator
   description_en: Expert Instagram marketing specialist focused on visual storytelling,
-    community building, and multi-format content optimization
+    community building, and multi-format content optimization. Masters aesthetic development
+    and drives meaningful engagement.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业Instagram营销专家，专注于视觉叙事、社区建设和多格式内容优化
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#E4405F'
+  emoji: 📸
+  vibe: Masters the grid aesthetic and turns scrollers into an engaged community.
   url: /agency-agents/marketing/marketing-instagram-curator.html
 - name: Jira Workflow Steward
   description_en: Expert delivery operations specialist who enforces Jira-linked Git
-    workflows, traceable commits, structured pull requests
+    workflows, traceable commits, structured pull requests, and release-safe branch
+    strategy across software teams.
+  description_zh: ''
   category: project-management
   category_name: Project Management
-  description_zh: 专业交付运营专家，执行Jira关联的Git工作流、可追溯提交、结构化拉取请求
-  color: '#84cc16'
+  color: orange
   emoji: 📋
+  vibe: Enforces traceable commits, structured PRs, and release-safe branch strategy.
   url: /agency-agents/project-management/project-management-jira-workflow-steward.html
 - name: Kuaishou Strategist
   description_en: Expert Kuaishou marketing strategist specializing in short-video
-    content for China's lower-tier city markets, live commerce operations
+    content for China's lower-tier city markets, live commerce operations, community
+    trust building, and grassroots audience growth on 快手.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业快手营销专家，专注于中国低线城市市场的短视频内容、直播电商运营
-  color: '#f59e0b'
-  emoji: 📢
+  color: orange
+  emoji: 🎥
+  vibe: Grows grassroots audiences and drives live commerce on 快手.
   url: /agency-agents/marketing/marketing-kuaishou-strategist.html
 - name: LSP/Index Engineer
   description_en: Language Server Protocol specialist building unified code intelligence
     systems through LSP client orchestration and semantic indexing
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 语言服务器协议专家，通过LPC客户端编排和语义索引构建统一代码智能系统
-  color: '#6366f1'
-  emoji: 🔧
+  color: orange
+  emoji: 🔎
+  vibe: Builds unified code intelligence through LSP orchestration and semantic indexing.
   url: /agency-agents/specialized/lsp-index-engineer.html
 - name: Legal Compliance Checker
   description_en: Expert legal and compliance specialist ensuring business operations,
-    data handling, and content creation comply with relevant laws
+    data handling, and content creation comply with relevant laws, regulations, and
+    industry standards across multiple jurisdictions.
+  description_zh: ''
   category: support
   category_name: Support
-  description_zh: 专业法律和合规专家，确保业务运营、数据处理和内容创作符合相关法律法规
-  color: '#22c55e'
-  emoji: 🎧
+  color: red
+  emoji: ⚖️
+  vibe: Ensures your operations comply with the law across every jurisdiction that
+    matters.
   url: /agency-agents/support/support-legal-compliance-checker.html
 - name: Level Designer
   description_en: Spatial storytelling and flow specialist - Masters layout theory,
-    pacing architecture, encounter design, and environmental narrative
+    pacing architecture, encounter design, and environmental narrative across all
+    game engines
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 空间叙事和流程专家 - 精通布局理论、节奏架构、遭遇设计和环境叙事
-  color: '#8b5cf6'
-  emoji: 🎮
+  color: teal
+  emoji: 🗺️
+  vibe: Treats every level as an authored experience where space tells the story.
   url: /agency-agents/game-development/level-designer.html
 - name: LinkedIn Content Creator
   description_en: Expert LinkedIn content strategist focused on thought leadership,
-    personal brand building, and high-engagement professional content
+    personal brand building, and high-engagement professional content. Masters LinkedIn's
+    algorithm and culture to drive inbound opportunities for founders, job seekers,
+    developers, and anyone building a professional presence.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业LinkedIn内容策略师，专注于思想领袖、个人品牌建设和高参与度专业内容
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#0A66C2'
+  emoji: 💼
+  vibe: Turns professional expertise into scroll-stopping content that makes the right
+    people find you.
   url: /agency-agents/marketing/marketing-linkedin-content-creator.html
+- name: Livestream Commerce Coach
+  description_en: Veteran livestream e-commerce coach specializing in host training
+    and live room operations across Douyin, Kuaishou, Taobao Live, and Channels, covering
+    script design, product sequencing, paid-vs-organic traffic balancing, conversion
+    closing techniques, and real-time data-driven optimization.
+  description_zh: ''
+  category: marketing
+  category_name: Marketing
+  color: '#E63946'
+  emoji: 🎙️
+  vibe: Coaches your livestream hosts from awkward beginners to million-yuan sellers.
+  url: /agency-agents/marketing/marketing-livestream-commerce-coach.html
+- name: MCP Builder
+  description_en: Expert Model Context Protocol developer who designs, builds, and
+    tests MCP servers that extend AI agent capabilities with custom tools, resources,
+    and prompts.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: indigo
+  emoji: 🔌
+  vibe: Builds the tools that make AI agents actually useful in the real world.
+  url: /agency-agents/specialized/specialized-mcp-builder.html
 - name: Mobile App Builder
   description_en: Specialized mobile application developer with expertise in native
     iOS/Android development and cross-platform frameworks
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业移动应用开发人员，熟悉原生iOS/Android开发和跨平台框架
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: purple
+  emoji: 📲
+  vibe: Ships native-quality apps on iOS and Android, fast.
   url: /agency-agents/engineering/engineering-mobile-app-builder.html
 - name: Model QA Specialist
   description_en: Independent model QA expert who audits ML and statistical models
-    end-to-end
+    end-to-end - from documentation review and data reconstruction to replication,
+    calibration testing, interpretability analysis, performance monitoring, and audit-grade
+    reporting.
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 独立模型QA专家，端到端审计ML和统计模型
-  color: '#6366f1'
-  emoji: 🔧
+  color: '#B22222'
+  emoji: 🔬
+  vibe: Audits ML models end-to-end — from data reconstruction to calibration testing.
   url: /agency-agents/specialized/specialized-model-qa.html
 - name: Narrative Designer
   description_en: Story systems and dialogue architect - Masters GDD-aligned narrative
     design, branching dialogue, lore architecture, and environmental storytelling
+    across all game engines
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 故事系统和对话架构师 - 精通游戏设计文档驱动的叙事设计、分支对话、lore架构和环境叙事
-  color: '#8b5cf6'
-  emoji: 🎮
+  color: red
+  emoji: 📖
+  vibe: Architects story systems where narrative and gameplay are inseparable.
   url: /agency-agents/game-development/narrative-designer.html
 - name: Outbound Strategist
   description_en: Signal-based outbound specialist who designs multi-channel prospecting
     sequences, defines ICPs, and builds pipeline through research-driven personalization
+    — not volume.
+  description_zh: ''
   category: sales
   category_name: Sales
-  description_zh: 基于信号的外呼专家，设计多渠道探矿序列、定义ICP，并通过研究驱动的个性化建立管道
-  color: '#14b8a6'
-  emoji: 💼
+  color: '#E8590C'
+  emoji: 🎯
+  vibe: Turns buying signals into booked meetings before the competition even notices.
   url: /agency-agents/sales/sales-outbound-strategist.html
 - name: PPC Campaign Strategist
   description_en: Senior paid media strategist specializing in large-scale search,
-    shopping, and performance max campaign architecture
+    shopping, and performance max campaign architecture across Google, Microsoft,
+    and Amazon ad platforms. Designs account structures, budget allocation frameworks,
+    and bidding strategies that scale from $10K to $10M+ monthly spend.
+  description_zh: ''
   category: paid-media
   category_name: Paid Media
-  description_zh: 高级付费媒体策略师，擅长大规模搜索、购物和效果最大化营销活动架构
-  color: '#ef4444'
+  color: orange
   emoji: 💰
+  vibe: Architects PPC campaigns that scale from $10K to $10M+ monthly.
   url: /agency-agents/paid-media/paid-media-ppc-strategist.html
 - name: Paid Media Auditor
   description_en: Comprehensive paid media auditor who systematically evaluates Google
-    Ads, Microsoft Ads, and Meta accounts across 200+ checkpoints
+    Ads, Microsoft Ads, and Meta accounts across 200+ checkpoints spanning account
+    structure, tracking, bidding, creative, audiences, and competitive positioning.
+    Produces actionable audit reports with prioritized recommendations and projected
+    impact.
+  description_zh: ''
   category: paid-media
   category_name: Paid Media
-  description_zh: 综合付费媒体审计师，系统评估Google Ads、Microsoft Ads和Meta账户的200多个检查点
-  color: '#ef4444'
-  emoji: 💰
+  color: orange
+  emoji: 📋
+  vibe: Finds the waste in your ad spend before your CFO does.
   url: /agency-agents/paid-media/paid-media-auditor.html
 - name: Paid Social Strategist
-  description_en: Cross-platform paid social advertising specialist covering Meta,
-    LinkedIn, TikTok, Pinterest, X, and Snapchat
+  description_en: Cross-platform paid social advertising specialist covering Meta
+    (Facebook/Instagram), LinkedIn, TikTok, Pinterest, X, and Snapchat. Designs full-funnel
+    social ad programs from prospecting through retargeting with platform-specific
+    creative and audience strategies.
+  description_zh: ''
   category: paid-media
   category_name: Paid Media
-  description_zh: 跨平台付费社交广告专家，覆盖Meta、LinkedIn、TikTok、Pinterest、X和Snapchat
-  color: '#ef4444'
-  emoji: 💰
+  color: orange
+  emoji: 📱
+  vibe: Makes every dollar on Meta, LinkedIn, and TikTok ads work harder.
   url: /agency-agents/paid-media/paid-media-paid-social-strategist.html
 - name: Performance Benchmarker
   description_en: Expert performance testing and optimization specialist focused on
-    measuring, analyzing, and improving system performance
+    measuring, analyzing, and improving system performance across all applications
+    and infrastructure
+  description_zh: ''
   category: testing
   category_name: Testing
-  description_zh: 专业性能和优化专家，专注于测量、分析和改进系统性能
-  color: '#a855f7'
-  emoji: 🧪
+  color: orange
+  emoji: ⏱️
+  vibe: Measures everything, optimizes what matters, and proves the improvement.
   url: /agency-agents/testing/testing-performance-benchmarker.html
 - name: Pipeline Analyst
   description_en: Revenue operations analyst specializing in pipeline health diagnostics,
-    deal velocity analysis, forecast accuracy
+    deal velocity analysis, forecast accuracy, and data-driven sales coaching. Turns
+    CRM data into actionable pipeline intelligence that surfaces risks before they
+    become missed quarters.
+  description_zh: ''
   category: sales
   category_name: Sales
-  description_zh: 营收运营分析师，擅长管道健康诊断、交易速度分析、预测准确性
-  color: '#14b8a6'
-  emoji: 💼
+  color: '#059669'
+  emoji: 📊
+  vibe: Tells you your forecast is wrong before you realize it yourself.
   url: /agency-agents/sales/sales-pipeline-analyst.html
+- name: Podcast Strategist
+  description_en: Content strategy and operations expert for the Chinese podcast market,
+    with deep expertise in Xiaoyuzhou, Ximalaya, and other major audio platforms,
+    covering show positioning, audio production, audience growth, multi-platform distribution,
+    and monetization to help podcast creators build sticky audio content brands.
+  description_zh: ''
+  category: marketing
+  category_name: Marketing
+  color: purple
+  emoji: 🎧
+  vibe: Guides your podcast from concept to loyal audience in China's booming audio
+    scene.
+  url: /agency-agents/marketing/marketing-podcast-strategist.html
+- name: Private Domain Operator
+  description_en: Expert in building enterprise WeChat (WeCom) private domain ecosystems,
+    with deep expertise in SCRM systems, segmented community operations, Mini Program
+    commerce integration, user lifecycle management, and full-funnel conversion optimization.
+  description_zh: ''
+  category: marketing
+  category_name: Marketing
+  color: '#1A73E8'
+  emoji: 🔒
+  vibe: Builds your WeChat private traffic empire from first contact to lifetime value.
+  url: /agency-agents/marketing/marketing-private-domain-operator.html
+- name: Product Manager
+  description_en: Holistic product leader who owns the full product lifecycle — from
+    discovery and strategy through roadmap, stakeholder alignment, go-to-market, and
+    outcome measurement. Bridges business goals, user needs, and technical reality
+    to ship the right thing at the right time.
+  description_zh: ''
+  category: product
+  category_name: Product
+  color: blue
+  emoji: 🧭
+  vibe: Ships the right thing, not just the next thing — outcome-obsessed, user-grounded,
+    and diplomatically ruthless about focus.
+  url: /agency-agents/product/product-manager.html
 - name: Programmatic & Display Buyer
   description_en: Display advertising and programmatic media buying specialist covering
-    GDN, DV360, trade desk platforms, and ABM display strategies
+    managed placements, Google Display Network, DV360, trade desk platforms, partner
+    media (newsletters, sponsored content), and ABM display strategies via platforms
+    like Demandbase and 6Sense.
+  description_zh: ''
   category: paid-media
   category_name: Paid Media
-  description_zh: 展示广告和程序化媒体购买专家，覆盖GDN、DV360、交易平台和ABM展示策略
-  color: '#ef4444'
-  emoji: 💰
+  color: orange
+  emoji: 📺
+  vibe: Buys display and video inventory at scale with surgical precision.
   url: /agency-agents/paid-media/paid-media-programmatic-buyer.html
 - name: Project Shepherd
   description_en: Expert project manager specializing in cross-functional project
-    coordination, timeline management, and stakeholder alignment
+    coordination, timeline management, and stakeholder alignment. Focused on shepherding
+    projects from conception to completion while managing resources, risks, and communications
+    across multiple teams and departments.
+  description_zh: ''
   category: project-management
   category_name: Project Management
-  description_zh: 专业项目经理，擅长跨职能项目协调、时间线管理和利益相关者对齐
-  color: '#84cc16'
-  emoji: 📋
+  color: blue
+  emoji: 🐑
+  vibe: Herds cross-functional chaos into on-time, on-scope delivery.
   url: /agency-agents/project-management/project-management-project-shepherd.html
 - name: Proposal Strategist
   description_en: Strategic proposal architect who transforms RFPs and sales opportunities
-    into compelling win narratives
+    into compelling win narratives. Specializes in win theme development, competitive
+    positioning, executive summary craft, and building proposals that persuade rather
+    than merely comply.
+  description_zh: ''
   category: sales
   category_name: Sales
-  description_zh: 战略提案架构师，将RFP和销售机会转化为引人注目的赢单叙事
-  color: '#14b8a6'
-  emoji: 💼
+  color: '#2563EB'
+  emoji: 🏹
+  vibe: Turns RFP responses into stories buyers can't put down.
   url: /agency-agents/sales/sales-proposal-strategist.html
 - name: Rapid Prototyper
   description_en: Specialized in ultra-fast proof-of-concept development and MVP creation
     using efficient tools and frameworks
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专注于使用高效工具和框架进行超快速概念验证和MVP创建
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: green
+  emoji: ⚡
+  vibe: Turns an idea into a working prototype before the meeting's over.
   url: /agency-agents/engineering/engineering-rapid-prototyper.html
 - name: Reality Checker
   description_en: Stops fantasy approvals, evidence-based certification - Default
     to "NEEDS WORK", requires overwhelming proof for production readiness
+  description_zh: ''
   category: testing
   category_name: Testing
-  description_zh: 阻止幻想批准、基于证据的认证 - 默认"需要工作"，要求压倒性的生产就绪证据
-  color: '#a855f7'
-  emoji: 🧪
+  color: red
+  emoji: 🧐
+  vibe: Defaults to "NEEDS WORK" — requires overwhelming proof for production readiness.
   url: /agency-agents/testing/testing-reality-checker.html
+- name: Recruitment Specialist
+  description_en: Expert recruitment operations and talent acquisition specialist
+    — skilled in China's major hiring platforms, talent assessment frameworks, and
+    labor law compliance. Helps companies efficiently attract, screen, and retain
+    top talent while building a competitive employer brand.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: blue
+  emoji: 🎯
+  vibe: Builds your full-cycle recruiting engine across China's hiring platforms,
+    from sourcing to onboarding to compliance.
+  url: /agency-agents/specialized/recruitment-specialist.html
 - name: Reddit Community Builder
   description_en: Expert Reddit marketing specialist focused on authentic community
-    engagement, value-driven content creation
+    engagement, value-driven content creation, and long-term relationship building.
+    Masters Reddit culture navigation.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业Reddit营销专家，专注于真实社区参与和价值驱动内容创作
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#FF4500'
+  emoji: 💬
+  vibe: Speaks fluent Reddit and builds community trust the authentic way.
   url: /agency-agents/marketing/marketing-reddit-community-builder.html
 - name: Report Distribution Agent
   description_en: AI agent that automates distribution of consolidated sales reports
     to representatives based on territorial parameters
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: AI智能体，根据区域参数自动将整合的销售报告分发给代表
-  color: '#6366f1'
-  emoji: 🔧
+  color: '#d69e2e'
+  emoji: 📤
+  vibe: Automates delivery of consolidated sales reports to the right reps.
   url: /agency-agents/specialized/report-distribution-agent.html
 - name: Roblox Avatar Creator
   description_en: Roblox UGC and avatar pipeline specialist - Masters Roblox's avatar
-    system, UGC item creation, accessory rigging, texture standards
+    system, UGC item creation, accessory rigging, texture standards, and the Creator
+    Marketplace submission pipeline
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: Roblox UGC和化身流水线专家 - 精通Roblox化身系统、UGC物品创建、配饰绑定、纹理标准
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/roblox-avatar-creator.html
+  color: fuchsia
+  emoji: 👤
+  vibe: Masters the UGC pipeline from rigging to Creator Marketplace submission.
+  url: /agency-agents/game-development/roblox-studio/roblox-avatar-creator.html
 - name: Roblox Experience Designer
   description_en: Roblox platform UX and monetization specialist - Masters engagement
-    loop design, DataStore-driven progression, Roblox monetization systems
+    loop design, DataStore-driven progression, Roblox monetization systems (Passes,
+    Developer Products, UGC), and player retention for Roblox experiences
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: Roblox平台UX和商业化专家 - 精通参与度循环设计、DataStore驱动的进度系统、Roblox商业化系统
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/level-designer.html
+  color: lime
+  emoji: 🎪
+  vibe: Designs engagement loops and monetization systems that keep players coming
+    back.
+  url: /agency-agents/game-development/roblox-studio/roblox-experience-designer.html
 - name: Roblox Systems Scripter
-  description_en: Roblox platform engineering specialist - Masters Luau, client-server
-    security model, RemoteEvents/RemoteFunctions, DataStore
+  description_en: Roblox platform engineering specialist - Masters Luau, the client-server
+    security model, RemoteEvents/RemoteFunctions, DataStore, and module architecture
+    for scalable Roblox experiences
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: Roblox平台工程专家 - 精通Luau、客户端-服务器安全模型、RemoteEvents/RemoteFunctions、DataStore
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/roblox-systems-scripter.html
+  color: rose
+  emoji: 🔧
+  vibe: Builds scalable Roblox experiences with rock-solid Luau and client-server
+    security.
+  url: /agency-agents/game-development/roblox-studio/roblox-systems-scripter.html
 - name: SEO Specialist
   description_en: Expert search engine optimization strategist specializing in technical
-    SEO, content optimization, link authority building
+    SEO, content optimization, link authority building, and organic search growth.
+    Drives sustainable traffic through data-driven search strategies.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业搜索引擎优化策略师，擅长技术SEO、内容优化、链接权威建设
-  color: '#f59e0b'
-  emoji: 📢
-  url: /agency-agents/marketing/marketing-baidu-seo-specialist.html
+  color: '#4285F4'
+  emoji: 🔍
+  vibe: Drives sustainable organic traffic through technical SEO and content strategy.
+  url: /agency-agents/marketing/marketing-seo-specialist.html
+- name: SRE (Site Reliability Engineer)
+  description_en: Expert site reliability engineer specializing in SLOs, error budgets,
+    observability, chaos engineering, and toil reduction for production systems at
+    scale.
+  description_zh: ''
+  category: engineering
+  category_name: Engineering
+  color: '#e63946'
+  emoji: 🛡️
+  vibe: Reliability is a feature. Error budgets fund velocity — spend them wisely.
+  url: /agency-agents/engineering/engineering-sre.html
 - name: Sales Coach
   description_en: Expert sales coaching specialist focused on rep development, pipeline
-    review facilitation, call coaching, deal strategy
+    review facilitation, call coaching, deal strategy, and forecast accuracy. Makes
+    every rep and every deal better through structured coaching methodology and behavioral
+    feedback.
+  description_zh: ''
   category: sales
   category_name: Sales
-  description_zh: 专业销售教练，专注于销售代表发展、管道审查促进、电话辅导、交易策略
-  color: '#14b8a6'
-  emoji: 💼
+  color: '#E65100'
+  emoji: 🏋️
+  vibe: Asks the question that makes the rep rethink the entire deal.
   url: /agency-agents/sales/sales-coach.html
 - name: Sales Data Extraction Agent
   description_en: AI agent specialized in monitoring Excel files and extracting key
     sales metrics (MTD, YTD, Year End) for internal live reporting
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: AI智能体，专门监控Excel文件并提取关键销售指标（月度至今、年度至今、年度结束）用于内部实时报告
-  color: '#6366f1'
-  emoji: 🔧
+  color: '#2b6cb0'
+  emoji: 📊
+  vibe: Watches your Excel files and extracts the metrics that matter.
   url: /agency-agents/specialized/sales-data-extraction-agent.html
 - name: Sales Engineer
   description_en: Senior pre-sales engineer specializing in technical discovery, demo
-    engineering, POC scoping, competitive battlecards
+    engineering, POC scoping, competitive battlecards, and bridging product capabilities
+    to business outcomes. Wins the technical decision so the deal can close.
+  description_zh: ''
   category: sales
   category_name: Sales
-  description_zh: 高级售前工程师，擅长技术发现、演示工程、POC范围界定、竞争对策卡
-  color: '#14b8a6'
-  emoji: 💼
+  color: '#2E5090'
+  emoji: 🛠️
+  vibe: Wins the technical decision before the deal even hits procurement.
   url: /agency-agents/sales/sales-engineer.html
 - name: Search Query Analyst
   description_en: Specialist in search term analysis, negative keyword architecture,
-    and query-to-intent mapping
+    and query-to-intent mapping. Turns raw search query data into actionable optimizations
+    that eliminate waste and amplify high-intent traffic across paid search accounts.
+  description_zh: ''
   category: paid-media
   category_name: Paid Media
-  description_zh: 搜索词分析、否定关键词架构和查询到意图映射专家
-  color: '#ef4444'
-  emoji: 💰
+  color: orange
+  emoji: 🔍
+  vibe: Mines search queries to find the gold your competitors are missing.
   url: /agency-agents/paid-media/paid-media-search-query-analyst.html
 - name: Security Engineer
   description_en: Expert application security engineer specializing in threat modeling,
     vulnerability assessment, secure code review, and security architecture design
+    for modern web and cloud-native applications.
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业应用安全工程师，擅长威胁建模、漏洞评估、安全代码审查和安全架构设计
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: red
+  emoji: 🔒
+  vibe: Models threats, reviews code, and designs security architecture that actually
+    holds.
   url: /agency-agents/engineering/engineering-security-engineer.html
 - name: Senior Developer
   description_en: Premium implementation specialist - Masters Laravel/Livewire/FluxUI,
     advanced CSS, Three.js integration
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 顶级实现专家 - 精通Laravel/Livewire/FluxUI、高级CSS、Three.js集成
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: green
+  emoji: 💎
+  vibe: Premium full-stack craftsperson — Laravel, Livewire, Three.js, advanced CSS.
   url: /agency-agents/engineering/engineering-senior-developer.html
 - name: Senior Project Manager
-  description_en: Converts specs to tasks and remembers previous projects - focused
-    on realistic scope
+  description_en: Converts specs to tasks and remembers previous projects. Focused
+    on realistic scope, no background processes, exact spec requirements
+  description_zh: ''
   category: project-management
   category_name: Project Management
-  description_zh: 将规格转换为任务并记住之前的项目 - 专注于实际范围
-  color: '#84cc16'
-  emoji: 📋
-  url: /agency-agents/project-management/project-management-studio-producer.html
-- name: Social Media Strategist
-  description_en: Expert social media strategist for LinkedIn, Twitter, and professional
-    platforms
+  color: blue
+  emoji: 📝
+  vibe: Converts specs to tasks with realistic scope — no gold-plating, no fantasy.
+  url: /agency-agents/project-management/project-manager-senior.html
+- name: Short-Video Editing Coach
+  description_en: Hands-on short-video editing coach covering the full post-production
+    pipeline, with mastery of CapCut Pro, Premiere Pro, DaVinci Resolve, and Final
+    Cut Pro across composition and camera language, color grading, audio engineering,
+    motion graphics and VFX, subtitle design, multi-platform export optimization,
+    editing workflow efficiency, and AI-assisted editing.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: LinkedIn、Twitter和专业平台的跨平台社交媒体营销专家
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#7B2D8E'
+  emoji: 🎬
+  vibe: Turns raw footage into scroll-stopping short videos with professional polish.
+  url: /agency-agents/marketing/marketing-short-video-editing-coach.html
+- name: Social Media Strategist
+  description_en: Expert social media strategist for LinkedIn, Twitter, and professional
+    platforms. Creates cross-platform campaigns, builds communities, manages real-time
+    engagement, and develops thought leadership strategies.
+  description_zh: ''
+  category: marketing
+  category_name: Marketing
+  color: blue
+  emoji: 📣
+  vibe: Orchestrates cross-platform campaigns that build community and drive engagement.
   url: /agency-agents/marketing/marketing-social-media-strategist.html
+- name: Software Architect
+  description_en: Expert software architect specializing in system design, domain-driven
+    design, architectural patterns, and technical decision-making for scalable, maintainable
+    systems.
+  description_zh: ''
+  category: engineering
+  category_name: Engineering
+  color: indigo
+  emoji: 🏛️
+  vibe: Designs systems that survive the team that built them. Every decision has
+    a trade-off — name it.
+  url: /agency-agents/engineering/engineering-software-architect.html
 - name: Solidity Smart Contract Engineer
   description_en: Expert Solidity developer specializing in EVM smart contract architecture,
     gas optimization, upgradeable proxy patterns, DeFi protocol development, and security-first
-    contract design
+    contract design across Ethereum and L2 chains.
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业Solidity开发者，擅长EVM智能合约架构、Gas优化、可升级代理模式、DeFi协议开发和安全优先的合约设计
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: orange
+  emoji: ⛓️
+  vibe: Battle-hardened Solidity developer who lives and breathes the EVM.
   url: /agency-agents/engineering/engineering-solidity-smart-contract-engineer.html
 - name: Sprint Prioritizer
   description_en: Expert product manager specializing in agile sprint planning, feature
-    prioritization, and resource allocation
+    prioritization, and resource allocation. Focused on maximizing team velocity and
+    business value delivery through data-driven prioritization frameworks.
+  description_zh: ''
   category: product
   category_name: Product
-  description_zh: 专业产品经理，擅长敏捷冲刺规划、功能优先级排序和资源分配
-  color: '#06b6d4'
-  emoji: 📦
+  color: green
+  emoji: 🎯
+  vibe: Maximizes sprint value through data-driven prioritization and ruthless focus.
   url: /agency-agents/product/product-sprint-prioritizer.html
 - name: Studio Operations
   description_en: Expert operations manager specializing in day-to-day studio efficiency,
-    process optimization, and resource coordination
+    process optimization, and resource coordination. Focused on ensuring smooth operations,
+    maintaining productivity standards, and supporting all teams with the tools and
+    processes needed for success.
+  description_zh: ''
   category: project-management
   category_name: Project Management
-  description_zh: 专业运营经理，擅长日常工作室效率、流程优化和资源协调
-  color: '#84cc16'
-  emoji: 📋
+  color: green
+  emoji: 🏭
+  vibe: Keeps the studio running smoothly — processes, tools, and people in sync.
   url: /agency-agents/project-management/project-management-studio-operations.html
 - name: Studio Producer
   description_en: Senior strategic leader specializing in high-level creative and
-    technical project orchestration, resource allocation
+    technical project orchestration, resource allocation, and multi-project portfolio
+    management. Focused on aligning creative vision with business objectives while
+    managing complex cross-functional initiatives and ensuring optimal studio operations.
+  description_zh: ''
   category: project-management
   category_name: Project Management
-  description_zh: 高级战略领导者，擅长高层创意和技术项目协调、资源分配
-  color: '#84cc16'
-  emoji: 📋
+  color: gold
+  emoji: 🎬
+  vibe: Aligns creative vision with business objectives across complex initiatives.
   url: /agency-agents/project-management/project-management-studio-producer.html
+- name: Study Abroad Advisor
+  description_en: Full-spectrum study abroad planning expert covering the US, UK,
+    Canada, Australia, Europe, Hong Kong, and Singapore — proficient in undergraduate,
+    master's, and PhD application strategy, school selection, essay coaching, profile
+    enhancement, standardized test planning, visa preparation, and overseas life adaptation,
+    helping Chinese students craft personalized end-to-end study abroad plans.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: '#1B4D3E'
+  emoji: 🎓
+  vibe: Guides Chinese students through the entire study abroad journey — from school
+    selection and essays to visas — with data-driven advice and zero anxiety selling.
+  url: /agency-agents/specialized/study-abroad-advisor.html
+- name: Supply Chain Strategist
+  description_en: Expert supply chain management and procurement strategy specialist
+    — skilled in supplier development, strategic sourcing, quality control, and supply
+    chain digitalization. Grounded in China's manufacturing ecosystem, helps companies
+    build efficient, resilient, and sustainable supply chains.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: blue
+  emoji: 🔗
+  vibe: Builds your procurement engine and supply chain resilience across China's
+    manufacturing ecosystem, from supplier sourcing to risk management.
+  url: /agency-agents/specialized/supply-chain-strategist.html
 - name: Support Responder
   description_en: Expert customer support specialist delivering exceptional customer
-    service, issue resolution, and user experience optimization
+    service, issue resolution, and user experience optimization. Specializes in multi-channel
+    support, proactive customer care, and turning support interactions into positive
+    brand experiences.
+  description_zh: ''
   category: support
   category_name: Support
-  description_zh: 专业客户支持专家，提供卓越客户服务、问题解决和用户体验优化
-  color: '#22c55e'
-  emoji: 🎧
+  color: blue
+  emoji: 💬
+  vibe: Turns frustrated users into loyal advocates, one interaction at a time.
   url: /agency-agents/support/support-support-responder.html
 - name: Technical Artist
   description_en: Art-to-engine pipeline specialist - Masters shaders, VFX systems,
     LOD pipelines, performance budgeting, and cross-engine asset optimization
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 美术到引擎流水线专家 - 精通着色器、VFX系统、LOD流水线、性能预算和跨引擎资产优化
-  color: '#8b5cf6'
-  emoji: 🎮
+  color: pink
+  emoji: 🎨
+  vibe: The bridge between artistic vision and engine reality.
   url: /agency-agents/game-development/technical-artist.html
 - name: Technical Writer
   description_en: Expert technical writer specializing in developer documentation,
-    API references, README files, and tutorials
+    API references, README files, and tutorials. Transforms complex engineering concepts
+    into clear, accurate, and engaging docs that developers actually read and use.
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业技术写手，擅长开发者文档、API参考、README文件和使用教程
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: teal
+  emoji: 📚
+  vibe: Writes the docs that developers actually read and use.
   url: /agency-agents/engineering/engineering-technical-writer.html
 - name: Terminal Integration Specialist
   description_en: Terminal emulation, text rendering optimization, and SwiftTerm integration
     for modern Swift applications
+  description_zh: ''
   category: spatial-computing
   category_name: Spatial Computing
-  description_zh: 终端仿真、文本渲染优化和现代Swift应用程序的SwiftTerm集成
-  color: '#f97316'
-  emoji: 🌐
+  color: green
+  emoji: 🖥️
+  vibe: Masters terminal emulation and text rendering in modern Swift applications.
   url: /agency-agents/spatial-computing/terminal-integration-specialist.html
 - name: Test Results Analyzer
   description_en: Expert test analysis specialist focused on comprehensive test result
-    evaluation, quality metrics analysis
+    evaluation, quality metrics analysis, and actionable insight generation from testing
+    activities
+  description_zh: ''
   category: testing
   category_name: Testing
-  description_zh: 专业测试分析专家，专注于全面的测试结果评估、质量指标分析
-  color: '#a855f7'
-  emoji: 🧪
+  color: indigo
+  emoji: 📋
+  vibe: Reads test results like a detective reads evidence — nothing gets past.
   url: /agency-agents/testing/testing-test-results-analyzer.html
 - name: Threat Detection Engineer
   description_en: Expert detection engineer specializing in SIEM rule development,
     MITRE ATT&CK coverage mapping, threat hunting, alert tuning, and detection-as-code
-    pipelines
+    pipelines for security operations teams.
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业检测工程师，擅长SIEM规则开发、MITRE ATT&CK覆盖映射、威胁狩猎、告警调优和检测即代码流水线
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: '#7b2d8e'
+  emoji: 🎯
+  vibe: Builds the detection layer that catches attackers after they bypass prevention.
   url: /agency-agents/engineering/engineering-threat-detection-engineer.html
 - name: TikTok Strategist
   description_en: Expert TikTok marketing specialist focused on viral content creation,
-    algorithm optimization, and community building
+    algorithm optimization, and community building. Masters TikTok's unique culture
+    and features for brand growth.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业TikTok营销专家，专注于病毒式内容创作、算法优化和社区建设
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#000000'
+  emoji: 🎵
+  vibe: Rides the algorithm and builds community through authentic TikTok culture.
   url: /agency-agents/marketing/marketing-tiktok-strategist.html
 - name: Tool Evaluator
   description_en: Expert technology assessment specialist focused on evaluating, testing,
-    and recommending tools, software, and platforms
+    and recommending tools, software, and platforms for business use and productivity
+    optimization
+  description_zh: ''
   category: testing
   category_name: Testing
-  description_zh: 专业技术评估专家，专注于评估、测试和推荐工具、软件和平台
-  color: '#a855f7'
-  emoji: 🧪
+  color: teal
+  emoji: 🔧
+  vibe: Tests and recommends the right tools so your team doesn't waste time on the
+    wrong ones.
   url: /agency-agents/testing/testing-tool-evaluator.html
 - name: Tracking & Measurement Specialist
   description_en: Expert in conversion tracking architecture, tag management, and
-    attribution modeling across GTM, GA4, Google Ads, Meta CAPI
+    attribution modeling across Google Tag Manager, GA4, Google Ads, Meta CAPI, LinkedIn
+    Insight Tag, and server-side implementations. Ensures every conversion is counted
+    correctly and every dollar of ad spend is measurable.
+  description_zh: ''
   category: paid-media
   category_name: Paid Media
-  description_zh: 跨GTM、GA4、Google Ads、Meta CAPI的转化追踪架构、标签管理和归因模型专家
-  color: '#ef4444'
-  emoji: 💰
+  color: orange
+  emoji: 📡
+  vibe: If it's not tracked correctly, it didn't happen.
   url: /agency-agents/paid-media/paid-media-tracking-specialist.html
 - name: Trend Researcher
   description_en: Expert market intelligence analyst specializing in identifying emerging
-    trends, competitive analysis, and opportunity assessment
+    trends, competitive analysis, and opportunity assessment. Focused on providing
+    actionable insights that drive product strategy and innovation decisions.
+  description_zh: ''
   category: product
   category_name: Product
-  description_zh: 专业市场情报分析师，擅长识别新兴趋势、竞争分析和机会评估
-  color: '#06b6d4'
-  emoji: 📦
+  color: purple
+  emoji: 🔭
+  vibe: Spots emerging trends before they hit the mainstream.
   url: /agency-agents/product/product-trend-researcher.html
 - name: Twitter Engager
   description_en: Expert Twitter marketing specialist focused on real-time engagement,
-    thought leadership building, and community-driven growth
+    thought leadership building, and community-driven growth. Builds brand authority
+    through authentic conversation participation and viral thread creation.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业Twitter营销专家，专注于实时互动、思想领袖建立和社区驱动增长
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#1DA1F2'
+  emoji: 🐦
+  vibe: Builds thought leadership and brand authority 280 characters at a time.
   url: /agency-agents/marketing/marketing-twitter-engager.html
 - name: UI Designer
   description_en: Expert UI designer specializing in visual design systems, component
-    libraries, and pixel-perfect interface creation
+    libraries, and pixel-perfect interface creation. Creates beautiful, consistent,
+    accessible user interfaces that enhance UX and reflect brand identity
+  description_zh: ''
   category: design
   category_name: Design
-  description_zh: 专业UI设计师，擅长视觉设计系统、组件库和像素级完美界面创建
-  color: '#ec4899'
+  color: purple
   emoji: 🎨
+  vibe: Creates beautiful, consistent, accessible interfaces that feel just right.
   url: /agency-agents/design/design-ui-designer.html
 - name: UX Architect
   description_en: Technical architecture and UX specialist who provides developers
     with solid foundations, CSS systems, and clear implementation guidance
+  description_zh: ''
   category: design
   category_name: Design
-  description_zh: 技术架构和UX专家，为开发者提供坚实基础、CSS系统和清晰的实现指导
-  color: '#ec4899'
-  emoji: 🎨
+  color: purple
+  emoji: 📐
+  vibe: Gives developers solid foundations, CSS systems, and clear implementation
+    paths.
   url: /agency-agents/design/design-ux-architect.html
 - name: UX Researcher
   description_en: Expert user experience researcher specializing in user behavior
-    analysis, usability testing, and data-driven design insights
+    analysis, usability testing, and data-driven design insights. Provides actionable
+    research findings that improve product usability and user satisfaction
+  description_zh: ''
   category: design
   category_name: Design
-  description_zh: 专业用户体验研究员，擅长用户行为分析、可用性测试和数据驱动的设计洞察
-  color: '#ec4899'
-  emoji: 🎨
+  color: green
+  emoji: 🔬
+  vibe: Validates design decisions with real user data, not assumptions.
   url: /agency-agents/design/design-ux-researcher.html
 - name: Unity Architect
   description_en: Data-driven modularity specialist - Masters ScriptableObjects, decoupled
-    systems, and single-responsibility component design
+    systems, and single-responsibility component design for scalable Unity projects
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 数据驱动模块化专家 - 精通ScriptableObjects、解耦系统和单一职责组件设计
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/unity-architect.html
+  color: blue
+  emoji: 🏛️
+  vibe: Designs data-driven, decoupled Unity systems that scale without spaghetti.
+  url: /agency-agents/game-development/unity/unity-architect.html
 - name: Unity Editor Tool Developer
   description_en: Unity editor automation specialist - Masters custom EditorWindows,
-    PropertyDrawers, AssetPostprocessors, ScriptedImporters
+    PropertyDrawers, AssetPostprocessors, ScriptedImporters, and pipeline automation
+    that saves teams hours per week
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: Unity编辑器自动化专家 - 精通自定义EditorWindows、PropertyDrawers、AssetPostprocessors、ScriptedImporters
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/unity-editor-tool-developer.html
+  color: gray
+  emoji: 🛠️
+  vibe: Builds custom Unity editor tools that save teams hours every week.
+  url: /agency-agents/game-development/unity/unity-editor-tool-developer.html
 - name: Unity Multiplayer Engineer
   description_en: Networked gameplay specialist - Masters Netcode for GameObjects,
-    Unity Gaming Services, client-server authority, lag compensation
+    Unity Gaming Services (Relay/Lobby), client-server authority, lag compensation,
+    and state synchronization
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 网络游戏专家 - 精通Netcode for GameObjects、Unity游戏服务、客户端-服务器权威、延迟补偿
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/game-audio-engineer.html
+  color: blue
+  emoji: 🔗
+  vibe: Makes networked Unity gameplay feel local through smart sync and prediction.
+  url: /agency-agents/game-development/unity/unity-multiplayer-engineer.html
 - name: Unity Shader Graph Artist
   description_en: Visual effects and material specialist - Masters Unity Shader Graph,
-    HLSL, URP/HDRP rendering pipelines
+    HLSL, URP/HDRP rendering pipelines, and custom pass authoring for real-time visual
+    effects
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 视觉特效和材质专家 - 精通Unity着色器图、HLSL、URP/HDRP渲染管线
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/technical-artist.html
+  color: cyan
+  emoji: ✨
+  vibe: Crafts real-time visual magic through Shader Graph and custom render passes.
+  url: /agency-agents/game-development/unity/unity-shader-graph-artist.html
 - name: Unreal Multiplayer Architect
   description_en: Unreal Engine networking specialist - Masters Actor replication,
-    GameMode/GameState architecture, server-authoritative gameplay
+    GameMode/GameState architecture, server-authoritative gameplay, network prediction,
+    and dedicated server setup for UE5
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: Unreal引擎网络专家 - 精通Actor复制、GameMode/GameState架构、服务器权威游戏
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/unreal-multiplayer-architect.html
+  color: red
+  emoji: 🌐
+  vibe: Architects server-authoritative Unreal multiplayer that feels lag-free.
+  url: /agency-agents/game-development/unreal-engine/unreal-multiplayer-architect.html
 - name: Unreal Systems Engineer
   description_en: Performance and hybrid architecture specialist - Masters C++/Blueprint
-    continuum, Nanite geometry, Lumen GI, and Gameplay Ability System
+    continuum, Nanite geometry, Lumen GI, and Gameplay Ability System for AAA-grade
+    Unreal Engine projects
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 性能和混合架构专家 - 精通C++/Blueprint结合、Nanite几何体、Lumen GI和Gameplay Ability
-    System
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/game-audio-engineer.html
+  color: orange
+  emoji: ⚙️
+  vibe: Masters the C++/Blueprint continuum for AAA-grade Unreal Engine projects.
+  url: /agency-agents/game-development/unreal-engine/unreal-systems-engineer.html
 - name: Unreal Technical Artist
   description_en: Unreal Engine visual pipeline specialist - Masters the Material
-    Editor, Niagara VFX, Procedural Content Generation, and art-to-engine pipeline
+    Editor, Niagara VFX, Procedural Content Generation, and the art-to-engine pipeline
+    for UE5 projects
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: Unreal引擎视觉流水线专家 - 精通材质编辑器、Niagara VFX、程序化内容生成和美术到引擎流水线
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/technical-artist.html
+  color: orange
+  emoji: 🎨
+  vibe: Bridges Niagara VFX, Material Editor, and PCG into polished UE5 visuals.
+  url: /agency-agents/game-development/unreal-engine/unreal-technical-artist.html
 - name: Unreal World Builder
   description_en: Open-world and environment specialist - Masters UE5 World Partition,
-    Landscape, procedural foliage, HLOD, and large-scale level streaming
+    Landscape, procedural foliage, HLOD, and large-scale level streaming for seamless
+    open-world experiences
+  description_zh: ''
   category: game-development
   category_name: Game Development
-  description_zh: 开放世界和环境专家 - 精通UE5世界分区、Landscape、程序化植被、HLOD和大规模关卡流式加载
-  color: '#8b5cf6'
-  emoji: 🎮
-  url: /agency-agents/game-development/unreal-world-builder.html
+  color: green
+  emoji: 🌍
+  vibe: Builds seamless open worlds with World Partition, Nanite, and procedural foliage.
+  url: /agency-agents/game-development/unreal-engine/unreal-world-builder.html
 - name: Visual Storyteller
   description_en: Expert visual communication specialist focused on creating compelling
-    visual narratives, multimedia content, and brand storytelling through design
+    visual narratives, multimedia content, and brand storytelling through design.
+    Specializes in transforming complex information into engaging visual stories that
+    connect with audiences and drive emotional engagement.
+  description_zh: ''
   category: design
   category_name: Design
-  description_zh: 专业视觉传播专家，专注于通过设计创建引人入胜的视觉叙事、多媒体内容和品牌故事
-  color: '#ec4899'
-  emoji: 🎨
+  color: purple
+  emoji: 🎬
+  vibe: Transforms complex information into visual narratives that move people.
   url: /agency-agents/design/design-visual-storyteller.html
 - name: WeChat Mini Program Developer
   description_en: Expert WeChat Mini Program developer specializing in 小程序 development
-    with WXML/WXSS/WXS, WeChat API integration, payment systems, subscription messaging
+    with WXML/WXSS/WXS, WeChat API integration, payment systems, subscription messaging,
+    and the full WeChat ecosystem.
+  description_zh: ''
   category: engineering
   category_name: Engineering
-  description_zh: 专业微信小程序开发工程师，擅长WXML/WXSS/WXS开发、微信API集成、支付系统、订阅消息
-  color: '#3b82f6'
-  emoji: ⚙️
+  color: green
+  emoji: 💬
+  vibe: Builds performant Mini Programs that thrive in the WeChat ecosystem.
   url: /agency-agents/engineering/engineering-wechat-mini-program-developer.html
 - name: WeChat Official Account Manager
   description_en: Expert WeChat Official Account (OA) strategist specializing in content
-    marketing, subscriber engagement, and conversion optimization
+    marketing, subscriber engagement, and conversion optimization. Masters multi-format
+    content and builds loyal communities through consistent value delivery.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业微信公众号(OA)策略师，擅长内容营销、订阅者参与和转化优化
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#09B83E'
+  emoji: 📱
+  vibe: Grows loyal WeChat subscriber communities through consistent value delivery.
   url: /agency-agents/marketing/marketing-wechat-official-account.html
+- name: Weibo Strategist
+  description_en: Full-spectrum operations expert for Sina Weibo, with deep expertise
+    in trending topic mechanics, Super Topic community management, public sentiment
+    monitoring, fan economy strategies, and Weibo advertising, helping brands achieve
+    viral reach and sustained growth on China's leading public discourse platform.
+  description_zh: ''
+  category: marketing
+  category_name: Marketing
+  color: '#FF8200'
+  emoji: 🔥
+  vibe: Makes your brand trend on Weibo and keeps the conversation going.
+  url: /agency-agents/marketing/marketing-weibo-strategist.html
 - name: Whimsy Injector
   description_en: Expert creative specialist focused on adding personality, delight,
-    and playful elements to brand experiences
+    and playful elements to brand experiences. Creates memorable, joyful interactions
+    that differentiate brands through unexpected moments of whimsy
+  description_zh: ''
   category: design
   category_name: Design
-  description_zh: 专业创意专家，专注于为品牌体验增添个性、愉悦和趣味元素
-  color: '#ec4899'
-  emoji: 🎨
+  color: pink
+  emoji: ✨
+  vibe: Adds the unexpected moments of delight that make brands unforgettable.
   url: /agency-agents/design/design-whimsy-injector.html
+- name: Workflow Architect
+  description_en: Workflow design specialist who maps complete workflow trees for
+    every system, user journey, and agent interaction — covering happy paths, all
+    branch conditions, failure modes, recovery paths, handoff contracts, and observable
+    states to produce build-ready specs that agents can implement against and QA can
+    test against.
+  description_zh: ''
+  category: specialized
+  category_name: Specialized
+  color: orange
+  emoji: 🗺️
+  vibe: Every path the system can take — mapped, named, and specified before a single
+    line is written.
+  url: /agency-agents/specialized/specialized-workflow-architect.html
 - name: Workflow Optimizer
   description_en: Expert process improvement specialist focused on analyzing, optimizing,
-    and automating workflows
+    and automating workflows across all business functions for maximum productivity
+    and efficiency
+  description_zh: ''
   category: testing
   category_name: Testing
-  description_zh: 专业流程改进专家，专注于分析、优化和自动化工作流
-  color: '#a855f7'
-  emoji: 🧪
+  color: green
+  emoji: ⚡
+  vibe: Finds the bottleneck, fixes the process, automates the rest.
   url: /agency-agents/testing/testing-workflow-optimizer.html
 - name: XR Cockpit Interaction Specialist
   description_en: Specialist in designing and developing immersive cockpit-based control
     systems for XR environments
+  description_zh: ''
   category: spatial-computing
   category_name: Spatial Computing
-  description_zh: 专注于为XR环境设计和开发沉浸式座舱控制系统的专家
-  color: '#f97316'
-  emoji: 🌐
+  color: orange
+  emoji: 🕹️
+  vibe: Designs immersive cockpit control systems that feel natural in XR.
   url: /agency-agents/spatial-computing/xr-cockpit-interaction-specialist.html
 - name: XR Immersive Developer
   description_en: Expert WebXR and immersive technology developer with specialization
     in browser-based AR/VR/XR applications
+  description_zh: ''
   category: spatial-computing
   category_name: Spatial Computing
-  description_zh: 专业WebXR和沉浸式技术开发者，专注于基于浏览器的AR/VR/XR应用
-  color: '#f97316'
+  color: neon-cyan
   emoji: 🌐
+  vibe: Builds browser-based AR/VR/XR experiences that push WebXR to its limits.
   url: /agency-agents/spatial-computing/xr-immersive-developer.html
 - name: XR Interface Architect
   description_en: Spatial interaction designer and interface strategist for immersive
     AR/VR/XR environments
+  description_zh: ''
   category: spatial-computing
   category_name: Spatial Computing
-  description_zh: 沉浸式AR/VR/XR环境的空间交互设计师和界面策略师
-  color: '#f97316'
-  emoji: 🌐
+  color: neon-green
+  emoji: 🫧
+  vibe: Designs spatial interfaces where interaction feels like instinct, not instruction.
   url: /agency-agents/spatial-computing/xr-interface-architect.html
 - name: Xiaohongshu Specialist
   description_en: Expert Xiaohongshu marketing specialist focused on lifestyle content,
-    trend-driven strategies, and authentic community engagement
+    trend-driven strategies, and authentic community engagement. Masters micro-content
+    creation and drives viral growth through aesthetic storytelling.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业小红书营销专家，专注于生活方式内容、趋势驱动策略和真实社区参与
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#FF1B6D'
+  emoji: 🌸
+  vibe: Masters lifestyle content and aesthetic storytelling on 小红书.
   url: /agency-agents/marketing/marketing-xiaohongshu-specialist.html
 - name: ZK Steward
-  description_en: Knowledge-base steward in the spirit of Niklas Luhmann's Zettelkasten
-    - enforces atomic notes, connectivity, and validation loops
+  description_en: 'Knowledge-base steward in the spirit of Niklas Luhmann''s Zettelkasten.
+    Default perspective: Luhmann; switches to domain experts (Feynman, Munger, Ogilvy,
+    etc.) by task. Enforces atomic notes, connectivity, and validation loops. Use
+    for knowledge-base building, note linking, complex task breakdown, and cross-domain
+    decision support.'
+  description_zh: ''
   category: specialized
   category_name: Specialized
-  description_zh: 借鉴Niklas Luhmann Zettelkasten的知识库守护者 - 强制执行原子笔记、连接和验证循环
-  color: '#6366f1'
-  emoji: 🔧
+  color: teal
+  emoji: 🗃️
+  vibe: Channels Luhmann's Zettelkasten to build connected, validated knowledge bases.
   url: /agency-agents/specialized/zk-steward.html
 - name: Zhihu Strategist
   description_en: Expert Zhihu marketing specialist focused on thought leadership,
-    community credibility, and knowledge-driven engagement
+    community credibility, and knowledge-driven engagement. Masters question-answering
+    strategy and builds brand authority through authentic expertise sharing.
+  description_zh: ''
   category: marketing
   category_name: Marketing
-  description_zh: 专业知乎营销专家，专注于思想领袖、社区可信度和知识驱动参与
-  color: '#f59e0b'
-  emoji: 📢
+  color: '#0084FF'
+  emoji: 🧠
+  vibe: Builds brand authority through expert knowledge-sharing on 知乎.
   url: /agency-agents/marketing/marketing-zhihu-strategist.html
 - name: macOS Spatial/Metal Engineer
   description_en: Native Swift and Metal specialist building high-performance 3D rendering
-    systems and spatial computing experiences
+    systems and spatial computing experiences for macOS and Vision Pro
+  description_zh: ''
   category: spatial-computing
   category_name: Spatial Computing
-  description_zh: 本地Swift和Metal专家，构建高性能3D渲染系统和空间计算体验
-  color: '#f97316'
-  emoji: 🌐
+  color: metallic-blue
+  emoji: 🍎
+  vibe: Pushes Metal to its limits for 3D rendering on macOS and Vision Pro.
   url: /agency-agents/spatial-computing/macos-spatial-metal-engineer.html
 - name: visionOS Spatial Engineer
   description_en: Native visionOS spatial computing, SwiftUI volumetric interfaces,
     and Liquid Glass design implementation
+  description_zh: ''
   category: spatial-computing
   category_name: Spatial Computing
-  description_zh: 本地visionOS空间计算、SwiftUI体积界面和Liquid Glass设计实现
-  color: '#f97316'
-  emoji: 🌐
+  color: indigo
+  emoji: 🥽
+  vibe: Builds native volumetric interfaces and Liquid Glass experiences for visionOS.
   url: /agency-agents/spatial-computing/visionos-spatial-engineer.html
 

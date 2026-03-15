@@ -18,13 +18,11 @@ title: Agency Agents Catalog
     <div class="filter-bar">
       <div class="category-filters" role="group" aria-label="Filter agents by category">
         <button class="filter-btn active" data-category="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-category="favorites" aria-pressed="false">⭐ Favorites</button>
         {% for category in site.data.categories %}
         <button class="filter-btn" data-category="{{ category.id }}" aria-pressed="false">{{ category.name_en }}</button>
         {% endfor %}
       </div>
-      <button id="favorites-btn" class="favorites-btn" aria-pressed="false" aria-label="Show favorites">
-        ⭐ Favorites
-      </button>
     </div>
   </div>
 </div>
